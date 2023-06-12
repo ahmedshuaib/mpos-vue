@@ -133,9 +133,6 @@ export default {
       }
   },
   methods: {
-
-  },
-
     change(event) {
         if (event.target == this.$refs.userModdal) {
             this.$router.push({ name: "user" });
@@ -148,6 +145,9 @@ export default {
         modal.hide();
       }
   },
+  },
+
+
 
 };
 
