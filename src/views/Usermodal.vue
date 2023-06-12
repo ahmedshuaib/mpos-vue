@@ -18,6 +18,7 @@
                                     <div class="col-lg-6 mt-2">
                                         <label for="fname">First Name: *</label>
                                         <input class="form-control" id="fname" type="text" placeholder="First Name"
+                                        v-model="fname"
                                         />
                                     </div>
                                     <div class="col-lg-6 mt-2">
@@ -122,9 +123,13 @@
 
 <script>
 import * as bootstrap from 'bootstrap';
-
+import axios from 'axios'
 export default {
-
+  data(){
+    return{
+      fname:''
+    }
+  },
   mounted(){
     if(this.$route.name==='usermodal'){
       const modalElement = this.$refs.userModdal;
@@ -133,6 +138,13 @@ export default {
       }
   },
   methods: {
+    handleSubmit(){
+      const data={
+        fname:this.fname,
+      }
+      axios.post('http://localhost:8080/user/usermodal')
+      
+    },
     change(event) {
         if (event.target == this.$refs.userModdal) {
             this.$router.push({ name: "user" });
