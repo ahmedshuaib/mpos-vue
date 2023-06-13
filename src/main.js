@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 
-// css-global-files//
+// css-global-library-files//
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
@@ -23,13 +23,10 @@ window.$=window.jQuery=jQuery;
 // js-global-files-end//
 
 
-//vuex-store//
-
-
-
 // mixins-js-files//
 import { datatable,Home,product } from './mixins';
 // mixins-js-files-end//
+
 
 
 // pages-path//
