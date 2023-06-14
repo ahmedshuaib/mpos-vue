@@ -1,5 +1,10 @@
 export default{
   methods:{
+    popup(){
+      document.body.style.overflowY = 'scroll'; // Reset the overflow-y property
+      document.body.style.padding = '0'; // Reset the overflow-y property
+
+    },
     searchBar(){
       const mobile__input = document.querySelector('.mobile__input');
 
@@ -48,7 +53,7 @@ export default{
             const dropBtn = document?.querySelector('.drop-btn');
             const dOptions = document?.querySelectorAll('.d-option');
             const dBtn_text = document?.querySelector('.dBtn-text');
-          
+            const popup_close=document.querySelector('#popup-close');
             dOptions?.forEach((option) => {
               option?.addEventListener('click', () => {
                 let selected = option.querySelector('.d-option-text').innerText;

@@ -12,6 +12,7 @@
   }
   .main.active{
     width:100%;
+    z-index: 1;
   }
   nav.active {
     width: 300px !important;
@@ -41,7 +42,6 @@
   }
 
   nav {
-    position: absolute;
     top: 80px;
     height: calc(100% - 80px);
   }
@@ -52,12 +52,14 @@
     left: 0;
     height: calc(100% - 80px);
     opacity: 1;
+    position: fixed;
     z-index: 1;
   }
 
   .main {
     left: 0;
     width: 100%;
+    z-index: 1;
   }
 
   header {
@@ -93,9 +95,7 @@
   .sales__table__section .card {
     overflow-y: scroll !important;
   }
-  .main{
-    z-index: -1;
-  }
+
   .stock__section .card {
     overflow-y: scroll !important;
   }

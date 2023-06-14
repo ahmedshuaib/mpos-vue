@@ -6,11 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
 import 'datatables.net-bs5/js/dataTables.bootstrap5.min.js';
-
 import "bootstrap";
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
+// css-global-files//
 import '@/assets/css/style.css';
 import '@/assets/css/responsive.css';
 import '@/assets/css/product.css';
@@ -33,9 +33,9 @@ import { datatable,Home,product } from './mixins';
 import sidebar from './components/common/Sidebar.vue';
 import navigation from './components/common/Navigation.vue';
 import footer from './components/common/Footer.vue';
-
-
 // pages-path-end//
+
+
 import router from '@/router';
 const app=createApp(App);
 app.component('tsidebar',sidebar);

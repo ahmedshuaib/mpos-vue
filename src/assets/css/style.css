@@ -29,15 +29,16 @@ table tr td {
   font-size: 14px;
 }
 
-.form-control:focus {
+.form-control {
   color: #212529;
-  background-color: none;
-  border-color: 1px solid var(--light-color) !important;
-  outline: 0;
+  background-color: none;;
+  padding: 9px 13px;
+
+}
+.form-control:focus{
   box-shadow: none !important;
   border: 1px solid var(--border-color) !important;
 }
-
 /* custom scrollbar settings */
 
 nav::-webkit-scrollbar-track {
@@ -197,6 +198,8 @@ nav .count {
   width: calc(100% - 300px);
   position: fixed;
   transition:300ms ease;
+  top:0;
+  z-index: 1;
   right: 0 !important;
 }
 .nav{
@@ -236,7 +239,9 @@ header {
   width: 45px;
   border-radius: 8px;
 }
-
+.modal-dialog{
+  max-width: 1000px !important;
+}
 .mobile__input {
   position: absolute;
   top: 0px;
@@ -325,15 +330,14 @@ header {
 /* MAIN SECTION */
 /* ================================================== */
 .main__body {
-  position: fixed;
-  left: 300px;
+
   width: calc(100% - 300px);
   transition:300ms ease;
   top: 80px;
-  overflow-y: scroll !important;
+  margin-left:auto;
   height: 100%;
+  margin-top: 5.5rem;
   transition: 300ms ease;
-  padding-bottom: 80px;
 }
 
 /* ================================================== */

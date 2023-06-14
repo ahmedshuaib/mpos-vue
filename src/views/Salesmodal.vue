@@ -14,16 +14,11 @@
               <div class="popup-form">
                 <form>
                     <div class="row">
-                      <div class="col-lg-6 mt-2">
-                          <label for="fname">First Name: *</label>
-                          <input
-                          class="form-control"
-                          id="fname"
-                          type="text"
-                          placeholder="First Name"
-                          />
+                      <div class="col-lg-6 mt-4">
+                        <label for="fname">First Name: *</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
-                      <div class="col-lg-6 mt-2">
+                      <div class="col-lg-6 mt-4">
                       <label for="lname">Last Name: *</label>
                         <input
                         class="form-control"
@@ -35,28 +30,18 @@
                     </div>
 
                     <div class="row">
-                    <div class="col-lg-6 mt-2">
-                    <label for="email">Email:</label>
-                    <input
-                    class="form-control"
-                    id="email"
-                    type="text"
-                    placeholder="Email"
-                    />
+                    <div class="col-lg-6 mt-4">
+                      <label for="email">Email:</label>
+                      <input class="form-control" id="email" type="text" placeholder="Email"/>
                     </div>
-                    <div class="col-lg-6 mt-2">
-                    <label for="contact">Contact No:</label>
-                    <input
-                    class="form-control"
-                    id="contact"
-                    type="text"
-                    placeholder="Role"
-                    />
+                    <div class="col-lg-6 mt-4">
+                      <label for="contact">Contact No:</label>
+                      <input class="form-control" id="contact" type="text" placeholder="Role"/>
                     </div>
                     </div>
 
                     <div class="row">
-                    <div class="col-lg-12 mt-2">
+                    <div class="col-lg-12 mt-4">
                     <label for="address">Address:</label>
                     <textarea
                     class="form-control"
@@ -69,7 +54,7 @@
                     </div>
 
                     <div class="row">
-                    <div class="col-lg-6 mt-2">
+                    <div class="col-lg-6 mt-4">
                     <label for="sales">Sales Commission Percentage (%):</label>
                     <input
                     class="form-control"
@@ -84,13 +69,14 @@
                       class="d-flex align-items-center justify-content-end pro-form-btn"
                       >
                       <div class="d-flex gap-3 align-items-center">
-                        <router-link :to="{name:'sales'}">
+                        <router-link :to="{name:'sales'}" @click="popup">
                             <span class="popup-close-btn" id="popup-close">Close</span>
                         </router-link>
                         <button class="popup-save-btn">Save</button>
                       </div>
                     </div>
                 </form>
+                
               </div>
             </div>
           </div>
