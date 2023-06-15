@@ -11,5 +11,4 @@ const router = createRouter({
     mode: 'history', // or 'hash' if using hash mode
 
 });
-
 export default router;

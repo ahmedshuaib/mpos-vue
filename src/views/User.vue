@@ -92,9 +92,11 @@
                                 <td>$1000</td>
                                 <td>
                                     <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
+                                    <router-link :to="{name:'edit',params:{id:'1'}}">
+                                        <button class="pro-edit-btn">
                                         <i class="uil uil-edit-alt"></i> Edit
                                     </button>
+                                    </router-link>
                                     <button class="pro-delete-btn">
                                         <i class="uil uil-trash-alt"></i> Delete
                                     </button>
@@ -197,15 +199,16 @@
             </div>
         </div>
     </section>
-    <router-view></router-view>
+    <router-view name="usermodal"></router-view>
+    <router-view name="edited"></router-view>
+
 </template>
 
 <script>
 
 export default {
     name:'User',
-    methods:{
-    }
+
 }
 </script>
 

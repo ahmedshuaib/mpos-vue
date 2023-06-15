@@ -5,6 +5,7 @@ export default{
       document.body.style.padding = '0'; // Reset the overflow-y property
 
     },
+    
     searchBar(){
       const mobile__input = document.querySelector('.mobile__input');
 
@@ -26,6 +27,7 @@ export default{
         const options = document.querySelectorAll('.option');
         const sBtn_text = document.querySelector('.sBtn-text');
 
+
         options.forEach((option) => {
           option.addEventListener('click', () => {
             let selected = option.querySelector('.option-text').innerText;
@@ -39,15 +41,38 @@ export default{
         });
         optionMenu.classList.add('select-menu--active');
     },
+
   },
     mounted(){
         window.addEventListener('load', () => {
             dropDown();
             dotsMenu();
+            accordion();
           });
+          const accordion = () => {  
+            const acHeader=document.querySelectorAll('.accordion-header');
+            const unstyle=document.querySelectorAll('.side-List')
+            const unstyleImg=document.querySelectorAll('.side-List img')
 
+            acHeader.forEach(function(tab,index){
 
-          
+              tab.addEventListener('click',function() {
+                unstyleImg.forEach(function(img){
+                  img.classList.remove('active')
+                })
+                unstyle.forEach(function(newtab){
+
+                  newtab.classList.remove('active');
+
+                })
+
+                unstyle[index].classList.add('active');
+                unstyleImg[index].classList.add('active')
+              })
+              
+            })
+          }
+
           const dropDown = () => {
             const dropMenu = document?.querySelector('.drop-menu');
             const dropBtn = document?.querySelector('.drop-btn');
@@ -88,6 +113,5 @@ export default{
               });
             });
           };
-          
+        }
     }
-}

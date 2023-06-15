@@ -16,7 +16,7 @@
                     <div class="row">
                       <div class="col-lg-6 mt-4">
                         <label for="fname">First Name: *</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="Fname" aria-describedby="FnameHelp">
                       </div>
                       <div class="col-lg-6 mt-4">
                       <label for="lname">Last Name: *</label>
@@ -30,39 +30,33 @@
                     </div>
 
                     <div class="row">
-                    <div class="col-lg-6 mt-4">
-                      <label for="email">Email:</label>
-                      <input class="form-control" id="email" type="text" placeholder="Email"/>
-                    </div>
-                    <div class="col-lg-6 mt-4">
-                      <label for="contact">Contact No:</label>
-                      <input class="form-control" id="contact" type="text" placeholder="Role"/>
-                    </div>
-                    </div>
-
-                    <div class="row">
-                    <div class="col-lg-12 mt-4">
-                    <label for="address">Address:</label>
-                    <textarea
-                    class="form-control"
-                    name="address"
-                    id="address"
-                    rows="4"
-                    placeholder="Address"
-                    ></textarea>
-                    </div>
+                      <div class="col-lg-6 mt-4">
+                        <label for="email">Email:</label>
+                        <input class="form-control" id="email" type="text" placeholder="Email"/>
+                      </div>
+                      <div class="col-lg-6 mt-4">
+                        <label for="contact">Contact No:</label>
+                        <input class="form-control" id="contact" type="text" placeholder="Role"/>
+                      </div>
                     </div>
 
                     <div class="row">
-                    <div class="col-lg-6 mt-4">
-                    <label for="sales">Sales Commission Percentage (%):</label>
-                    <input
-                    class="form-control"
-                    id="sales"
-                    type="text"
-                    placeholder="Sales Commission Percentage (%)"
-                    />
+                      <div class="col-lg-12 mt-4">
+                        <label for="address">Address:</label>
+                        <textarea class="form-control" name="address" id="address" rows="4" placeholder="Address"></textarea>
+                      </div>
                     </div>
+
+                    <div class="row">
+                      <div class="col-lg-6 mt-4">
+                      <label for="sales">Sales Commission Percentage (%):</label>
+                      <input
+                      class="form-control"
+                      id="sales"
+                      type="text"
+                      placeholder="Sales Commission Percentage (%)"
+                      />
+                      </div>
                     </div>
 
                     <div

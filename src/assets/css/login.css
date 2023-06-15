@@ -1,0 +1,317 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&display=swap');
+.login-section{
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    background: #FFFFFF;
+    padding:80px 10px;
+    max-width: 600px;
+}
+.login-footer{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+.form-header h1{
+    margin:1rem 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #030229;
+}
+.form-header h6{
+    font-style: revert;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4B5563;
+}
+.google-account .btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    width:100%;
+    margin:2rem 0;
+    gap: 2%;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+.login-section label,
+.verification-section label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #344054;
+    line-height: 20px;
+}
+.login-section .form-control,
+.verification-section .form-control{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #344054;
+    line-height: 20px;
+    padding: 16px;
+}
+.login-section .last-text{
+    display: flex;
+    justify-content: space-evenly;
+}
+.login-section .email-lines{
+    border-bottom: 3px solid rgba(156, 163, 175, 1);
+    width: 27%;
+    margin-bottom: 25px;
+}
+.login-section .last-texts {
+    margin-top: 23px;
+    font-family: Poppins;
+    font-weight: normal;
+    text-align: center;
+    line-height: 20px;
+    color: #E1E5E6;
+
+}
+.login-section .form-check .form-check-input {
+    float: left;
+    margin-left: -1.5em;
+    margin-top: 4px;
+}
+.login-section .forgot-link a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    text-decoration: none;
+    /* Primary/1 */
+
+    color: #229269;
+
+}
+.login-section .submit{
+    width:100%;
+    padding: 10px 18px;
+    background: #4EA787;
+    border: 1px solid #4EA787;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family:inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.login-section .create-account{
+    margin:2rem 0;
+}
+.login-section .create-account a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #229269;
+
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* verification-section */
+.verification-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verification-section .card-body{
+    text-align: center;
+}
+.verification-section .card-footer{
+    background-color: #ffff;
+    border-top:0;
+}
+.verification-section .card{
+    background: #FFFFFF;
+    box-shadow: 20px -20px 40px rgba(232, 236, 238, 0.25), -20px 20px 30px rgba(232, 236, 238, 0.25);
+    border-radius: 10px;
+    padding:2rem;
+}
+
+.verification-section h4{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin:1rem 0;
+    color: #08306D;
+
+}
+.verification-section .s1-pass{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #545963;
+}
+.verification-section .login-btn .btn{
+    width:100%;
+    padding:10px;
+    background: #229269;
+    border: 1px solid #4EA787;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family:inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top:1.5rem ;
+}
+
+/* forgot-pass-section */
+.verification-section .forgot-pass{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    color: #101828;
+    
+}
+.verification-section .instruction{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #475467;
+}
+.verification-section .back{
+    display:flex;
+    justify-content: center;
+    gap:5%;
+    text-decoration: none;
+    color: #475467;
+}
+.verification-section .email-text{
+    color: #475467;
+    font-weight:700;
+}
+.verification-section .resend{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #475467;
+}
+.verification-section .resend-link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #6941C6;
+}
+
+/* email-verification */
+
+.code{
+    border-radius:10px;
+    border:3px solid rgba(34, 146, 105, 1);
+    font-size:14px;
+    width:75px;
+    height:80px;
+    margin:5px;
+    text-align: center;
+    font-weight:300;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+/* Primary/1 */
+
+color: #229269;
+
+    outline:none;
+}
+@media (max-width:600px) {
+    .code-container{
+        flex-wrap:wrap;
+    }
+    .code{
+        font-size:24px;
+        height:50px;
+        max-width: 50px;
+        font-size: bold;
+    }
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button{
+    -webkit-appearance:none ;
+}
+
+
+/* .pinBox {
+    --width: 296px;
+    --height: 74px;
+    --spacing: 47px;
+    
+    display: inline-block;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    background-image: url(https://i.stack.imgur.com/JbkZl.png); 
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    color:rgba(34, 146, 105, 1);
+    filter: opacity(0.5) drop-shadow(0 0 0 rgba(34, 146, 105, 1));
+  }
+  
+  .pinEntry {
+    position: absolute;
+    font-family: courier, monospaced;
+    
+    font-size: var(--spacing);
+    height: var(--height);
+    letter-spacing: var(--spacing);
+    left:22px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    
+    clip: rect(0px, calc(var(--width) - 21px), var(--height), 0px);
+  } */
