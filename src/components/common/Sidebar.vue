@@ -17,17 +17,17 @@
             </div>
             <div class="nav__items-wrapper d-flex justify-content-between">
                 <div class="items__left">
-                    <ul class="list-unstyled">
+                <ul class="list-unstyled">
                     <li
-                        class="option-active d-flex align-items-center justify-content-center">
+                        class="active d-flex align-items-center justify-content-center side-List">
                         <a active-class="active"
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="index.html"
                             >
-                            <img src="../../assets/img/Home-active.svg" alt="" />
+                            <img src="../../assets/img/Home.svg" alt="" class="active"/>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a active-class="active"
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="product.html"
@@ -35,7 +35,7 @@
                             <img src="../../assets/img/Discovery.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                           class="text-decoration-none d-flex align-items-center justify-content-center"
                           href="#"
@@ -43,7 +43,7 @@
                             <img src="../../assets/img/profile-circle.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="product.html"
@@ -51,7 +51,7 @@
                         <img src="../../assets/img/Bag.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -59,7 +59,7 @@
                         <img src="../../assets/img/receipt-minus.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -67,7 +67,7 @@
                         <img src="../../assets/img/Activity.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -76,7 +76,7 @@
                         </a>
                     </li>
         
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -84,7 +84,7 @@
                         <img src="../../assets/img/money-send.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -93,7 +93,7 @@
                         </a>
                     </li>
         
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -101,7 +101,7 @@
                         <img src="../../assets/img/empty-wallet-change.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -109,7 +109,7 @@
                         <img src="../../assets/img/wallet-add.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -120,7 +120,7 @@
         
                     <hr style="border-top: 1px solid #3eac85; opacity: 1; margin: 0" />
         
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -128,7 +128,7 @@
                         <img src="../../assets/img/message-text.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -136,7 +136,7 @@
                         <img src="../../assets/img/notify.svg" alt="logo" />
                         </a>
                     </li>
-                    <li class="d-flex align-items-center justify-content-center">
+                    <li class="d-flex align-items-center justify-content-center side-List">
                         <a
                         class="text-decoration-none d-flex align-items-center justify-content-center"
                         href="#"
@@ -144,13 +144,13 @@
                         <img src="../../assets/img/Chat.svg" alt="logo" />
                         </a>
                     </li>
-                    </ul>
+                </ul>
                 </div>
                 <div class="items__right">
                     <ul class="list-unstyled">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
-                            <h2 class="accordion-header mb-0 mb-0" id="headingOne">
+                            <h2 class="accordion-header mb-0 mb-0" id="headingOne" @click="acheader">
                                 <button
                                 class="accordion-button collapsed"
                                 type="button"
@@ -170,17 +170,14 @@
                             >
                                 <div class="accordion-body">
                                 <router-link :to="{name:'home'}" class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Home</router-link
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    >Home</router-link>
+                                <a class="text-decoration-none d-block py-2 mb-0" href="#">Sub item two</a>
                                 </div>
                             </div>
                             </div>
             
                             <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingTwo">
+                            <h2 class="accordion-header mb-0" id="headingTwo" >
                                 <button
                                 class="accordion-button collapsed"
                                 type="button"
@@ -225,7 +222,7 @@
                                 aria-expanded="false"
                                 aria-controls="collapseThree"
                                 >
-                                Contact
+                                Contacts
                                 </button>
                             </h2>
                             <div
@@ -235,12 +232,18 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                <router-link :to="{name:'suppliers'}" class="text-decoration-none d-block py-2 mb-0" href="#"
+                                    >Suppliers
+                                </router-link>
+                                <router-link :to="{name:'customers'}" class="text-decoration-none d-block py-2 mb-0" 
+                                    >Customers 
+                                </router-link>
+                                <router-link :to="{name:'customer-pay'}" class="text-decoration-none d-block py-2 mb-0" 
+                                    >Customer Payable 
+                                </router-link>
+                                <router-link :to="{name:'customer-group'}" class="text-decoration-none d-block py-2 mb-0" 
+                                    >Customer Group 
+                                </router-link>
                                 </div>
                             </div>
                             </div>
@@ -547,7 +550,11 @@
 
 <script>
 export default {
-    name:'tSidebar'
+    name:'tSidebar',
+    mounted(){
+
+
+    }
 }
 </script>
 

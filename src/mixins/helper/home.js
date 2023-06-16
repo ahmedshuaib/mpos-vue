@@ -1,9 +1,9 @@
-import { Chart } from 'chart.js';
-import { registerables } from 'chart.js';
+import { Chart ,registerables} from 'chart.js';
 
 
 
 export default{
+
   mounted(){
 
       const dropMenu = document?.querySelector('.drop-menu');
@@ -39,7 +39,6 @@ export default{
           });
         });
       });
-
 
     const day = document.querySelector('#day');
         const week = document.querySelector('#week');
@@ -100,15 +99,43 @@ export default{
           monthItem.style.display = 'none';
           yearItem.style.display = 'none';
         });
+
+
+
+        // form-validation
+        (() => {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                // event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+
         this.initializeCharts();
   },
 
-  beforeRouteLeave(to, from, next) {
-      this.destroyCharts();
-      next();
-  },
+  // beforeRouteLeave(to, from, next) {
+  //     this.destroyCharts();
+  //     next();
+  // },
+
     methods:{ 
+      submited(e){
+        e.preventDefault();
+      },
       initializeCharts(){
+
         const ctxOne = document?.getElementById('myChartOne')?.getContext('2d');
         const ctxTwo = document?.getElementById('myChartTwo')?.getContext('2d');
         const ctxThree = document?.getElementById('myChartThree')?.getContext('2d');
@@ -374,12 +401,15 @@ export default{
       this.chartThree = new Chart(ctxThree, config3);
       this.chartFour = new Chart(ctxFour, config4);
     },
-      destroyCharts() {
-        this.chartOne.destroy();
-        this.chartTwo.destroy();
-        this.chartThree.destroy();
-        this.chartFour.destroy();
-      }
+    
+      // destroyCharts() {
+      //   this.initializeCharts();
+
+      //   this.chartOne.destroy();
+      //   this.chartTwo.destroy();
+      //   this.chartThree.destroy();
+      //   this.chartFour.destroy();
+      // }
   }
  }
 

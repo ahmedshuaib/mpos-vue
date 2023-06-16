@@ -33,7 +33,9 @@ table tr td {
   color: #212529;
   background-color: none;;
   padding: 9px 13px;
-
+}
+select.form-select{
+  color: #6B7280;
 }
 .form-control:focus{
   box-shadow: none !important;
@@ -146,13 +148,18 @@ nav.active .small-logo {
   height: 70px;
 }
 
-.items__left ul li.option-active a {
+.items__left ul .side-List.active a {
   background-color: var(--light-color);
   height: 48px;
   width: 48px;
   border-radius: 16px;
+  
 }
 
+.side-List img.active{
+  filter: opacity(0.5) drop-shadow(0 0 0 black);
+
+}
 /* right side */
 
 .items__right {
@@ -330,7 +337,6 @@ header {
 /* MAIN SECTION */
 /* ================================================== */
 .main__body {
-
   width: calc(100% - 300px);
   transition:300ms ease;
   top: 80px;
