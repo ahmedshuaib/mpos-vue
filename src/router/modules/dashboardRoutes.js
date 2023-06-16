@@ -45,7 +45,7 @@ export default[
         component: () => import(/* webpackChunkName: "sales" */ "@/views/Sales.vue"),
         children:[
             {
-                path: "/salesmodal",
+                path: "salesmodal",
                 name: "salesmodal",
                 component: () => import(/* webpackChunkName: "salesmodal" */ "@/components/sales/Salesmodal.vue"),
             },
@@ -58,14 +58,44 @@ export default[
         component: () => import(/* webpackChunkName: "suppliers" */ "@/views/Suppliers.vue"),
         children:[
             {
-                path:'customermodal',
-                name:'customermodal',
-                component: () => import(/* webpackChunkName: "customermodal" */ "@/components/customer/Customermodal.vue"),
-
-            }
+                path: "addcustomer",
+                name: "addcustomer",
+                component: () => import(/* webpackChunkName: "addcustomer" */ "@/components/contacts/suppliers/Suppliersmodal.vue"),
+            },
             
         ]
     },
+    {
+        path:'/customers',
+        name:'customers',
+        component: () => import(/* webpackChunkName: "customers" */ "@/views/Customers.vue"),
+        children:[
+            {
+                path:'newcustomers',
+                name:'new-customers',
+                component:() => import(/* webpackChunkName: "newcustomers"*/ "@/components/contacts/customers/Newcustomer.vue")
+            }
+        ]
+    },
+    {
+        path:'/customergroup',
+        name:'customer-group',
+        component:() => import(/* webpackChunkName: "customergroup"*/ "@/views/Customergroup.vue"),
+        children:[
+            {
+                path:'addgroup',
+                name:'add-group',
+                component:() => import(/* webpackChunkName: "newcustomers"*/ "@/components/contacts/customergroup/Addgroups.vue")
+            }
+        ]
+    },
+    {
+        path:'/customerpay',
+        name:'customer-pay',
+        component: () => import(/* webpackChunkName: "customerpayable" */ "@/views/Customerpay.vue"),
+    },
+
+    // login-pages
     {
         path:'/login',
         name:'login',
@@ -80,29 +110,29 @@ export default[
     {
         path:'/verification',
         name:'verification',
-        component: () => import(/* webpackChunkName: "verification" */ "@/views/auth/forgot-password/Verification.vue"),
+        component: () => import(/* webpackChunkName: "verification" */ "@/auth/forgot-password/Verification.vue"),
     },
     {
         path:'/password/reset/',
         name:'forgot-password',
-        component: () => import(/* webpackChunkName: "forgot-password" */ "@/views/auth/forgot-password/Forgot.vue"),
+        component: () => import(/* webpackChunkName: "forgot-password" */ "@/auth/forgot-password/Forgot.vue"),
     },
     {
         path:'/password/mail',
         name:'mail',
-        component: () => import(/* webpackChunkName: "mail" */ "@/views/auth/forgot-password/Mail.vue"),
+        component: () => import(/* webpackChunkName: "mail" */ "@/auth/forgot-password/Mail.vue"),
     },
     {
-        path: "/password/new-password/",
+        path: "/password/new-password",
         name: "new-password",
         component: () =>
-            import(/* webpackChunkName: "newpassword" */ "@/views/auth/forgot-password/Reset.vue"),
+            import(/* webpackChunkName: "newpassword" */ "@/auth/forgot-password/Reset.vue"),
     },
     {
         path: "/password/success-password",
         name: "reset-sucess",
         component: () =>
-            import(/* webpackChunkName: "reset-sucess" */ "@/views/auth/forgot-password/Successreset.vue"),
+            import(/* webpackChunkName: "reset-sucess" */ "@/auth/forgot-password/Successreset.vue"),
     },
     // forgot-password-paths-end
 
@@ -111,19 +141,19 @@ export default[
         path: "/email/verification",
         name: "email-verify",
         component: () =>
-            import(/* webpackChunkName: "forgotPassword" */ "@/views/auth/email-verification/Emailverify.vue"),
+            import(/* webpackChunkName: "forgotPassword" */ "@/auth/email-verification/Emailverify.vue"),
     },
     {
         path: "/email/verifycode",
         name: "verify-code",
         component: () =>
-            import(/* webpackChunkName: "forgotPassword" */ "@/views/auth/email-verification/Codeverify.vue"),
+            import(/* webpackChunkName: "forgotPassword" */ "@/auth/email-verification/Codeverify.vue"),
     },
     {
         path: "/email/success-verify",
         name: "verify-success",
         component: () =>
-            import(/* webpackChunkName: "forgotPassword" */ "@/views/auth/email-verification/Verified.vue"),
+            import(/* webpackChunkName: "forgotPassword" */ "@/auth/email-verification/Verified.vue"),
     },
     // email-verification-paths-end
 ]

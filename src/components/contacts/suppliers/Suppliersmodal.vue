@@ -1,5 +1,5 @@
 <template>
-    <div class="modal fade" ref="customermodal" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
+    <div class="modal fade" ref="addcustomer" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
       <div class="modal-dialog" >
         <div class="modal-content modal-lg" >
 
@@ -50,7 +50,7 @@
 
                     <div class="row">
                         <div class="col-lg-6 mt-4">
-                          <label for="contact">Customer Type</label>
+                          <label for="contact">Customer Type:</label>
                           <select class="form-select" aria-label="Default select example">
                             <option selected>General</option>
                             <option value="1">One</option>
@@ -59,7 +59,7 @@
                           </select>
                         </div>
                         <div class="col-lg-6 mt-4">
-                          <label for="contact">Tax Number</label>
+                          <label for="contact">Tax Number:</label>
                           <input class="form-control" id="tax" type="text" placeholder="Tax Number"/>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         </div>
                       </div>
                       <div class="col-lg-6 mt-4">
-                        <label for="contact" style="vertical-align: middle;">Pay: <img src="../../assets/img/pay.svg" alt="logo"></label>
+                        <label for="contact" style="vertical-align: middle;">Pay: <img src="../../../assets/img/pay.svg" alt="logo"></label>
                         <select class="form-select" aria-label="Default select example">
                           <option selected>Pay term | Please Select</option>
                           <option value="1">One</option>
@@ -264,8 +264,8 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='customermodal'){
-      const modalElement = this.$refs.customermodal;
+    if(this.$route.name==='addcustomer'){
+      const modalElement = this.$refs.addcustomer;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
       }
@@ -274,7 +274,7 @@ export default {
   
   methods:{
     resetModal() {
-      const modalElement = this.$refs.customermodal;
+      const modalElement = this.$refs.addcustomer;
       const modal = bootstrap.Modal.getInstance(modalElement);
       if (modal) {
         modal.hide();

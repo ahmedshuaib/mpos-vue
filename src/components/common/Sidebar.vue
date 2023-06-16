@@ -233,11 +233,17 @@
                             >
                                 <div class="accordion-body">
                                 <router-link :to="{name:'suppliers'}" class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Suppliers</router-link
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    >Suppliers
+                                </router-link>
+                                <router-link :to="{name:'customers'}" class="text-decoration-none d-block py-2 mb-0" 
+                                    >Customers 
+                                </router-link>
+                                <router-link :to="{name:'customer-pay'}" class="text-decoration-none d-block py-2 mb-0" 
+                                    >Customer Payable 
+                                </router-link>
+                                <router-link :to="{name:'customer-group'}" class="text-decoration-none d-block py-2 mb-0" 
+                                    >Customer Group 
+                                </router-link>
                                 </div>
                             </div>
                             </div>
