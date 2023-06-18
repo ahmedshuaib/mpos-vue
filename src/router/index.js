@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import dashboard from "./modules/dashboardRoutes";
+import { adminRoutes } from "./modules/admin";
+import { publicRoutes } from "./modules/public";
+import { authRoutes } from "./modules/auth";
 
-
-const routes = [...dashboard];
+const routes = [...adminRoutes, ...publicRoutes, ...authRoutes];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    mode: 'history', // or 'hash' if using hash mode
-
+    mode: "history", // or 'hash' if using hash mode
 });
+
 export default router;

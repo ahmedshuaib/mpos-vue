@@ -1,9 +1,6 @@
 <template>
-    <tnavigation></tnavigation>
-    <tsidebar></tsidebar>
-    <div class="main__body">
-        <router-view ></router-view>
-        <tfooter></tfooter>
+    <div id="app">
+        <router-view></router-view>
     </div>
 </template>
 
@@ -13,6 +10,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
