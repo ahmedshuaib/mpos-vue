@@ -31,10 +31,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -43,10 +51,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -55,10 +71,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -67,58 +91,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>

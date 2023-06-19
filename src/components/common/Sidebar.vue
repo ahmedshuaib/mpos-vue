@@ -232,18 +232,25 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <router-link :to="{name:'suppliers'}" class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Suppliers
-                                </router-link>
-                                <router-link :to="{name:'customers'}" class="text-decoration-none d-block py-2 mb-0" 
-                                    >Customers 
-                                </router-link>
-                                <router-link :to="{name:'customer-pay'}" class="text-decoration-none d-block py-2 mb-0" 
-                                    >Customer Payable 
-                                </router-link>
-                                <router-link :to="{name:'customer-group'}" class="text-decoration-none d-block py-2 mb-0" 
-                                    >Customer Group 
-                                </router-link>
+                                    <router-link :to="{name:'suppliers'}" class="text-decoration-none d-block py-2 mb-0" href="#"
+                                        >Suppliers
+                                    </router-link>
+                                    <router-link :to="{name:'customers'}" class="text-decoration-none d-block py-2 mb-0" 
+                                        >Customers 
+                                    </router-link>
+                                    <router-link :to="{name:'customer-pay'}" class="text-decoration-none d-block py-2 mb-0" 
+                                        >Customer Payable 
+                                    </router-link>
+                                    <router-link :to="{name:'customer-group'}" class="text-decoration-none d-block py-2 mb-0" 
+                                        >Customer Group 
+                                    </router-link>
+                                    <router-link :to="{name:'customer-sms'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Customer SMS
+                                    </router-link>
+                                    <router-link :to="{name:'customer-contact'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Import Contact
+                                    </router-link>
+
                                 </div>
                             </div>
                             </div>
@@ -268,12 +275,34 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                 
+                                    <router-link :to="{name:'list-product'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                    List Product
+                                    </router-link>
+                                    <router-link :to="{name:'new-product'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        New Product List
+                                    </router-link>
+                                    <router-link :to="{name:'print-label'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Print Label
+                                    </router-link>
+                                    <router-link :to="{name:'variations'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Variations
+                                    </router-link>
+                                    <router-link :to="{name:'import-product'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Import Product
+                                    </router-link>
+                                    <router-link :to="{name:'sell-group'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Selling Price Group
+                                    </router-link>
+                                    <router-link :to="{name:'units'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                            Units
+                                    </router-link>
+                                    <router-link :to="{name:'categories'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                            Categories
+                                    </router-link>
+                                    <router-link :to="{name:'brands'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                            Brands
+                                    </router-link>
                                 </div>
                             </div>
                             </div>

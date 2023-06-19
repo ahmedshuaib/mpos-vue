@@ -1,9 +1,68 @@
 export default{
+  data(){
+    return{
+      error:{}
+    }
+  },
   methods:{
+    handle(){
+
+      this.error={};
+      try{
+        const dragarea=document.querySelector('.drag-area');
+  
+  
+        dragarea.addEventListener('dragover',function(event){
+            event.preventDefault();
+        })
+    
+        dragarea.addEventListener('dragleave',function(event){
+    
+    
+        })
+        dragarea.addEventListener('drop', function(event) {
+          event.preventDefault();
+          const file = event.dataTransfer.files[0];
+          let fileType = file.type;
+          let validExtensions = ['image/jpeg', 'image/jpg', 'image/png'];
+      
+          if (validExtensions.includes(fileType)) {
+              let fileReader = new FileReader();
+      
+              fileReader.onload = () => {
+                  let fileURL = fileReader.result;
+      
+                  let imgTag = document.createElement('img');
+                  imgTag.src = fileURL;
+                  imgTag.alt = '';
+      
+                  // Clear existing content of the dragarea div
+                  dragarea.innerHTML = '';
+      
+                  // Append the dropped image to the dragarea div
+                  dragarea.appendChild(imgTag);
+              };
+      
+              fileReader.readAsDataURL(file);
+          }
+      });
+
+      }catch(err){
+        this.error=err;
+      }
+    },
+
+
+
+
+
+
+
+
+
     popup(){
       document.body.style.overflowY = 'scroll'; // Reset the overflow-y property
       document.body.style.padding = '0'; // Reset the overflow-y property
-
     },
     
     searchBar(){
@@ -42,13 +101,39 @@ export default{
         optionMenu.classList.add('select-menu--active');
     },
 
+
   },
+
     mounted(){
         window.addEventListener('load', () => {
-            dropDown();
-            dotsMenu();
             accordion();
+            dropDown();
           });
+          this.handle();
+
+          const dropDown = () => {
+            const dropMenu = document?.querySelector('.drop-menu');
+            const dropBtn = document?.querySelector('.drop-btn');
+            const dOptions = document?.querySelectorAll('.d-option');
+            const dBtn_text = document?.querySelector('.dBtn-text');
+            const popup_close=document.querySelector('#popup-close');
+            dOptions?.forEach((option) => {
+              option?.addEventListener('click', () => {
+                let selected = option.querySelector('.d-option-text').innerText;
+                dBtn_text.innerText = selected;
+                dropMenu.classList.remove('drop-menu--active');
+              });
+            });
+          
+            dropBtn?.addEventListener('click', () => {
+              dropMenu.classList.toggle('drop-menu--active');
+            });
+          };
+          
+
+
+
+
           const accordion = () => {  
             const acHeader=document.querySelectorAll('.accordion-header');
             const unstyle=document.querySelectorAll('.side-List')
@@ -73,45 +158,8 @@ export default{
             })
           }
 
-          const dropDown = () => {
-            const dropMenu = document?.querySelector('.drop-menu');
-            const dropBtn = document?.querySelector('.drop-btn');
-            const dOptions = document?.querySelectorAll('.d-option');
-            const dBtn_text = document?.querySelector('.dBtn-text');
-            const popup_close=document.querySelector('#popup-close');
-            dOptions?.forEach((option) => {
-              option?.addEventListener('click', () => {
-                let selected = option.querySelector('.d-option-text').innerText;
-                dBtn_text.innerText = selected;
-                dropMenu.classList.remove('drop-menu--active');
-              });
-            });
-          
-            dropBtn?.addEventListener('click', () => {
-              dropMenu.classList.toggle('drop-menu--active');
-            });
-          };
-          
-          const dotsMenu = () => {
-            const dotsMenu = document.querySelector('.dots-menu');
-            const tOptions = document.querySelectorAll('.t-option');
-            const dotsBtn = document.querySelectorAll('.dots-btn');
-          
-            dotsBtn.forEach((btn) => {
-              btn.addEventListener('click', () => {
-                btn.classList.toggle('dots--active');
-                 console.log('asdf')
 
-              });
-            });
-          
-            tOptions.forEach((opt) => {
-              opt.addEventListener('click', () => {
-                dotsBtn.forEach((btn) => {
-                  btn.classList.remove('dots--active');
-                });
-              });
-            });
-          };
-        }
+
+
+        },
     }

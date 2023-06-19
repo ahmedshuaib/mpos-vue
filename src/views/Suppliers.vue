@@ -6,7 +6,7 @@
         >
           <h4 class="mb-0">Suppliers</h4>
 
-          <router-link :to="{name:'customermodal'}">
+          <router-link :to="{name:'addcustomer'}">
             <button class="user-add-btn" id="user-add-btn" @click="openModal">
             <span class="me-1">+</span>Add
           </button>

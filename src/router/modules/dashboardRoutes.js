@@ -1,5 +1,5 @@
-import editmodal from '@/components/user/Edit.vue';
-import usermodal from '@/components/user/Usermodal.vue';
+import editmodal from '@/components/parts/user/Edit.vue';
+import usermodal from '@/components/parts/user/Usermodal.vue';
 export default[
     {
         path: "/",
@@ -42,12 +42,12 @@ export default[
     {
         path: "/sales",
         name: "sales",
-        component: () => import(/* webpackChunkName: "sales" */ "@/views/Sales.vue"),
+        component: () => import(/* webpackChunkName: "Sales" */ "@/views/Sales.vue"),
         children:[
             {
                 path: "salesmodal",
                 name: "salesmodal",
-                component: () => import(/* webpackChunkName: "salesmodal" */ "@/components/sales/Salesmodal.vue"),
+                component: () => import(/* webpackChunkName: "salesmodal" */ "@/components/parts/sales/Salesmodal.vue"),
             },
             
         ]
@@ -60,7 +60,7 @@ export default[
             {
                 path: "addcustomer",
                 name: "addcustomer",
-                component: () => import(/* webpackChunkName: "addcustomer" */ "@/components/contacts/suppliers/Suppliersmodal.vue"),
+                component: () => import(/* webpackChunkName: "Suppliersmodal" */ "@/components/parts/contacts/suppliers/Suppliersmodal.vue"),
             },
             
         ]
@@ -68,33 +68,131 @@ export default[
     {
         path:'/customers',
         name:'customers',
-        component: () => import(/* webpackChunkName: "customers" */ "@/views/Customers.vue"),
+        component: () => import(/* webpackChunkName: "Customers" */ "@/views/Customers.vue"),
         children:[
             {
                 path:'newcustomers',
                 name:'new-customers',
-                component:() => import(/* webpackChunkName: "newcustomers"*/ "@/components/contacts/customers/Newcustomer.vue")
+                component:() => import(/* webpackChunkName: "Newcustomer"*/ "@/components/parts/contacts/customers/Newcustomer.vue")
             }
         ]
     },
     {
         path:'/customergroup',
         name:'customer-group',
-        component:() => import(/* webpackChunkName: "customergroup"*/ "@/views/Customergroup.vue"),
+        component:() => import(/* webpackChunkName: "Customergroup"*/ "@/views/Customergroup.vue"),
         children:[
             {
                 path:'addgroup',
                 name:'add-group',
-                component:() => import(/* webpackChunkName: "newcustomers"*/ "@/components/contacts/customergroup/Addgroups.vue")
+                component:() => import(/* webpackChunkName: "Addgroups"*/ "@/components/parts/contacts/customergroup/Addgroups.vue")
             }
         ]
     },
     {
         path:'/customerpay',
         name:'customer-pay',
-        component: () => import(/* webpackChunkName: "customerpayable" */ "@/views/Customerpay.vue"),
+        component: () => import(/* webpackChunkName: "Customerpay" */ "@/views/Customerpay.vue"),
+    },
+    {
+        path:'/customer-sms',
+        name:'customer-sms',
+        component:() => import (/* webpackChunkName: "CustomerSms" */ "@/views/CustomerSms.vue")
+    },
+    {
+        path:'/customer-contact',
+        name:'customer-contact',
+        component:() => import (/* webpackChunkName: "ImportContact" */ "@/views/ImportContact.vue")
+
+    },
+    {
+        path:'/list-product',
+        name:'list-product',
+        component:() => import (/* webpackChunkName: "ListProduct" */ "@/views/ListProduct.vue")
+    },
+    {
+        path:'/add-product',
+        name:'add-product',
+        component:() => import (/* webpackChunkName: "AddProduct" */ "@/views/AddProduct.vue")
+    },
+    {
+        path:'/new-product',
+        name:'new-product',
+        component:() => import (/* webpackChunkName: "NewList" */ "@/views/NewList.vue")
+    },
+    {
+        path:'/print-label',
+        name:'print-label',
+        component:() => import (/* webpackChunkName: "PrintLabel" */ "@/views/PrintLabel.vue")
+    },
+    {
+        path:'/variations',
+        name:'variations',
+        component:() => import (/* webpackChunkName: "Variations" */ "@/views/Variations.vue"),
+        children:[
+            {
+                path:'add-variation',
+                name:'add-variation',
+                component:() => import(/* webpackChunkName: "newcustomers"*/ "@/components/parts/Product/variation/AddVariation.vue")
+            }
+        ]
+    },
+    {
+        path:'/import-product',
+        name:'import-product',
+        component:() => import (/* webpackChunkName: "ImportProduct" */ "@/views/ImportProduct.vue")
     },
 
+    {
+        path:'/sell-group',
+        name:'sell-group',
+        component:() => import (/* webpackChunkName: "SellGroup" */ "@/views/SellGroup.vue"),
+        children:[
+            {
+                path:'add-selling',
+                name:'add-selling',
+                component:() => import(/* webpackChunkName: "AddVariation"*/ "@/components/parts/Product/sellingprice/AddSelling.vue")
+            }
+        ]
+    },
+
+    {
+        path:'/units',
+        name:'units',
+        component:() => import (/* webpackChunkName: "Units" */ "@/views/Units.vue"),
+        children:[
+            {
+                path:'add-unit',
+                name:'add-unit',
+                component:() => import(/* webpackChunkName: "AddUnits"*/ "@/components/parts/Product/units/AddUnits.vue")
+            }
+        ]
+    },
+    {
+        path:'/categories',
+        name:'categories',
+        component:() => import (/* webpackChunkName: "Categories" */ "@/views/Categories.vue"),
+        children:[
+            {
+                path:'add-category',
+                name:'add-category',
+                component:() => import(/* webpackChunkName: "addCategories"*/ "@/components/parts/Product/category/AddCategory.vue")
+            }
+        ]
+    },
+
+    {
+        path:'/brands',
+        name:'brands',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/Brands.vue"),
+        children:[
+            {
+                path:'add-brands',
+                name:'add-brands',
+                component:() => import(/* webpackChunkName: "addbrands"*/ "@/components/parts/Product/brands/AddBrand.vue")
+            }
+        ]
+    },
     // login-pages
     {
         path:'/login',

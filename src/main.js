@@ -25,7 +25,7 @@ window.$=window.jQuery=jQuery;
 
 
 // mixins-js-files//
-import { datatable,Home,product } from './mixins';
+import { datatable,Home,product,imagedrop } from './mixins';
 // mixins-js-files-end//
 
 
@@ -45,6 +45,7 @@ app.component('tfooter',footer);
 
 app.use(router);
 app.mixin(datatable);
+app.mixin(imagedrop)
 app.mixin(product);
 app.mixin(Home)
 app.mount('#app');

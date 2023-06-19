@@ -6,10 +6,8 @@
         >
           <h4 class="mb-0">Customer Group</h4>
 
-          <router-link :to="{name:'add-group'}">
-            <button class="user-add-btn" id="user-add-btn" @click="openModal">
-            <span class="me-1">+</span>Add
-          </button>
+          <router-link :to="{name:'add-group'}" class="add-role-link btns">
+            <button class="btn green"><span class="me-1">+</span>Add</button>
           </router-link>
         </div>
       </div>
@@ -25,7 +23,7 @@
 
                   <!-- select menu -->
                   <div class="select-menu">
-                  <div class="select-btn" @click="selectBtn">
+                  <div class="select-btn green-export" @click="selectBtn">
                       <span class="sBtn-text">Export</span>
                       <i class="uil uil-angle-down"></i>
                   </div>
@@ -83,62 +81,70 @@
                         <tbody>
 
                             <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
+                                <td>Green</td>
+                                <td>10%</td>
                                 <td>
                                     <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
+                                    <a>
+                                        <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt=""> Edit
                                     </button>
+                                    </a>
                                     <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
+                                        <img src="../assets/img/delete.svg" alt=""> Delete
+                                    </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Green</td>
+                                <td>10%</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                    <a>
+                                        <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt=""> Edit
+                                    </button>
+                                    </a>
+                                    <button class="pro-delete-btn">
+                                        <img src="../assets/img/delete.svg" alt=""> Delete
+                                    </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Green</td>
+                                <td>10%</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                    <a>
+                                        <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt=""> Edit
+                                    </button>
+                                    </a>
+                                    <button class="pro-delete-btn">
+                                        <img src="../assets/img/delete.svg" alt=""> Delete
+                                    </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Green</td>
+                                <td>10%</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                    <a>
+                                        <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt=""> Edit
+                                    </button>
+                                    </a>
+                                    <button class="pro-delete-btn">
+                                        <img src="../assets/img/delete.svg" alt=""> Delete
                                     </button>
                                     </div>
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
-                                    </button>
-                                    <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
-                                    </button>
-                                    <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
-                                    </button>
-                                    <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
