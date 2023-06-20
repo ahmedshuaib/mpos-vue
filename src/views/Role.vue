@@ -28,7 +28,6 @@
                 <tbody>
                   <tr>
                     <td>Admin</td>
-
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
                         <button class="pro-view-btn">

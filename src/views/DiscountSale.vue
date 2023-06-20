@@ -1,15 +1,26 @@
 <template>
-
     <section class="pro-users__section">
       <div class="section__container">
         <div
           class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
         >
-          <h4 class="mb-0">Selling Price Group</h4>
-          <router-link :to="{name:'add-selling'}" class="add-role-link btns">
+          <h4 class="mb-0">Discount Sales</h4>
+          <router-link :to="{name:'add-purchase'}" class="add-role-link btns">
             <button class="btn green"><span class="me-1">+</span>Add</button>
           </router-link>
         </div>
+
+        <div class="col-lg-1">
+          <div class="input-group mb-3" style="width:150px">
+          <select class="form-select" id="inputGroupSelect01" >
+          <option selected>Filter by Date</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          </select>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -72,62 +83,66 @@
             <table ref="table5" style="width:100%">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Invoice No</th>
+                  <th>Customer Name</th>
+                  <th>Location</th>
+                  <th>Payment Status</th>
+                  <th>Total Amount</th>
+                  <th>Total Paid</th>
+                  <th>Payment Due</th>
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>Apple</td>
-                  <td>Mac Mini Pro M1</td>
-                  <td style="width: 50%">
-                    <div class="d-flex align-items-center gap-2">
-                        <a>
-                            <button class="pro-edit-btn">
-                            <img src="../assets/img/edit.svg" alt=""> Edit
-                        </button>
-                        </a>
-                        <button class="pro-delete-btn">
-                            <img src="../assets/img/delete.svg" alt=""> Delete
-                        </button>
-                    </div>
-                  </td>
-                </tr>
 
+
+            <tbody>
                 <tr>
-                  <td>Samsung</td>
-                  <td>Galaxy S22 Ultra</td>
-                  <td>
-                    <div class="d-flex align-items-center gap-2">
-                    <a>
-                        <button class="pro-edit-btn">
-                        <img src="../assets/img/edit.svg" alt=""> Edit
-                    </button>
-                    </a>
-                    <button class="pro-delete-btn">
-                        <img src="../assets/img/delete.svg" alt=""> Delete
-                    </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>One Plus</td>
-                  <td>One Plus 9R Pro</td>
-                  <td style="width: 50%">
-                    <div class="d-flex align-items-center gap-2">
-                        <a>
-                            <button class="pro-edit-btn">
-                            <img src="../assets/img/edit.svg" alt=""> Edit
+                    <td>17/04/22</td>
+                    <td>E54814</td>
+                    <td>Kamrul Islam</td>
+                    <td>Dhaka</td>
+                    <td>                        
+                      <button class="pro-add-btn">
+                          Success
                         </button>
-                        </a>
-                        <button class="pro-delete-btn">
-                            <img src="../assets/img/delete.svg" alt=""> Delete
-                        </button>
-                        </div>
+                    </td>
+                    <td>$120</td>
+                    <td>
+                      $140
+                    </td>
+                    <td>$1200</td>
+                    <td>
+                        <div class="dots-menu">
+                          <div class="dots-btn">
+                              <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+
+                          <ul class="t-options">
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Copy</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">View</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Edit</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Delete</p>
+                              </li>
+                          </ul>
+                        </div> 
                     </td>
                 </tr>
-              </tbody>
+            </tbody>
             </table>
           </div>
         </div>

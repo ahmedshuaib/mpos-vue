@@ -5,11 +5,23 @@
         <div
           class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
         >
-          <h4 class="mb-0">Selling Price Group</h4>
-          <router-link :to="{name:'add-selling'}" class="add-role-link btns">
+          <h4 class="mb-0">List Purchase Return</h4>
+          <router-link :to="{name:'add-purchase'}" class="add-role-link btns">
             <button class="btn green"><span class="me-1">+</span>Add</button>
           </router-link>
         </div>
+
+        <div class="col-lg-1">
+          <div class="input-group mb-3" style="width:150px">
+          <select class="form-select" id="inputGroupSelect01" >
+          <option selected>Filter by Date</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          </select>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -72,59 +84,62 @@
             <table ref="table5" style="width:100%">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Reference No</th>
+                  <th>Parent Purchase</th>
+                  <th>Location</th>
+                  <th>Supplier</th>
+                  <th>Payment Status</th>
+                  <th>Grand Total</th>
+                  <th>Payment due</th>
                   <th>Action</th>
                 </tr>
               </thead>
+
+
               <tbody>
                 <tr>
-                  <td>Apple</td>
-                  <td>Mac Mini Pro M1</td>
-                  <td style="width: 50%">
-                    <div class="d-flex align-items-center gap-2">
-                        <a>
-                            <button class="pro-edit-btn">
-                            <img src="../assets/img/edit.svg" alt=""> Edit
-                        </button>
-                        </a>
+                    <td>17/04/22</td>
+                    <td>P022541</td>
+                    <td>Mobile</td>
+                    <td>Dhaka</td>
+                    <td>Kamrul Islam</td>
+                    <td>
                         <button class="pro-delete-btn">
-                            <img src="../assets/img/delete.svg" alt=""> Delete
+                          <img src="../assets/img/delete.svg" alt="">
+                          Due      
                         </button>
-                    </div>
-                  </td>
-                </tr>
+                    </td>
+                    <td>$1200</td>
+                    <td>p:$1200</td>
+                    <td>
+                        <div class="dots-menu">
+                          <div class="dots-btn">
+                              <i class="fa-solid fa-ellipsis"></i>
+                          </div>
 
-                <tr>
-                  <td>Samsung</td>
-                  <td>Galaxy S22 Ultra</td>
-                  <td>
-                    <div class="d-flex align-items-center gap-2">
-                    <a>
-                        <button class="pro-edit-btn">
-                        <img src="../assets/img/edit.svg" alt=""> Edit
-                    </button>
-                    </a>
-                    <button class="pro-delete-btn">
-                        <img src="../assets/img/delete.svg" alt=""> Delete
-                    </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>One Plus</td>
-                  <td>One Plus 9R Pro</td>
-                  <td style="width: 50%">
-                    <div class="d-flex align-items-center gap-2">
-                        <a>
-                            <button class="pro-edit-btn">
-                            <img src="../assets/img/edit.svg" alt=""> Edit
-                        </button>
-                        </a>
-                        <button class="pro-delete-btn">
-                            <img src="../assets/img/delete.svg" alt=""> Delete
-                        </button>
-                        </div>
+                          <ul class="t-options">
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Copy</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">View</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Edit</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Delete</p>
+                              </li>
+                          </ul>
+                          </div> 
                     </td>
                 </tr>
               </tbody>

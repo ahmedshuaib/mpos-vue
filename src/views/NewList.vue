@@ -18,7 +18,7 @@
                   <div class="select-menu">
                   <div class="select-btn green-export" @click="selectBtn">
                       <span class="sBtn-text">Export</span>
-                      <i class="uil uil-angle-down"></i>
+                      <img src="../assets/img/drop.svg" alt="">
                   </div>
 
                   <ul class="options">

@@ -303,6 +303,12 @@
                                     <router-link :to="{name:'brands'}"  class="text-decoration-none d-block py-2 mb-0"> 
                                             Brands
                                     </router-link>
+                                    <router-link :to="{name:'list-purchase'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                            List Purchase
+                                    </router-link>
+                                    <router-link :to="{name:'purchase-return'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Purchase Return
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -327,12 +333,27 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'all-sales'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        All Sales
+                                    </router-link>
+                                    <router-link :to="{name:'discount-sales'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Discount Sale
+                                    </router-link>
+                                    <router-link :to="{name:'add-sales'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Add Sale
+                                    </router-link>
+                                    <router-link :to="{name:'list-pose'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        List Pos
+                                    </router-link>
+                                    <router-link :to="{name:'list-draft'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        List Draft
+                                    </router-link>
+                                    <router-link :to="{name:'list-quotations'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        List quotations
+                                    </router-link>
+                                    <router-link :to="{name:'sell-return'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Sell Return
+                                    </router-link>
                                 </div>
                             </div>
                             </div>

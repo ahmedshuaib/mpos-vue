@@ -25,7 +25,7 @@
                   <div class="select-menu">
                   <div class="select-btn green-export" @click="selectBtn">
                       <span class="sBtn-text">Export</span>
-                      <i class="uil uil-angle-down"></i>
+                      <img src="../assets/img/drop.svg" alt="">
                   </div>
 
                   <ul class="options">
@@ -62,6 +62,13 @@
                   </div>
               </div>
               </div>
+              <div class="col-lg-12 text-center mt-4">
+                <div class="btns">
+                    <button class="btn blue">Sace & Add opening Stock</button>
+                    <button class="btn leaf">+ Save and Add Another</button>
+                    <button class="btn green">Save</button>
+                </div>
+            </div>
           </div>
     </section>
     <section class="pro-table__section">

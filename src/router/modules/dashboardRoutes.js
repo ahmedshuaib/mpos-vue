@@ -193,6 +193,56 @@ export default[
             }
         ]
     },
+    {
+        path:'/list-purchase',
+        name:'list-purchase',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListPurchase.vue"),
+    },
+    {
+        path:'/add-purchase',
+        name:'add-purchase',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/AddPurchase.vue"),
+    },  
+    {
+        path:'/purchase-return',
+        name:'purchase-return',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/PurchaseReturn.vue"),
+    },
+    {
+        path:'/all-sales',
+        name:'all-sales',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/AllSales.vue"),
+    },
+    {
+        path:'/discount-sales',
+        name:'discount-sales',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/DiscountSale.vue"),
+    },
+    {
+        path:'/add-sales',
+        name:'add-sales',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/AddSale.vue"),
+    },
+    {
+        path:'/list-pose',
+        name:'list-pose',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListPose.vue"),
+    },
+    {
+        path:'/list-draft',
+        name:'list-draft',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListDraft.vue"),
+    },
+    {
+        path:'/list-quotations',
+        name:'list-quotations',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListQuotations.vue"),
+    },
+    {
+        path:'/sell-return',
+        name:'sell-return',
+        component:() => import (/* webpackChunkName: "brands" */ "@/views/SellReturn.vue"),
+    },
     // login-pages
     {
         path:'/login',

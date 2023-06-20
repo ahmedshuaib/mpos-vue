@@ -82,9 +82,10 @@ export default{
 
     selectBtn() {
         const optionMenu = document.querySelector('.select-menu');
-        const selectBtn = document.querySelector('.select-btn');
+        const selectBtn = document.querySelectorAll('.select-btn');
         const options = document.querySelectorAll('.option');
         const sBtn_text = document.querySelector('.sBtn-text');
+        const  selectmenu = document.querySelectorAll('.select-menu');
 
 
         options.forEach((option) => {
@@ -95,13 +96,15 @@ export default{
           });
         });
 
-        selectBtn.addEventListener('click', () => {
-          optionMenu.classList.add('select-menu--active');
-        });
-        optionMenu.classList.add('select-menu--active');
+        selectBtn.forEach(function(selectBtns){
+          selectBtns.addEventListener('click', () => {
+            optionMenu.classList.add('select-menu--active');
+          });
+        })
+
+
+
     },
-
-
   },
 
     mounted(){
