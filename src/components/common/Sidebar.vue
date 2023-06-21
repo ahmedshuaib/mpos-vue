@@ -354,6 +354,7 @@
                                     <router-link :to="{name:'sell-return'}"  class="text-decoration-none d-block py-2 mb-0"> 
                                         Sell Return
                                     </router-link>
+
                                 </div>
                             </div>
                             </div>
@@ -378,12 +379,38 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'reports'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                       Profile/Loss Report
+                                    </router-link>
+                                    <router-link :to="{name:'net-balance'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                       Net Balance
+                                    </router-link>
+                                    <router-link :to="{name:'supplier-position'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        SUPPLIER Wise Sales Position
+                                    </router-link>
+                                    <router-link :to="{name:'supplier-summery'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Supplier Wise Stock Summery
+                                    </router-link>
+                                    <router-link :to="{name:'supplier-report'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Supplier Wise Product Sell Report
+                                    </router-link>
+         
+                                    <router-link :to="{name:'stock-position'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Supplier Wise Detail Stock Position of shop
+                                    </router-link>
+                                   
+                                    <router-link :to="{name:'stock-receipts'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Supplier Wise Stock Receipts Report
+                                    </router-link>
+                                    <router-link :to="{name:'purchase-sale'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Purchase & Sale Report
+                                    </router-link>
+                                    <router-link :to="{name:'transfer-report'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Transfer Report
+                                    </router-link>
+                                    <router-link :to="{name:'transaction-report'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Transaction Report
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -408,12 +435,12 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'stock-adjust'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Stock Adjustment
+                                    </router-link>
+                                    <router-link :to="{name:'add-stock'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                       Add Stock 
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -438,12 +465,13 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'expenses'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                       Expenses
+                                    </router-link>
+                                   
+                                    <router-link :to="{name:'expenses-category'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                       Expense Categories
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -468,9 +496,9 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
+                                    <router-link :to="{name:'bank-user'}"  class="text-decoration-none d-block py-2 mb-0"> 
+                                        Bank User
+                                    </router-link>
                                 <a class="text-decoration-none d-block py-2 mb-0" href="#"
                                     >Sub item two</a
                                 >
@@ -498,12 +526,15 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'bank'}"  class="text-decoration-none d-block py-2 mb-0">
+                                        Bank
+                                    </router-link>
+                                    <router-link :to="{name:'personal'}"  class="text-decoration-none d-block py-2 mb-0">
+                                        Personal
+                                    </router-link>
+                                    <router-link :to="{name:'main-point'}"  class="text-decoration-none d-block py-2 mb-0">
+                                        Main Point
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -528,12 +559,12 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'receive-balance'}"  class="text-decoration-none d-block py-2 mb-0">
+                                       Bank
+                                    </router-link>
+                                    <router-link :to="{name:'receive-personal'}"  class="text-decoration-none d-block py-2 mb-0">
+                                       Personal
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -570,19 +601,17 @@
                         </div>
         
                       <hr style="border-top: 1px solid #ededed; opacity: 1; margin: 0" />
-        
                         <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none" href="#"
+                            <router-link :to="{name:'inbox'}" class="text-decoration-none" href="#"
                             ><p class="mb-0">inbox</p>
                             <div class="count">19</div>
-                            </a>
+                        </router-link>
                         </li>
-        
                         <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none" href="#"
-                            ><p class="mb-0">Notifications</p>
+                            <router-link :to="{name:'notification'}">
+                                <p class="mb-0">Notifications</p>
                             <div class="count">7</div>
-                            </a>
+                            </router-link>
                         </li>
             
                         <li class="d-flex align-items-center justify-content-between">

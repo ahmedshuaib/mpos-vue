@@ -1,5 +1,5 @@
 <template>
-    <div class="modal fade" ref="addgroups" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
+    <div class="modal fade"  ref="addgroups" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
       <div class="modal-dialog" >
         <div class="modal-content modal-lg" >
 
@@ -35,7 +35,7 @@
                       class="d-flex align-items-center justify-content-end pro-form-btn"
                       >
                       <div class="d-flex gap-3 align-items-center">
-                        <router-link :to="{name:'customer-group'}" @click="popup">
+                        <router-link :to="{name:'customer-group'}" data-bs-dismiss="modal">
                             <span class="popup-close-btn" id="popup-close">Close</span>
                         </router-link>
                         <button class="popup-save-btn">Save</button>

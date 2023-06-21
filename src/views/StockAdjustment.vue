@@ -1,22 +1,14 @@
 <template>
+
     <section class="pro-users__section">
       <div class="section__container">
         <div
-          class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
-          <h4 class="mb-0">List POS</h4>
+          class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
+        >
+          <h4 class="mb-0">Stock Adjustments</h4>
           <a  class="add-role-link btns">
-              <button class="btn green"><span class="me-1">+</span>Add</button>
+            <button class="btn green"><span class="me-1">+</span>Add</button>
           </a>
-        </div>
-        <div class="col-lg-1">
-            <div class="input-group mb-3" style="width:150px">
-            <select class="form-select" id="inputGroupSelect01" >
-            <option selected>Filter by Date</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-            </select>
-            </div>
         </div>
       </div>
     </section>
@@ -80,36 +72,26 @@
             <table ref="table5" style="width:100%">
               <thead>
                 <tr>
-                  <th>Date</th>
-                  <th>Invoice No</th>
-                  <th>Customer Name</th>
-                  <th>Location</th>
-                  <th>Payment Status</th>
-                  <th>Total Amount</th>
-                  <th>Total Paid</th>
-                  <th>Payment Due</th>
-                  <th>Action</th>
+                    <th>Date</th>
+                    <th>Reference No</th>
+                    <th>Location</th>
+                    <th>Adjustment type</th>
+                    <th>Total Amount</th>
+                    <th>Total Amount recovered</th>
+                    <th>Reson</th>
+                    <th>Action</th>
                 </tr>
               </thead>
-
-
-            <tbody>
+              <tbody>
                 <tr>
-                    <td>17/04/22</td>
-                    <td>E54814</td>
-                    <td>Kamrul Islam</td>
-                    <td>Dhaka</td>
-                    <td>                        
-                      <button class="pro-add-btn">
-                          Success
-                        </button>
-                    </td>
-                    <td>$120</td>
-                    <td>
-                      $140
-                    </td>
-                    <td>$1200</td>
-                    <td>
+                  <td>17/02/22</td>
+                  <td>P023423</td>
+                  <td>Dhaka</td>
+                  <td>Mobile</td>
+                  <td>$1200</td>
+                  <td>$200</td>
+                  <td>No</td>
+                  <td>
                         <div class="dots-menu">
                           <div class="dots-btn">
                               <i class="fa-solid fa-ellipsis"></i>
@@ -138,23 +120,16 @@
                           </ul>
                         </div> 
                     </td>
-                </tr>
+                </tr> 
                 <tr>
-                    <td>17/04/22</td>
-                    <td>E54814</td>
-                    <td>Kamrul Islam</td>
-                    <td>Dhaka</td>
-                    <td>                        
-                      <button class="pro-add-btn">
-                          Success
-                        </button>
-                    </td>
-                    <td>$120</td>
-                    <td>
-                      $140
-                    </td>
-                    <td>$1200</td>
-                    <td>
+                  <td>17/02/22</td>
+                  <td>P023423</td>
+                  <td>Dhaka</td>
+                  <td>Mobile</td>
+                  <td>$1200</td>
+                  <td>$200</td>
+                  <td>No</td>
+                  <td>
                         <div class="dots-menu">
                           <div class="dots-btn">
                               <i class="fa-solid fa-ellipsis"></i>
@@ -183,23 +158,16 @@
                           </ul>
                         </div> 
                     </td>
-                </tr>
+                </tr> 
                 <tr>
-                    <td>17/04/22</td>
-                    <td>E54814</td>
-                    <td>Kamrul Islam</td>
-                    <td>Dhaka</td>
-                    <td>                        
-                      <button class="pro-add-btn">
-                          Success
-                        </button>
-                    </td>
-                    <td>$120</td>
-                    <td>
-                      $140
-                    </td>
-                    <td>$1200</td>
-                    <td>
+                  <td>17/02/22</td>
+                  <td>P023423</td>
+                  <td>Dhaka</td>
+                  <td>Mobile</td>
+                  <td>$1200</td>
+                  <td>$200</td>
+                  <td>No</td>
+                  <td>
                         <div class="dots-menu">
                           <div class="dots-btn">
                               <i class="fa-solid fa-ellipsis"></i>
@@ -228,8 +196,46 @@
                           </ul>
                         </div> 
                     </td>
-                </tr>
-            </tbody>
+                </tr> 
+                <tr>
+                  <td>17/02/22</td>
+                  <td>P023423</td>
+                  <td>Dhaka</td>
+                  <td>Mobile</td>
+                  <td>$1200</td>
+                  <td>$200</td>
+                  <td>No</td>
+                  <td>
+                        <div class="dots-menu">
+                          <div class="dots-btn">
+                              <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+
+                          <ul class="t-options">
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Copy</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">View</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Edit</p>
+                              </li>
+
+                              <li class="t-option">
+                              <span class="t-option-circle"></span>
+                              <p class="t-option-text mb-0">Delete</p>
+                              </li>
+                          </ul>
+                        </div> 
+                    </td>
+                </tr> 
+              </tbody>
             </table>
           </div>
         </div>

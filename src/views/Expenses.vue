@@ -1,27 +1,39 @@
 <template>
+
+
     <section class="pro-users__section">
       <div class="section__container">
         <div
-          class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
-          <h4 class="mb-0">List POS</h4>
-          <a  class="add-role-link btns">
-              <button class="btn green"><span class="me-1">+</span>Add</button>
+          class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
+        >
+          <h4 class="mb-0">Expense</h4>
+          <a ref="" class="add-role-link btns">
+            <button class="btn green"><span class="me-1">+</span>Add</button>
           </a>
         </div>
-        <div class="col-lg-1">
-            <div class="input-group mb-3" style="width:150px">
-            <select class="form-select" id="inputGroupSelect01" >
-            <option selected>Filter by Date</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-            </select>
-            </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="pro-search__section">
+          <div class="col-lg-12 product-image">
+            <div class="filter">
+                <img src="../assets/img/filter.svg" alt="filter">
+            </div>
+            <div class="row pay-term">
+                <div class="col-lg-4">
+                    <label for="Pay">Pay term*</label>
+                    <input type="text" placeholder="Pay term" class="form-control">
+                </div>
+                <div class="col-lg-4">
+                  <label for="Pay">Pay term*</label>
+                  <input type="text" placeholder="Pay term" class="form-control">
+                </div>
+                <div class="col-lg-4">
+                  <label for="Pay">Pay term*</label>
+                  <input type="text" placeholder="Pay term" class="form-control">
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <section class="pro-search__section mt-3">
           <div class="section__container">
               <div
               class="pro__search"
@@ -72,6 +84,9 @@
               </div>
           </div>
     </section>
+    </section>
+
+
     <section class="pro-table__section">
       <div class="section__container">
         <div class="table__wrapper">
@@ -81,34 +96,32 @@
               <thead>
                 <tr>
                   <th>Date</th>
-                  <th>Invoice No</th>
-                  <th>Customer Name</th>
+                  <th>Reference No</th>
+                  <th>Category</th>
                   <th>Location</th>
                   <th>Payment Status</th>
                   <th>Total Amount</th>
-                  <th>Total Paid</th>
-                  <th>Payment Due</th>
+                  <th>Payment due</th>
+                  <th>Expense For</th>
                   <th>Action</th>
                 </tr>
               </thead>
 
 
-            <tbody>
+              <tbody>
                 <tr>
                     <td>17/04/22</td>
-                    <td>E54814</td>
-                    <td>Kamrul Islam</td>
-                    <td>Dhaka</td>
-                    <td>                        
-                      <button class="pro-add-btn">
-                          Success
+                    <td>P022541</td>
+                    <td>Office Clean</td>
+                    <td>Original Gadget</td>
+                    <td>
+                        <button class="pro-edit-btn">
+                          Paid      
                         </button>
                     </td>
-                    <td>$120</td>
-                    <td>
-                      $140
-                    </td>
                     <td>$1200</td>
+                    <td>0.00</td>
+                    <td>Alor Pothe</td>
                     <td>
                         <div class="dots-menu">
                           <div class="dots-btn">
@@ -136,24 +149,22 @@
                               <p class="t-option-text mb-0">Delete</p>
                               </li>
                           </ul>
-                        </div> 
+                          </div> 
                     </td>
                 </tr>
                 <tr>
                     <td>17/04/22</td>
-                    <td>E54814</td>
-                    <td>Kamrul Islam</td>
-                    <td>Dhaka</td>
-                    <td>                        
-                      <button class="pro-add-btn">
-                          Success
+                    <td>P022541</td>
+                    <td>Office Clean</td>
+                    <td>Original Gadget</td>
+                    <td>
+                        <button class="pro-edit-btn">
+                          Paid      
                         </button>
                     </td>
-                    <td>$120</td>
-                    <td>
-                      $140
-                    </td>
                     <td>$1200</td>
+                    <td>0.00</td>
+                    <td>Alor Pothe</td>
                     <td>
                         <div class="dots-menu">
                           <div class="dots-btn">
@@ -181,24 +192,22 @@
                               <p class="t-option-text mb-0">Delete</p>
                               </li>
                           </ul>
-                        </div> 
+                          </div> 
                     </td>
                 </tr>
                 <tr>
                     <td>17/04/22</td>
-                    <td>E54814</td>
-                    <td>Kamrul Islam</td>
-                    <td>Dhaka</td>
-                    <td>                        
-                      <button class="pro-add-btn">
-                          Success
+                    <td>P022541</td>
+                    <td>Office Clean</td>
+                    <td>Original Gadget</td>
+                    <td>
+                        <button class="pro-edit-btn">
+                          Paid      
                         </button>
                     </td>
-                    <td>$120</td>
-                    <td>
-                      $140
-                    </td>
                     <td>$1200</td>
+                    <td>0.00</td>
+                    <td>Alor Pothe</td>
                     <td>
                         <div class="dots-menu">
                           <div class="dots-btn">
@@ -226,10 +235,10 @@
                               <p class="t-option-text mb-0">Delete</p>
                               </li>
                           </ul>
-                        </div> 
+                          </div> 
                     </td>
                 </tr>
-            </tbody>
+              </tbody>
             </table>
           </div>
         </div>

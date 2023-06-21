@@ -1,5 +1,5 @@
 <template>
-    <div class="modal fade" ref="addgroups" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
+    <div class="modal fade"  ref="addgroups" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
       <div class="modal-dialog" >
         <div class="modal-content modal-lg" >
 
@@ -8,7 +8,7 @@
               <div
               class="d-flex align-items-center justify-content-between popup-header"
               >
-              <h4 class="mb-0">Add Variation</h4>
+              <h4 class="mb-0">Add Bank User</h4>
               <i class="uil uil-multiply popup-times-btn" id="popup-close"></i>
               </div>
               <div class="popup-form">
@@ -16,16 +16,24 @@
                 <form class="needs-validation" novalidate @submit.prevent="submited">
                     <div class="row">
                       <div class="col-lg-12 mt-4">
-                        <label for="fname">Variation Name: * </label>
-                        <input type="text" class="form-control" id="customergroup" aria-describedby="customergroup" placeholder="Customer Group Name" required/>
+                        <label for="Bank">Bank Name: * </label>
+                        <input type="text" class="form-control" id="Bank" aria-describedby="Bank" placeholder="Name" required/>
                         <div class="invalid-feedback">
                           This field is required
                         </div>
                       </div>
 
                       <div class="col-lg-12 mt-4">
-                        <label for="fname">Add Variation Value: * </label>
-                        <input type="text" class="form-control" id="customergroup" aria-describedby="customergroup" placeholder="Customer Group Name" required/>
+                        <label for="Branch">Branch:* </label>
+                        <input type="text" class="form-control" id="Branch" aria-describedby="Branch" placeholder="Branch" required/>
+                        <div class="invalid-feedback">
+                          This field is required
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 mt-4">
+                        <label for="Bank">Bank Account NO: * </label>
+                        <input type="number" class="form-control" id="Bank" aria-describedby="customergroup" placeholder="Account_no" required/>
                         <div class="invalid-feedback">
                           This field is required
                         </div>
@@ -56,7 +64,7 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='add-variation'){
+    if(this.$route.name==='addbank-user'){
       const modalElement = this.$refs.addgroups;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();

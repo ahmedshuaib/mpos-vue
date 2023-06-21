@@ -196,52 +196,172 @@ export default[
     {
         path:'/list-purchase',
         name:'list-purchase',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListPurchase.vue"),
+        component:() => import (/* webpackChunkName: "ListPurchase" */ "@/views/ListPurchase.vue"),
     },
     {
         path:'/add-purchase',
         name:'add-purchase',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/AddPurchase.vue"),
+        component:() => import (/* webpackChunkName: "AddPurchase" */ "@/views/AddPurchase.vue"),
     },  
     {
         path:'/purchase-return',
         name:'purchase-return',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/PurchaseReturn.vue"),
+        component:() => import (/* webpackChunkName: "PurchaseReturn" */ "@/views/PurchaseReturn.vue"),
     },
     {
         path:'/all-sales',
         name:'all-sales',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/AllSales.vue"),
+        component:() => import (/* webpackChunkName: "AllSales" */ "@/views/AllSales.vue"),
     },
     {
         path:'/discount-sales',
         name:'discount-sales',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/DiscountSale.vue"),
+        component:() => import (/* webpackChunkName: "DiscountSale" */ "@/views/DiscountSale.vue"),
     },
     {
         path:'/add-sales',
         name:'add-sales',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/AddSale.vue"),
+        component:() => import (/* webpackChunkName: "AddSale" */ "@/views/AddSale.vue"),
     },
     {
         path:'/list-pose',
         name:'list-pose',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListPose.vue"),
+        component:() => import (/* webpackChunkName: "ListPose" */ "@/views/ListPose.vue"),
     },
     {
         path:'/list-draft',
         name:'list-draft',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListDraft.vue"),
+        component:() => import (/* webpackChunkName: "ListDraft" */ "@/views/ListDraft.vue"),
     },
     {
         path:'/list-quotations',
         name:'list-quotations',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/ListQuotations.vue"),
+        component:() => import (/* webpackChunkName: "ListQuotations" */ "@/views/ListQuotations.vue"),
     },
     {
         path:'/sell-return',
         name:'sell-return',
-        component:() => import (/* webpackChunkName: "brands" */ "@/views/SellReturn.vue"),
+        component:() => import (/* webpackChunkName: "SellReturn" */ "@/views/SellReturn.vue"),
+    },
+    {
+        path:'/stock-adjust',
+        name:'stock-adjust',
+        component:() => import (/* webpackChunkName: "StockAdjustment" */ "@/views/StockAdjustment.vue"),
+    },
+    {
+        path:'/add-stock',
+        name:'add-stock',
+        component:() => import (/* webpackChunkName: "AddStockAdjustment" */ "@/views/AddStockAdjustment.vue"),
+    },
+    {
+        path:'/expenses',
+        name:'expenses',
+        component:() => import (/* webpackChunkName: "Expenses" */ "@/views/Expenses.vue"),
+    },
+    {
+        path:'/expenses-category',
+        name:'expenses-category',
+        component:() => import (/* webpackChunkName: "ExpenseCategory" */ "@/views/ExpenseCategory.vue"),
+    },
+    {
+        path:'/reports',
+        name:'reports',
+        component:() => import (/* webpackChunkName: "Reports" */ "@/views/Reports.vue"),
+    },
+
+    {
+        path:'/net-balance',
+        name:'net-balance',
+        component:() => import (/* webpackChunkName: "NetBalance" */ "@/views/NetBalance.vue"),
+    },
+    {
+        path:'/supplier-position',
+        name:'supplier-position',
+        component:() => import (/* webpackChunkName: "SupplierPosition" */ "@/views/SupplierPosition.vue"),
+    },
+    {
+        path:'/supplier-summery',
+        name:'supplier-summery',
+        component:() => import (/* webpackChunkName: "SupplierSummery" */ "@/views/SupplierSummery.vue"),
+    },
+    {
+        path:'/supplier-report',
+        name:'supplier-report',
+        component:() => import (/* webpackChunkName: "SupplierReport" */ "@/views/SupplierReport.vue"),
+    },
+    {
+        path:'/stock-position',
+        name:'stock-position',
+        component:() => import (/* webpackChunkName: "StockPosition" */ "@/views/StockPosition.vue"),
+    },
+    {
+        path:'/stock-receipts',
+        name:'stock-receipts',
+        component:() => import (/* webpackChunkName: "StockReceipts" */ "@/views/StockReceipts.vue"),
+    },
+    {
+        path:'/purchase-sale',
+        name:'purchase-sale',
+        component:() => import (/* webpackChunkName: "PurchaseSale" */ "@/views/PurchaseSale.vue"),
+    },
+
+    {
+        path:'/transfer-report',
+        name:'transfer-report',
+        component:() => import (/* webpackChunkName: "TransferReport" */ "@/views/TransferReport.vue"),
+    },
+    {
+        path:'/transaction-report',
+        name:'transaction-report',
+        component:() => import (/* webpackChunkName: "TransactionReport" */ "@/views/TransactionReport.vue"),
+    },
+    {
+        path:'/bank-user',
+        name:'bank-user',
+        component:() => import (/* webpackChunkName: "BankUser" */ "@/views/BankUser.vue"),
+        children:[
+            {
+                path:'addbank-user',
+                name:'addbank-user',
+                component:() => import (/* webpackChunkName: "AddBankUser" */ "@/components/parts/bank/AddBankUser.vue"),
+
+            }
+        ]
+    },
+    {
+        path:'/bank',
+        name:'bank',
+        component:() => import (/* webpackChunkName: "Bank" */ "@/views/Bank.vue"),
+    },
+    {
+        path:'/personal',
+        name:'personal',
+        component:() => import (/* webpackChunkName: "Personal" */ "@/views/Personal.vue"),
+    },
+    {
+        path:'/main-point',
+        name:'main-point',
+        component:() => import (/* webpackChunkName: "MainPoint" */ "@/views/MainPoint.vue"),
+    },
+    {
+        path:'/receive-balance',
+        name:'receive-balance',
+        component:() => import (/* webpackChunkName: "MainPoint" */ "@/views/ReceiveBalance.vue"),
+    },
+    {
+        path:'/receive-personal',
+        name:'receive-personal',
+        component:() => import (/* webpackChunkName: "MainPoint" */ "@/views/ReceivePersonal.vue"),
+    },
+    {
+        path:'/inbox',
+        name:'inbox',
+        component:() => import (/* webpackChunkName: "Inbox" */  "@/views/Inbox.vue"),
+    },
+    {
+        path:'/notification',
+        name:'notification',
+        component:() => import (/* webpackChunkName: "Inbox" */  "@/views/Notification.vue"),
     },
     // login-pages
     {

@@ -1,13 +1,24 @@
 <template>
+        <section class="pro-users__section">
+        <div class="section__container">
+          <div
+            class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
+          >
+            <h4 class="mb-0">Sall Return</h4>
+
+            <div
+                class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
+                <a  class="add-role-link btns">
+                  <button class="btn green"><span class="me-1">+</span>Add</button>
+                </a>
+           </div>
+
+          </div>
+        </div>
+      </section>
     <section class="pro-users__section">
       <div class="section__container">
-        <div
-          class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
-          <h4 class="mb-0">Sell Return</h4>
-          <router-link :to="{name:'add-purchase'}" class="add-role-link btns">
-            <button class="btn green"><span class="me-1">+</span>Add</button>
-          </router-link>
-        </div>
+
         <div class="col-lg-1">
             <div class="input-group mb-3" style="width:150px">
             <select class="form-select" id="inputGroupSelect01" >
@@ -94,11 +105,10 @@
 
 
             <tbody>
-                <tr>
+              <tr>
                     <td>17/04/22</td>
                     <td>E54814</td>
-                    <td>Mobile</td>
-                    <td>Jhon Cena</td>
+                    <td>Kamrul Islam</td>
                     <td>Dhaka</td>
                     <td>                        
                       <button class="pro-add-btn">
@@ -109,6 +119,7 @@
                     <td>
                       $140
                     </td>
+                    <td>$1200</td>
                     <td>
                         <div class="dots-menu">
                           <div class="dots-btn">

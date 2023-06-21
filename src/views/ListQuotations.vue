@@ -4,6 +4,9 @@
         <div class="section__container">
             <div class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
                 <h4 class="mb-0">List Quotations</h4>
+                <a  class="add-role-link btns">
+                    <button class="btn green"><span class="me-1">+</span>Add</button>
+                </a>
             </div>
         </div>
     </section>

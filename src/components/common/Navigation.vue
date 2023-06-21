@@ -19,7 +19,6 @@
           </div>
           <div class="mobile__input">
             <form>
-
               <input type="text" placeholder="Search..." />
             </form>
           </div>
@@ -34,7 +33,7 @@
             <div
               class="user__info-item d-flex align-items-center justify-content-center"
             >
-              <img src="../../assets/img/notification.svg" alt="profile" />
+              <router-link :to="{name:'notification'}"><img src="../../assets/img/notification.svg" alt="profile" /></router-link>
             </div>
   
             <div class="user d-flex align-items-center justify-content-center">

@@ -5,9 +5,9 @@
           class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
         >
           <h4 class="mb-0">Discount Sales</h4>
-          <router-link :to="{name:'add-purchase'}" class="add-role-link btns">
+          <a  class="add-role-link btns">
             <button class="btn green"><span class="me-1">+</span>Add</button>
-          </router-link>
+          </a>
         </div>
 
         <div class="col-lg-1">

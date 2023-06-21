@@ -1,5 +1,5 @@
 <template>
-    <div class="modal fade" ref="userModdal" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
+    <div class="modal fade"  ref="userModdal" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
         <div class="modal-dialog">
           <div class="modal-content modal-lg">
               <div class="d-flex align-items-center justify-content-center">
@@ -92,7 +92,7 @@
 
                             <div class="d-flex align-items-center justify-content-end pro-form-btn">
                                 <div class="d-flex gap-3 align-items-center">
-                                  <router-link :to="{name:'user'}"><span class="popup-close-btn" id="popup-close" @click="popup">Close</span></router-link>  
+                                  <router-link :to="{name:'user'}"><span class="popup-close-btn" data-bs-dismiss="modal" >Close</span></router-link>  
                                   <button class="popup-save-btn" type="submit">Save</button>
                                 </div>
                             </div>
@@ -122,11 +122,20 @@
         const modal = bootstrap.Modal.getInstance(modalElement);
         if (modal) {
           modal.hide();
-        }else if(modal.hide()){
-          document.body.style.overflowY = 'scroll';
-
         }
     },
+    methods:{
+    onModalShown() {
+      this.setBodyScroll(false);
+    },
+    onModalHidden() {
+      this.setBodyScroll(true);
+    },
+    setBodyScroll(enableScroll) {
+      const body = document.querySelector('body');
+      body.classList.toggle('no-scroll', !enableScroll);
+    },
+  },
     },
   };
 </script>
