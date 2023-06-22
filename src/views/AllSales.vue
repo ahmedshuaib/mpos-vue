@@ -11,70 +11,46 @@
           </a>
         </div>
 
-        <div class="col-lg-1">
-            <div class="input-group mb-3" style="width:150px">
-              <select class="form-select" id="inputGroupSelect01" >
-                <option selected>Filter by Date</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+        <div class="dropdown-btn" style="display:inline-block">
+            <div class="select d-flex alig-items-center gap-4">
+                <span class="selected">Filter By date</span>
+                <img src="../assets/img/drop.svg" alt="">
             </div>
-        </div>
+            <ul class="menu">
+                <li>Copy</li>
+                <li>Export to CSV</li>
+                <li class="active">Export to Excel</li>
+                <li>Export to PDF</li>
+                <li>Print</li>
+                <li>Column visibility</li>
+            </ul>
+        </div> 
 
       </div>
     </section>
 
     <section class="pro-search__section">
-          <div class="section__container">
-              <div
-              class="pro__search"
-              >
-              <div class="pro-select-box">
-                  <!-- dropdown menu -->
-
-                  <!-- select menu -->
-                  <div class="select-menu">
-                  <div class="select-btn green-export" @click="selectBtn">
-                      <span class="sBtn-text">Export</span>
-                      <img src="../assets/img/drop.svg" alt="">
+        <div class="section__container">
+            <div class="pro__search">
+                <div class="pro-select-box">
+                    <!-- dropdown menu -->
+                    <div class="dropdown-btn">
+                        <div class="select d-flex alig-items-center gap-4">
+                            <span class="selected">Export</span>
+                            <img src="../assets/img/drop.svg" alt="">
+                        </div>
+                        <ul class="menu">
+                            <li>Copy</li>
+                            <li>Export to CSV</li>
+                            <li class="active">Export to Excel</li>
+                            <li>Export to PDF</li>
+                            <li>Print</li>
+                            <li>Column visibility</li>
+                        </ul>
                   </div>
-
-                  <ul class="options">
-                      <li class="option">
-                        <span class="option-circle"></span>
-                        <p class="option-text mb-0">Copy</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to CSV</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to Excel</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to PDF</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Print</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Column Visibility</p>
-                      </li>
-                  </ul>
-                  </div>
-              </div>
-              </div>
-          </div>
+                </div>
+            </div>
+        </div>
     </section>
 
   
@@ -241,7 +217,6 @@
             </div>
         </div>
     </section>
-    <router-view></router-view>
 </template>
 
 <script>

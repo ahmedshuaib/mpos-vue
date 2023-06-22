@@ -76,32 +76,6 @@ export default{
       mainHeader.classList.toggle('active');
       console.log('asdf')
     },
-
-    selectBtn() {
-        const optionMenu = document.querySelector('.select-menu');
-        const selectBtn = document.querySelectorAll('.select-btn');
-        const options = document.querySelectorAll('.option');
-        const sBtn_text = document.querySelector('.sBtn-text');
-        const  selectmenu = document.querySelectorAll('.select-menu');
-
-
-        options.forEach((option) => {
-          option.addEventListener('click', () => {
-            let selected = option.querySelector('.option-text').innerText;
-            sBtn_text.innerText = selected;
-            optionMenu.classList.remove('select-menu--active');
-          });
-        });
-
-        selectBtn.forEach(function(selectBtns){
-          selectBtns.addEventListener('click', () => {
-            optionMenu.classList.add('select-menu--active');
-          });
-        })
-
-
-
-    },
   },
 
     mounted(){
@@ -110,6 +84,7 @@ export default{
             dropDown();
           });
           this.handle();
+
 
           const dropDown = () => {
             const dropMenu = document?.querySelector('.drop-menu');

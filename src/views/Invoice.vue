@@ -21,47 +21,23 @@
                   <!-- dropdown menu -->
 
                   <!-- select menu -->
-                  <div class="select-menu">
-                  <div class="select-btn green-export" @click="selectBtn">
-                      <span class="sBtn-text">Export</span>
-                      <img src="../assets/img/drop.svg" alt="">
-                  </div>
-
-                  <ul class="options">
-                      <li class="option">
-                        <span class="option-circle"></span>
-                        <p class="option-text mb-0">Copy</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to CSV</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to Excel</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to PDF</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Print</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Column Visibility</p>
-                      </li>
-                  </ul>
-                  </div>
-              </div>
-              </div>
-          </div>
+                  <div class="dropdown-btn" >
+                        <div class="select d-flex alig-items-center gap-4" >
+                            <span class="selected">Business</span>
+                            <img src="../assets/img/drop.svg" alt="">
+                        </div>
+                        <ul class="menu">
+                            <li>Copy</li>
+                            <li>Export to CSV</li>
+                            <li class="active">Export to Excel</li>
+                            <li>Export to PDF</li>
+                            <li>Print</li>
+                            <li>Column visibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
 

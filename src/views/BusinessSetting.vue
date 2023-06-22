@@ -7,7 +7,7 @@
           <div class="row">
                 <div class="col-lg-2">
                     <section class="pro-search__section">
-                        <div class="section__container">
+                        <div class="section__container p-0">
                             <div
                             class="pro__search"
                             >
@@ -15,68 +15,19 @@
                                 <!-- dropdown menu -->
 
                                 <!-- select menu -->
-                                <div class="select-menu">
-                                <div class="select-btn green-export" @click="selectBtn">
-                                    <span class="sBtn-text">Business</span>
-                                    <img src="../assets/img/drop.svg" alt="">
-                                </div>
-
-                                <ul class="options">
-                                    <li class="option">
-                                        <span class="option-circle"></span>
-                                        <p class="option-text mb-0">text</p>
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">Sale</p>
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">Purchase</p>
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">Dashboard</p>
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">System</p>
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">Prefixes</p>
-                                    
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">Email Settings</p>
-                                    
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">SMS Settings</p>
-                                    
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">POS</p>
-                                    
-                                    </li>
-
-                                    <li class="option">
-                                    <span class="option-circle"></span>
-                                    <p class="option-text mb-0">Modules</p>
-                                    
-                                    </li>
-                                </ul>
+                                <div class="dropdown-btn" >
+                                    <div class="select d-flex alig-items-center gap-4" >
+                                        <span class="selected">Business</span>
+                                        <img src="../assets/img/drop.svg" alt="">
+                                    </div>
+                                    <ul class="menu">
+                                        <li>Copy</li>
+                                        <li>Export to CSV</li>
+                                        <li class="active">Export to Excel</li>
+                                        <li>Export to PDF</li>
+                                        <li>Print</li>
+                                        <li>Column visibility</li>
+                                    </ul>
                                 </div>
                             </div>
                             </div>

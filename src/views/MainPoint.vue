@@ -7,14 +7,20 @@
             <h2 class="header-balance">Your Total Balance is: 0</h2>
         </div>
         <div class="col-lg-12 d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
-            <div class="input-group mb-3" style="width:150px">
-              <select class="form-select" id="inputGroupSelect01" >
-                <option selected>Filter by Date</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
+          <div class="dropdown-btn" >
+                <div class="select d-flex alig-items-center gap-4" >
+                    <span class="selected">Filter by date</span>
+                    <img src="../assets/img/drop.svg" alt="">
+                </div>
+                <ul class="menu">
+                    <li>Copy</li>
+                    <li>Export to CSV</li>
+                    <li class="active">Export to Excel</li>
+                    <li>Export to PDF</li>
+                    <li>Print</li>
+                    <li>Column visibility</li>
+                </ul>
+              </div>
             <a class="add-role-link btns">
                 <button class="btn green"><span class="me-1">+</span>Add</button>
             </a>
@@ -32,44 +38,20 @@
               <!-- dropdown menu -->
 
               <!-- select menu -->
-              <div class="select-menu">
-              <div class="select-btn green-export" @click="selectBtn">
-                  <span class="sBtn-text">Export</span>
-                  <img src="../assets/img/drop.svg" alt="">
-              </div>
-
-              <ul class="options">
-                  <li class="option">
-                    <span class="option-circle"></span>
-                    <p class="option-text mb-0">Copy</p>
-                  </li>
-
-                  <li class="option">
-                  <span class="option-circle"></span>
-                  <p class="option-text mb-0">Export to CSV</p>
-                  </li>
-
-                  <li class="option">
-                  <span class="option-circle"></span>
-                  <p class="option-text mb-0">Export to Excel</p>
-                  </li>
-
-                  <li class="option">
-                  <span class="option-circle"></span>
-                  <p class="option-text mb-0">Export to PDF</p>
-                  </li>
-
-                  <li class="option">
-                  <span class="option-circle"></span>
-                  <p class="option-text mb-0">Print</p>
-                  </li>
-
-                  <li class="option">
-                  <span class="option-circle"></span>
-                  <p class="option-text mb-0">Column Visibility</p>
-                  </li>
-              </ul>
-              </div>
+              <div class="dropdown-btn" >
+                      <div class="select d-flex alig-items-center gap-4" >
+                          <span class="selected">Export</span>
+                          <img src="../assets/img/drop.svg" alt="">
+                      </div>
+                      <ul class="menu">
+                          <li>Copy</li>
+                          <li>Export to CSV</li>
+                          <li class="active">Export to Excel</li>
+                          <li>Export to PDF</li>
+                          <li>Print</li>
+                          <li>Column visibility</li>
+                      </ul>
+                  </div>
           </div>
           </div>
       </div>
@@ -197,7 +179,6 @@
           </div>
       </div>
     </section>
-    <router-view></router-view>
 </template>
 
 <script>

@@ -316,8 +316,8 @@
                       class="d-flex align-items-center justify-content-end pro-form-btn"
                       >
                       <div class="d-flex gap-3 align-items-center">
-                        <router-link :to="{name:'customers'}"  data-bs-dismiss="modal">
-                            <span class="popup-close-btn" id="popup-close">Close</span>
+                        <router-link :to="{name:'customers'}" >
+                            <span class="popup-close-btn" id="popup-close"  data-bs-dismiss="modal">Close</span>
                         </router-link>
                         <button class="popup-save-btn">Save</button>
                       </div>

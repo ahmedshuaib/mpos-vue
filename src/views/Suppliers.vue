@@ -24,59 +24,25 @@
                   <!-- dropdown menu -->
 
                   <!-- select menu -->
-                  <div class="select-menu">
-                  <div class="select-btn" @click="selectBtn">
-                      <span class="sBtn-text">Export</span>
-                      <img src="../assets/img/drop.svg" alt="">
-                  </div>
-
-                  <ul class="options">
-                      <li class="option">
-                        <span class="option-circle"></span>
-                        <p class="option-text mb-0">Copy</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to CSV</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to Excel</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Export to PDF</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Print</p>
-                      </li>
-
-                      <li class="option">
-                      <span class="option-circle"></span>
-                      <p class="option-text mb-0">Column Visibility</p>
-                      </li>
-                  </ul>
-                  </div>
+                  <div class="dropdown-btn">
+                      <div class="select d-flex alig-items-center gap-4">
+                          <span class="selected">Export</span>
+                          <img src="../assets/img/drop.svg" alt="">
+                      </div>
+                      <ul class="menu">
+                          <li>Copy</li>
+                          <li>Export to CSV</li>
+                          <li class="active">Export to Excel</li>
+                          <li>Export to PDF</li>
+                          <li>Print</li>
+                          <li>Column visibility</li>
+                      </ul>
+                        </div> 
               </div>
               </div>
           </div>
     </section>
     
-    <section class="pro-table__section">
-      <div class="section__container">
-        <div class="table__wrapper">
-          <div class="table-scrollable">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="stock__section mt-5">
         <div class="section__container">
             <div class="card border-0 bg-white p-4">
