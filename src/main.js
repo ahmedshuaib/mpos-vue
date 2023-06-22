@@ -11,10 +11,10 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 
 // css-global-files//
-import '@/assets/css/style.css';
-import '@/assets/css/responsive.css';
-import '@/assets/css/product.css';
-import '@/assets/css/login.css'
+import './assets/css/style.css';
+import './assets/css/responsive.css';
+import './assets/css/product.css';
+import './assets/css/login.css'
 // css-global-files-end//
 
 
@@ -37,7 +37,7 @@ import footer from './components/common/Footer.vue';
 // pages-path-end//
 
 
-import router from '@/router';
+import router from './router';
 const app=createApp(App);
 app.component('tsidebar',sidebar);
 app.component('tnavigation',navigation);
