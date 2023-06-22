@@ -13,12 +13,10 @@
 
 
 
-    <section class="pro-table__section">
+    <section class="stock__section mt-5">
         <div class="section__container">
-            <div class="table__wrapper">
-                <div class="table-scrollable">
-
-                    <table ref="table4" style="width:100%">
+            <div class="card border-0 bg-white p-4">
+                <table ref="table4" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -205,11 +203,11 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
-                </div>
+                </table>
             </div>
         </div>
     </section>
+
 </template>
 
 <script>

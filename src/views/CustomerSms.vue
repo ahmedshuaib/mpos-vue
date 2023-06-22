@@ -4,7 +4,7 @@
             <div
                 class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
             >
-                <h4 class="mb-0">Customers</h4>
+                <h4 class="mb-0">Customers Sms</h4>
             </div>
             <div class="col-lg-12 product-image p-4">
                 <span class="send-sms">Send Customer SMS</span><br>

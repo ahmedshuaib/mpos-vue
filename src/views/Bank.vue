@@ -74,11 +74,13 @@
           </div>
       </div>
     </section>
-    <section class="pro-table__section">
+
+
+
+
+    <section class="stock__section mt-5">
       <div class="section__container">
-        <div class="table__wrapper">
-          <div class="table-scrollable">
-            
+          <div class="card border-0 bg-white p-4">
             <table ref="table5" style="width:100%">
               <thead>
                 <tr>
@@ -92,8 +94,6 @@
                   <th>Action</th>
                 </tr>
               </thead>
-
-
               <tbody>
                   <tr>
                       <td>2022-04-04</td>
@@ -188,7 +188,6 @@
               </tbody>
             </table>
           </div>
-        </div>
       </div>
     </section>
     <router-view></router-view>

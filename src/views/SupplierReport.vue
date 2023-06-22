@@ -5,15 +5,10 @@
           class="d-flex align-items-strech justify-content-between heading-box flex-wrap gap-2 btns"
         >
           <h4 class="mb-0">Supplier Wise Product Sell Report</h4>
-
-        
-
           <a>
-            
             <button class="btn green" id="user-add-btn" @click="openModal">
                   <span class="me-1">+</span>Add
             </button>
-            
           </a>
         </div>
         <div
@@ -98,52 +93,82 @@
       </div>
     </section>
 
-    <section class="pro-search__section">
-          <div class="section__container">
-
-          </div>
-    </section>
     
-    <section class="pro-table__section">
-      <div class="section__container">
-        <div class="table__wrapper">
-          <div class="table-scrollable">
-            <table ref="table6" width="100%">
-              <thead>
-                <tr>
-                  <th style="border-top-left-radius: 10px">Supplier Name</th>
-                  <th>Sell Qty</th>
-                  <th>Return Qty</th>
-                  <th>Purchase Amount</th>
-                  <th>Sale Amount</th>
-                  <th>Discount</th>
-                  <th>Vat</th>
-                  <th>Return Amount</th>
-                  <th>Net Sale</th>
-                  <th>Gross Profit</th>
 
-                </tr>
-              </thead>
-              <tbody>
-                    <tr>
-                        <td>Kamrul Islam</td>
-                        <td>2.00</td>
-                        <td>0.00</td>
-                        <td>0.000</td>
-                        <td>0.00</td> 
-                        <td>1900</td>
-                        <td>0.000</td>
-                        <td>0.000</td>
-                        <td>1900</td>
-                        <td>1700</td>
-                    </tr>
-              </tbody>
-            </table>
-          </div>
+
+    <section class="stock__section mt-5">
+        <div class="section__container">
+            <div class="card border-0 bg-white p-4">
+                  <table ref="table6" width="100%">
+                      <thead>
+                        <tr>
+                          <th style="border-top-left-radius: 10px">Supplier Name</th>
+                          <th>Sell Qty</th>
+                          <th>Return Qty</th>
+                          <th>Purchase Amount</th>
+                          <th>Sale Amount</th>
+                          <th>Discount</th>
+                          <th>Vat</th>
+                          <th>Return Amount</th>
+                          <th>Net Sale</th>
+                          <th>Gross Profit</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                            <tr>
+                                <td>Kamrul Islam</td>
+                                <td>2.00</td>
+                                <td>0.00</td>
+                                <td>0.000</td>
+                                <td>0.00</td> 
+                                <td>1900</td>
+                                <td>0.000</td>
+                                <td>0.000</td>
+                                <td>1900</td>
+                                <td>1700</td>
+                            </tr>
+                            <tr>
+                                <td>Kamrul Islam</td>
+                                <td>2.00</td>
+                                <td>0.00</td>
+                                <td>0.000</td>
+                                <td>0.00</td> 
+                                <td>1900</td>
+                                <td>0.000</td>
+                                <td>0.000</td>
+                                <td>1900</td>
+                                <td>1700</td>
+                            </tr>
+                            <tr>
+                                <td>Kamrul Islam</td>
+                                <td>2.00</td>
+                                <td>0.00</td>
+                                <td>0.000</td>
+                                <td>0.00</td> 
+                                <td>1900</td>
+                                <td>0.000</td>
+                                <td>0.000</td>
+                                <td>1900</td>
+                                <td>1700</td>
+                            </tr>
+                            <tr>
+                                <td>Kamrul Islam</td>
+                                <td>2.00</td>
+                                <td>0.00</td>
+                                <td>0.000</td>
+                                <td>0.00</td> 
+                                <td>1900</td>
+                                <td>0.000</td>
+                                <td>0.000</td>
+                                <td>1900</td>
+                                <td>1700</td>
+                            </tr>
+                      </tbody>
+                  </table>
+            </div>
         </div>
-      </div>
     </section>
-
     <router-view></router-view>
 </template>
 

@@ -76,77 +76,75 @@
               </div>
           </div>
     </section>
-    <section class="pro-table__section">
-      <div class="section__container">
-        <div class="table__wrapper">
-          <div class="table-scrollable">
-            
-            <table ref="table5" style="width:100%">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Reference No</th>
-                  <th>Parent Purchase</th>
-                  <th>Location</th>
-                  <th>Supplier</th>
-                  <th>Payment Status</th>
-                  <th>Grand Total</th>
-                  <th>Payment due</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
 
+    
 
-              <tbody>
-                <tr>
-                    <td>17/04/22</td>
-                    <td>P022541</td>
-                    <td>Mobile</td>
-                    <td>Dhaka</td>
-                    <td>Kamrul Islam</td>
-                    <td>
-                        <button class="pro-delete-btn">
-                          <img src="../assets/img/delete.svg" alt="">
-                          Due      
-                        </button>
-                    </td>
-                    <td>$1200</td>
-                    <td>p:$1200</td>
-                    <td>
-                        <div class="dots-menu">
-                          <div class="dots-btn">
-                              <i class="fa-solid fa-ellipsis"></i>
-                          </div>
+    <section class="stock__section mt-5">
+        <div class="section__container">
+            <div class="card border-0 bg-white p-4">  
+                <table ref="table5" style="width:100%">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Reference No</th>
+                        <th>Parent Purchase</th>
+                        <th>Location</th>
+                        <th>Supplier</th>
+                        <th>Payment Status</th>
+                        <th>Grand Total</th>
+                        <th>Payment due</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>17/04/22</td>
+                          <td>P022541</td>
+                          <td>Mobile</td>
+                          <td>Dhaka</td>
+                          <td>Kamrul Islam</td>
+                          <td>
+                              <button class="pro-delete-btn">
+                                <img src="../assets/img/delete.svg" alt="">
+                                Due      
+                              </button>
+                          </td>
+                          <td>$1200</td>
+                          <td>p:$1200</td>
+                          <td>
+                              <div class="dots-menu">
+                                <div class="dots-btn">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
 
-                          <ul class="t-options">
-                              <li class="t-option">
-                              <span class="t-option-circle"></span>
-                              <p class="t-option-text mb-0">Copy</p>
-                              </li>
+                                <ul class="t-options">
+                                    <li class="t-option">
+                                    <span class="t-option-circle"></span>
+                                    <p class="t-option-text mb-0">Copy</p>
+                                    </li>
 
-                              <li class="t-option">
-                              <span class="t-option-circle"></span>
-                              <p class="t-option-text mb-0">View</p>
-                              </li>
+                                    <li class="t-option">
+                                    <span class="t-option-circle"></span>
+                                    <p class="t-option-text mb-0">View</p>
+                                    </li>
 
-                              <li class="t-option">
-                              <span class="t-option-circle"></span>
-                              <p class="t-option-text mb-0">Edit</p>
-                              </li>
+                                    <li class="t-option">
+                                    <span class="t-option-circle"></span>
+                                    <p class="t-option-text mb-0">Edit</p>
+                                    </li>
 
-                              <li class="t-option">
-                              <span class="t-option-circle"></span>
-                              <p class="t-option-text mb-0">Delete</p>
-                              </li>
-                          </ul>
-                          </div> 
-                    </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                                    <li class="t-option">
+                                    <span class="t-option-circle"></span>
+                                    <p class="t-option-text mb-0">Delete</p>
+                                    </li>
+                                </ul>
+                                </div> 
+                          </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
     </section>
     <router-view></router-view>
 </template>

@@ -361,7 +361,47 @@ export default[
     {
         path:'/notification',
         name:'notification',
-        component:() => import (/* webpackChunkName: "Inbox" */  "@/views/Notification.vue"),
+        component:() => import (/* webpackChunkName: "Notification" */  "@/views/Notification.vue"),
+    },
+    {
+        path:'/comment',
+        name:'comment',
+        component:() => import (/* webpackChunkName: "Comment" */  "@/views/Comment.vue"),
+    },
+    {
+        path:'/business-setting',
+        name:'business-setting',
+        component:() => import (/* webpackChunkName: "BusinessSetting" */  "@/views/BusinessSetting.vue"),
+    },
+    {
+        path:'/business-location',
+        name:'business-location',
+        component:() => import (/* webpackChunkName: "BusinessLocation" */  "@/views/BusinessLocation.vue"),
+    },
+    {
+        path:'/invoice-setting',
+        name:'invoice-setting',
+        component:() => import (/* webpackChunkName: "Invoice" */  "@/views/Invoice.vue"),
+    },
+    {
+        path:'/barcode-setting',
+        name:'barcode-setting',
+        component:() => import (/* webpackChunkName: "Barcode" */  "@/views/BarCode.vue"),
+    },
+    {
+        path:'/receipt-printer',
+        name:'receipt-printer',
+        component:() => import (/* webpackChunkName: "ReceiptPrinter" */  "@/views/ReceiptPrinter.vue"),
+    },
+    {
+        path:'/tax-rate',
+        name:'tax-rate',
+        component:() => import (/* webpackChunkName: "TextRate" */  "@/views/TaxRate.vue"),
+    },
+    {
+        path:'/subscription',
+        name:'subscription',
+        component:() => import (/* webpackChunkName: "SubsCription" */  "@/views/SubsCription.vue"),
     },
     // login-pages
     {

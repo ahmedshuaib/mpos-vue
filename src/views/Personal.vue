@@ -74,11 +74,25 @@
           </div>
       </div>
     </section>
+
+
     <section class="pro-table__section">
       <div class="section__container">
         <div class="table__wrapper">
           <div class="table-scrollable">
             
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="stock__section mt-5">
+      <div class="section__container">
+          <div class="card border-0 bg-white p-4">
             <table ref="table5" style="width:100%">
               <thead>
                 <tr>
@@ -182,7 +196,6 @@
               </tbody>
             </table>
           </div>
-        </div>
       </div>
     </section>
     <router-view></router-view>

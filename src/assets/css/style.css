@@ -27,6 +27,7 @@ html {
 
 body {
   background-color: var(--body-color);
+  overflow-x:hidden ;
 }
 
 table tr td {
@@ -1191,4 +1192,67 @@ color: #4B5563;
 }
 .no-scroll{
   overflow: hidden;
+}
+.cmnt-id span{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #11142D;
+  opacity: 0.7;
+}
+.cmnt-list{
+  border-bottom: 1px solid #E1E5E6;
+}
+.subscription .card{
+  padding:35px 15px;
+}
+.subscription .card-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #030229;
+}
+.subscription .btns .green{
+  padding: 16px;
+  display:inline-block;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+.subscription h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+  color: #11142D;
+  
+}
+.subscription .span2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #030229;
+}
+.subscription .span{
+  line-height: 30px;;
+}
+.subscription .card-footer{
+  background-color: #fff;
+  border:none;
+  display:inline-grid;
+}
+
+.subscription .dark-blue{
+  padding: 16px;
+  display:inline-block;
+  color: #FFFFFF;
+
+  background: #030229;
+  border-radius: 10px;
 }

@@ -94,81 +94,76 @@
       </div>
     </section>
 
-    <section class="pro-search__section">
-          <div class="section__container">
 
-          </div>
-    </section>
-    
-    <section class="pro-table__section">
-      <div class="section__container">
-        <div class="table__wrapper">
-          <div class="table-scrollable">
-            <table ref="table6" width="100%">
-              <thead>
-                <tr>
-                    <th style="border-top-left-radius: 10px">Challan</th>
-                    <th>Supplier</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Date</th>
-                    <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
+
+
+    <section class="stock__section mt-5">
+        <div class="section__container">
+            <div class="card border-0 bg-white p-4">
+              <table ref="table6" width="100%">
+                  <thead>
                     <tr>
-                        <td>Challan</td>
-                        <td>Kamrul ISlam</td>
-                        <td>$1200</td>
-                        <td>Recevied</td>
-                        <td>2022-04-01</td>
-                        <td>              
-                            <button class="pro-view-btn">
-                            <img src="../assets/img/view.svg" alt="">
-                            View</button>
-                        </td>
+                      <th style="border-top-left-radius: 10px">Challan</th>
+                      <th>Supplier</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                      <th>Action</th>
                     </tr>
-                    <tr>
-                        <td>Challan</td>
-                        <td>Kamrul ISlam</td>
-                        <td>$1200</td>
-                        <td>Recevied</td>
-                        <td>2022-04-01</td>
-                        <td>              
-                            <button class="pro-view-btn">
-                            <img src="../assets/img/view.svg" alt="">
-                            View</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Challan</td>
-                        <td>Kamrul ISlam</td>
-                        <td>$1200</td>
-                        <td>Recevied</td>
-                        <td>2022-04-01</td>
-                        <td>              
-                            <button class="pro-view-btn">
-                            <img src="../assets/img/view.svg" alt="">
-                            View</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Challan</td>
-                        <td>Kamrul ISlam</td>
-                        <td>$1200</td>
-                        <td>Recevied</td>
-                        <td>2022-04-01</td>
-                        <td>              
-                            <button class="pro-view-btn">
-                            <img src="../assets/img/view.svg" alt="">
-                            View</button>
-                        </td>
-                    </tr>
-              </tbody>
-            </table>
-          </div>
+                  </thead>
+                  <tbody>
+                        <tr>
+                            <td>Challan</td>
+                            <td>Kamrul ISlam</td>
+                            <td>$1200</td>
+                            <td>Recevied</td>
+                            <td>2022-04-01</td>
+                            <td>              
+                                <button class="pro-view-btn">
+                                <img src="../assets/img/view.svg" alt="">
+                                View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Challan</td>
+                            <td>Kamrul ISlam</td>
+                            <td>$1200</td>
+                            <td>Recevied</td>
+                            <td>2022-04-01</td>
+                            <td>              
+                                <button class="pro-view-btn">
+                                <img src="../assets/img/view.svg" alt="">
+                                View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Challan</td>
+                            <td>Kamrul ISlam</td>
+                            <td>$1200</td>
+                            <td>Recevied</td>
+                            <td>2022-04-01</td>
+                            <td>              
+                                <button class="pro-view-btn">
+                                <img src="../assets/img/view.svg" alt="">
+                                View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Challan</td>
+                            <td>Kamrul ISlam</td>
+                            <td>$1200</td>
+                            <td>Recevied</td>
+                            <td>2022-04-01</td>
+                            <td>              
+                                <button class="pro-view-btn">
+                                <img src="../assets/img/view.svg" alt="">
+                                View</button>
+                            </td>
+                        </tr>
+                  </tbody>
+              </table>
+            </div>
         </div>
-      </div>
     </section>
 
     <router-view></router-view>

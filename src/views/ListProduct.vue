@@ -67,11 +67,6 @@
     <section class="stock__section mt-5">
             <div class="section__container">
                 <div class="card border-0 bg-white p-4">
-                    <div class="d-flex align-items-center gap-1 mb-3">
-                    <h4 class="mb-0 me-2">Product Stock Alert</h4>
-                    <img src="../assets/img/alert-circle.svg" alt="logo" />
-                    </div>
-
                     <table ref="table3" style="width:100%">
                         <thead>
                             <tr>
@@ -108,34 +103,34 @@
                                 <td>123666</td>
                                 <td>146</td>
                                 <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
+                                    <div class="dots-menu">
+                                    <div class="dots-btn">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
 
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
+                                    <ul class="t-options">
+                                        <li class="t-option">
+                                        <span class="t-option-circle"></span>
+                                        <p class="t-option-text mb-0">Copy</p>
+                                        </li>
 
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
+                                        <li class="t-option">
+                                        <span class="t-option-circle"></span>
+                                        <p class="t-option-text mb-0">View</p>
+                                        </li>
 
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
+                                        <li class="t-option">
+                                        <span class="t-option-circle"></span>
+                                        <p class="t-option-text mb-0">Edit</p>
+                                        </li>
 
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
+                                        <li class="t-option">
+                                        <span class="t-option-circle"></span>
+                                        <p class="t-option-text mb-0">Delete</p>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                             <td>

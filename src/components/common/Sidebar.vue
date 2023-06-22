@@ -380,13 +380,13 @@
                             >
                                 <div class="accordion-body">
                                     <router-link :to="{name:'reports'}"  class="text-decoration-none d-block py-2 mb-0"> 
-                                       Profile/Loss Report
+                                       Profit/Loss Report
                                     </router-link>
                                     <router-link :to="{name:'net-balance'}"  class="text-decoration-none d-block py-2 mb-0"> 
                                        Net Balance
                                     </router-link>
                                     <router-link :to="{name:'supplier-position'}"  class="text-decoration-none d-block py-2 mb-0"> 
-                                        SUPPLIER Wise Sales Position
+                                        Supplier Wise Sales Position
                                     </router-link>
                                     <router-link :to="{name:'supplier-summery'}"  class="text-decoration-none d-block py-2 mb-0"> 
                                         Supplier Wise Stock Summery
@@ -589,12 +589,27 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item one</a
-                                >
-                                <a class="text-decoration-none d-block py-2 mb-0" href="#"
-                                    >Sub item two</a
-                                >
+                                    <router-link :to="{name:'business-setting'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Business Settings</p>
+                                    </router-link>
+                                    <router-link :to="{name:'business-location'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Business Location</p>
+                                    </router-link>
+                                    <router-link :to="{name:'invoice-setting'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Invoice Setting</p>
+                                    </router-link>
+                                    <router-link :to="{name:'barcode-setting'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Barcode Settings</p>
+                                    </router-link>
+                                    <router-link :to="{name:'receipt-printer'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Receipt Printer</p>
+                                    </router-link>
+                                    <router-link :to="{name:'tax-rate'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Tax Rate</p>
+                                    </router-link>
+                                    <router-link :to="{name:'subscription'}" class="text-decoration-none" href="#"
+                                        ><p class="mb-0">Subscription</p>
+                                    </router-link>
                                 </div>
                             </div>
                             </div>
@@ -615,10 +630,10 @@
                         </li>
             
                         <li class="d-flex align-items-center justify-content-between">
-                            <a class="text-decoration-none" href="#"
+                            <router-link :to="{name:'comment'}" class="text-decoration-none" 
                             ><p class="mb-0">Comment</p>
                             <div class="count">9</div>
-                            </a>
+                        </router-link>
                         </li>
                     </ul>
                 </div>

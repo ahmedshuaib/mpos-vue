@@ -12,7 +12,7 @@
             <div class="pro-select-box d-flex align-items-center gap-1">
                 <div class="select-menu">
                     <div class="select-btn green-export">
-                        <span class="sBtn-text">Filter by date</span>
+                        <span class="sBtn-text">Excel Download</span>
                     </div>
                 </div>
 
@@ -21,11 +21,7 @@
                       <button class="btn green m-0"><img src="../assets/img/print.svg" alt="">Print</button>
                     </div>
                 </div>
-                  <!-- select menu -->
- 
-
             </div>
-
         </div>
 
         <div class="col-lg-12 mt-5">

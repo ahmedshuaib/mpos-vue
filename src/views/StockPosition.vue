@@ -35,12 +35,12 @@
     </section>
 
 
-    
-    <section class="pro-table__section">
-      <div class="section__container">
-        <div class="table__wrapper">
-          <div class="table-scrollable">
-            <table ref="table6" width="100%">
+   
+
+    <section class="stock__section mt-5">
+        <div class="section__container">
+            <div class="card border-0 bg-white p-4">
+              <table ref="table6" width="100%">
               <thead>
                 <tr>
                   <th>Barcode</th>
@@ -66,11 +66,9 @@
                 </tr>
               </tbody>
             </table>
-          </div>
+            </div>
         </div>
-      </div>
     </section>
-
     <router-view></router-view>
 </template>
 

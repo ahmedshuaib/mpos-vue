@@ -16,56 +16,49 @@
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                     <li>
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                     <li>
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                     <li>
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                     <li>
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                     <li>
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                     <li>
                       <img src="../assets/img/active-profile.svg" alt="">
                       <div class="notification-text">
                           <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
-                      </div>
-                    </li>
-                    <li>
-                      <img src="../assets/img/active-profile.svg" alt="">
-                      <div class="notification-text">
-                          <span class="span-text1">New order #F52414</span>
-                          <span class="time">Today</span>
+                          <span class="time d-flex align-items-center gap-1"><img src="../assets/img/glasstime.svg" alt="">Today</span>
                       </div>
                     </li>
                   </ul>

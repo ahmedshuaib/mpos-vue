@@ -66,141 +66,137 @@
         </div>
     </section>
 
-
-    <section class="pro-table__section">
+    <section class="stock__section mt-5">
         <div class="section__container">
-            <div class="table__wrapper">
-                <div class="table-scrollable">
-
-                    <table ref="table4" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>User Name</th>
-                                <th>Role</th>
-                                <th>Email</th>
-                                <th>Salary</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>Admin</td>
-                                <td>No Parent Unit</td>
-                                <td>$1000</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <router-link :to="{name:'edit',params:{id:'1'}}">
-                                        <button class="pro-edit-btn">
-                                        <img src="../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                    </router-link>
-                                    <button class="pro-delete-btn">
-                                        <img src="../assets/img/delete.svg" alt=""> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>Admin</td>
-                                <td>No Parent Unit</td>
-                                <td>$1000</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <router-link :to="{name:'edit',params:{id:'1'}}">
-                                        <button class="pro-edit-btn">
-                                        <img src="../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                    </router-link>
-                                    <button class="pro-delete-btn">
-                                        <img src="../assets/img/delete.svg" alt=""> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>Admin</td>
-                                <td>No Parent Unit</td>
-                                <td>$1000</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <router-link :to="{name:'edit',params:{id:'1'}}">
-                                        <button class="pro-edit-btn">
-                                        <img src="../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                    </router-link>
-                                    <button class="pro-delete-btn">
-                                        <img src="../assets/img/delete.svg" alt=""> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>Admin</td>
-                                <td>No Parent Unit</td>
-                                <td>$1000</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <router-link :to="{name:'edit',params:{id:'1'}}">
-                                        <button class="pro-edit-btn">
-                                        <img src="../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                    </router-link>
-                                    <button class="pro-delete-btn">
-                                        <img src="../assets/img/delete.svg" alt=""> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>Admin</td>
-                                <td>No Parent Unit</td>
-                                <td>$1000</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <router-link :to="{name:'edit',params:{id:'1'}}">
-                                        <button class="pro-edit-btn">
-                                        <img src="../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                    </router-link>
-                                    <button class="pro-delete-btn">
-                                        <img src="../assets/img/delete.svg" alt=""> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>Admin</td>
-                                <td>No Parent Unit</td>
-                                <td>$1000</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <router-link :to="{name:'edit',params:{id:'1'}}">
-                                        <button class="pro-edit-btn">
-                                        <img src="../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                    </router-link>
-                                    <button class="pro-delete-btn">
-                                        <img src="../assets/img/delete.svg" alt=""> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="card border-0 bg-white p-4">
+                <table ref="table4" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>User Name</th>
+                            <th>Role</th>
+                            <th>Email</th>
+                            <th>Salary</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kamrul Islam</td>
+                            <td>@kamrul</td>
+                            <td>Admin</td>
+                            <td>No Parent Unit</td>
+                            <td>$1000</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                    <button class="pro-edit-btn">
+                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                </button>
+                                </router-link>
+                                <button class="pro-delete-btn">
+                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kamrul Islam</td>
+                            <td>@kamrul</td>
+                            <td>Admin</td>
+                            <td>No Parent Unit</td>
+                            <td>$1000</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                    <button class="pro-edit-btn">
+                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                </button>
+                                </router-link>
+                                <button class="pro-delete-btn">
+                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kamrul Islam</td>
+                            <td>@kamrul</td>
+                            <td>Admin</td>
+                            <td>No Parent Unit</td>
+                            <td>$1000</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                    <button class="pro-edit-btn">
+                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                </button>
+                                </router-link>
+                                <button class="pro-delete-btn">
+                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kamrul Islam</td>
+                            <td>@kamrul</td>
+                            <td>Admin</td>
+                            <td>No Parent Unit</td>
+                            <td>$1000</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                    <button class="pro-edit-btn">
+                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                </button>
+                                </router-link>
+                                <button class="pro-delete-btn">
+                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kamrul Islam</td>
+                            <td>@kamrul</td>
+                            <td>Admin</td>
+                            <td>No Parent Unit</td>
+                            <td>$1000</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                    <button class="pro-edit-btn">
+                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                </button>
+                                </router-link>
+                                <button class="pro-delete-btn">
+                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kamrul Islam</td>
+                            <td>@kamrul</td>
+                            <td>Admin</td>
+                            <td>No Parent Unit</td>
+                            <td>$1000</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                    <button class="pro-edit-btn">
+                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                </button>
+                                </router-link>
+                                <button class="pro-delete-btn">
+                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
