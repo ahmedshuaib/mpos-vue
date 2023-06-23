@@ -9,9 +9,7 @@
                 W
                 </p>
             </div>
-            <div
-                class="right__side d-flex align-items-center justify-content-center"
-            >
+            <div class="right__side d-flex align-items-center justify-content-center">
                 <img class="logo" src="../../assets/img/wafah-pos.svg" alt="logo" />
             </div>
             </div>
@@ -20,7 +18,7 @@
                 <ul class="list-unstyled">
                     <li
                         class="active d-flex align-items-center justify-content-center side-List">
-                        <a active-class="active"
+                        <a active-class="active" 
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="index.html"
                             >
@@ -169,7 +167,7 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                <router-link :to="{name:'home'}" class="text-decoration-none d-block py-2 mb-0" href="#"
+                                <router-link :to="{name:'home'}"  class="text-decoration-none d-block py-2 mb-0" href="#"
                                     >Home</router-link>
                                 <a class="text-decoration-none d-block py-2 mb-0" href="#">Sub item two</a>
                                 </div>
@@ -232,8 +230,8 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                    <router-link :to="{name:'suppliers'}" class="text-decoration-none d-block py-2 mb-0" href="#"
-                                        >Suppliers
+                                    <router-link :to="{name:'suppliers'}" class="text-decoration-none d-block py-2 mb-0"  href="#"
+                                    exact>Suppliers
                                     </router-link>
                                     <router-link :to="{name:'customers'}" class="text-decoration-none d-block py-2 mb-0" 
                                         >Customers 
@@ -644,14 +642,14 @@
 
 <script>
 export default {
-    name:'tSidebar',
-    mounted(){
-
-
-    }
+    
 }
 </script>
 
 <style>
 
 </style>
+
+
+
+
