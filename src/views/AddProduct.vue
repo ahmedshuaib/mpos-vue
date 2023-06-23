@@ -1,5 +1,5 @@
 <template>
-      <section class="pro-users__section">
+    <section class="pro-users__section">
         <div class="section__container">
             <div class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
                 <h4 class="mb-0">Add New Product</h4>
@@ -183,7 +183,7 @@
                 </div>
             </div>
         </div>
-  </section>
+    </section>
  
 
 </template>

@@ -60,11 +60,11 @@
                   <td>Admin</td>
                   <td>256GB, 126GB, 512GB, 64 GB, 32GB, 16GB</td>
                   <td style="width: 50%">
-                    <a>
+                    <router-link :to="{name:'edit-variation',params:{id:3}}">
                         <button class="pro-edit-btn">
                         <img src="../assets/img/edit.svg" alt=""> Edit
                        </button>
-                    </a>
+                    </router-link>
                   </td>
                 </tr>
 
@@ -72,22 +72,22 @@
                   <td>color</td>
                   <td>Graphite, Black, White, Navy Blue, Sea Bluw, Blue</td>
                   <td style="width: 50%">
-                    <a>
+                    <router-link :to="{name:'edit-variation',params:{id:3}}">
                         <button class="pro-edit-btn">
                         <img src="../assets/img/edit.svg" alt=""> Edit
                        </button>
-                    </a>
+                    </router-link>
                   </td>
                 </tr>
                 <tr>
                   <td>Storage</td>
                   <td>256GB, 126GB, 512GB, 64 GB, 32GB, 16GB</td>
                   <td style="width: 50%">
-                    <a>
+                    <router-link :to="{name:'edit-variation',params:{id:3}}">
                         <button class="pro-edit-btn">
                         <img src="../assets/img/edit.svg" alt=""> Edit
                        </button>
-                    </a>
+                    </router-link>
                   </td>
                 </tr>
               </tbody>
@@ -96,7 +96,8 @@
         </div>
       </div>
     </section>
-    <router-view></router-view>
+    <router-view name="Addvariation"></router-view>
+    <router-view name="editvariation"></router-view>
 </template>
 
 <script>

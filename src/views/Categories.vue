@@ -72,9 +72,12 @@
                               <button class="pro-add-btn">
                                 <img src="../assets/img/grenplus.svg" alt="">
                                 Edit Sub Category</button>
-                              <button class="pro-edit-btn">
-                                <img src="../assets/img/edit.svg" alt="">
-                                Edit </button>
+                                <router-link :to="{name:'editcategory',params:{id:6}}">
+                                  <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt="">
+                                      Edit 
+                                 </button>
+                                </router-link>
                               <button class="pro-delete-btn">
                                 <img src="../assets/img/delete.svg" alt="">
                                 Delete </button>
@@ -93,9 +96,12 @@
                               <button class="pro-add-btn">
                                 <img src="../assets/img/grenplus.svg" alt="">
                                 Edit Sub Category</button>
-                              <button class="pro-edit-btn">
-                                <img src="../assets/img/edit.svg" alt="">
-                                Edit </button>
+                                <router-link :to="{name:'editcategory',params:{id:6}}">
+                                  <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt="">
+                                      Edit 
+                                 </button>
+                                </router-link>
                               <button class="pro-delete-btn">
                                 <img src="../assets/img/delete.svg" alt="">
                                 Delete </button>
@@ -113,9 +119,12 @@
                               <button class="pro-add-btn">
                                 <img src="../assets/img/grenplus.svg" alt="">
                                 Edit Sub Category</button>
-                              <button class="pro-edit-btn">
-                                <img src="../assets/img/edit.svg" alt="">
-                                Edit </button>
+                                <router-link :to="{name:'editcategory',params:{id:6}}">
+                                  <button class="pro-edit-btn">
+                                        <img src="../assets/img/edit.svg" alt="">
+                                      Edit 
+                                 </button>
+                                </router-link>
                               <button class="pro-delete-btn">
                                 <img src="../assets/img/delete.svg" alt="">
                                 Delete </button>
@@ -127,7 +136,8 @@
             </div>
         </div>
     </section>
-    <router-view></router-view>
+    <router-view name="AddCategory"></router-view>
+    <router-view name="EditCategory"></router-view>
 </template>
 
 <script>

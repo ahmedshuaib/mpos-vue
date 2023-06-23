@@ -38,7 +38,9 @@ import footer from './components/common/Footer.vue';
 
 
 import router from './router';
+
 const app=createApp(App);
+
 app.component('tsidebar',sidebar);
 app.component('tnavigation',navigation);
 app.component('tfooter',footer);

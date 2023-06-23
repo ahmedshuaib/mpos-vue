@@ -55,16 +55,16 @@
                       <tr>
                         <td>Apple</td>
                         <td>Mac Mini Pro M1</td>
-                        <td style="width: 50%">
+                        <td>
                           <div class="d-flex align-items-center gap-2">
-                              <a>
-                                  <button class="pro-edit-btn">
-                                  <img src="../assets/img/edit.svg" alt=""> Edit
-                              </button>
-                              </a>
-                              <button class="pro-delete-btn">
-                                  <img src="../assets/img/delete.svg" alt=""> Delete
-                              </button>
+                          <router-link :to="{name:'edit-sellgroup',params:{id:4}}">
+                              <button class="pro-edit-btn">
+                              <img src="../assets/img/edit.svg" alt=""> Edit
+                          </button>
+                          </router-link>
+                          <button class="pro-delete-btn">
+                              <img src="../assets/img/delete.svg" alt=""> Delete
+                          </button>
                           </div>
                         </td>
                       </tr>
@@ -74,11 +74,11 @@
                         <td>Galaxy S22 Ultra</td>
                         <td>
                           <div class="d-flex align-items-center gap-2">
-                          <a>
+                          <router-link :to="{name:'edit-sellgroup',params:{id:4}}">
                               <button class="pro-edit-btn">
                               <img src="../assets/img/edit.svg" alt=""> Edit
                           </button>
-                          </a>
+                          </router-link>
                           <button class="pro-delete-btn">
                               <img src="../assets/img/delete.svg" alt=""> Delete
                           </button>
@@ -88,25 +88,26 @@
                       <tr>
                         <td>One Plus</td>
                         <td>One Plus 9R Pro</td>
-                        <td style="width: 50%">
+                        <td>
                           <div class="d-flex align-items-center gap-2">
-                              <a>
-                                  <button class="pro-edit-btn">
-                                  <img src="../assets/img/edit.svg" alt=""> Edit
-                              </button>
-                              </a>
-                              <button class="pro-delete-btn">
-                                  <img src="../assets/img/delete.svg" alt=""> Delete
-                              </button>
-                              </div>
-                          </td>
+                          <router-link :to="{name:'edit-sellgroup',params:{id:4}}">
+                              <button class="pro-edit-btn">
+                              <img src="../assets/img/edit.svg" alt=""> Edit
+                          </button>
+                          </router-link>
+                          <button class="pro-delete-btn">
+                              <img src="../assets/img/delete.svg" alt=""> Delete
+                          </button>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
-    <router-view></router-view>
+    <router-view name="AddSellGroup"></router-view>
+    <router-view name="EditSelling"></router-view>
 </template>
 
 <script>

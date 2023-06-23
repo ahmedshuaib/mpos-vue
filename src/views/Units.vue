@@ -64,13 +64,13 @@
                   <td>No</td>
                   <td>No Parent Unit</td>
                   <td>No Parent Unit</td>
-                  <td >
+                  <td>
                     <div class="d-flex align-items-center gap-2">
-                        <a>
+                        <router-link :to="{name:'EditUnit',params:{id:5}}">
                             <button class="pro-edit-btn">
                             <img src="../assets/img/edit.svg" alt=""> Edit
                         </button>
-                        </a>
+                      </router-link>
                         <button class="pro-delete-btn">
                             <img src="../assets/img/delete.svg" alt=""> Delete
                         </button>
@@ -86,11 +86,11 @@
                   <td>No Parent Unit</td>
                   <td>
                     <div class="d-flex align-items-center gap-2">
-                        <a>
+                        <router-link :to="{name:'EditUnit',params:{id:5}}">
                             <button class="pro-edit-btn">
                             <img src="../assets/img/edit.svg" alt=""> Edit
                         </button>
-                        </a>
+                      </router-link>
                         <button class="pro-delete-btn">
                             <img src="../assets/img/delete.svg" alt=""> Delete
                         </button>
@@ -106,11 +106,11 @@
                   <td>No Parent Unit</td>
                   <td>
                     <div class="d-flex align-items-center gap-2">
-                        <a>
+                        <router-link :to="{name:'EditUnit',params:{id:5}}">
                             <button class="pro-edit-btn">
                             <img src="../assets/img/edit.svg" alt=""> Edit
                         </button>
-                        </a>
+                      </router-link>
                         <button class="pro-delete-btn">
                             <img src="../assets/img/delete.svg" alt=""> Delete
                         </button>
@@ -126,11 +126,11 @@
                   <td>No Parent Unit</td>
                   <td>
                     <div class="d-flex align-items-center gap-2">
-                        <a>
+                        <router-link :to="{name:'EditUnit',params:{id:5}}">
                             <button class="pro-edit-btn">
                             <img src="../assets/img/edit.svg" alt=""> Edit
                         </button>
-                        </a>
+                      </router-link>
                         <button class="pro-delete-btn">
                             <img src="../assets/img/delete.svg" alt=""> Delete
                         </button>
@@ -146,11 +146,11 @@
                   <td>No Parent Unit</td>
                   <td>
                     <div class="d-flex align-items-center gap-2">
-                        <a>
+                        <router-link :to="{name:'EditUnit',params:{id:5}}">
                             <button class="pro-edit-btn">
                             <img src="../assets/img/edit.svg" alt=""> Edit
                         </button>
-                        </a>
+                      </router-link>
                         <button class="pro-delete-btn">
                             <img src="../assets/img/delete.svg" alt=""> Delete
                         </button>
@@ -162,7 +162,8 @@
             </div>
         </div>
     </section>
-    <router-view></router-view>
+    <router-view name="AddUnit"></router-view>
+    <router-view name="EditUnit"></router-view>
 </template>
 
 <script>

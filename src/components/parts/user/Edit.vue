@@ -103,9 +103,6 @@
           </div>
         </div>
     </div>
-    <!-- Button trigger modal -->
-
-    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, hic.</h1>
 </template>
 
 <script>
@@ -113,7 +110,7 @@
   export default {
 
     mounted(){
-      if(this.$route.name==='usermodal'){
+      if(this.$route.name==='edit'){
           const modalElement = this.$refs.editModal;
           const modal = new bootstrap.Modal(modalElement);
           modal.show();

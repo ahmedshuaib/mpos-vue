@@ -1,5 +1,17 @@
 import editmodal from '../../components/parts/user/edit.vue';
 import usermodal from '../../components/parts/user/Usermodal.vue';
+import EditGroup from '../../components/parts/contacts/customergroup/EditCustomer.vue';
+import Addgroup from '../../components/parts/contacts/customergroup/Addgroups.vue';
+import AddVariation from '../../components/parts/Product/variation/AddVariation.vue';
+import EditVariation from '../../components/parts/Product/variation/EditVariation.vue';
+import AddSellGroup from '../../components/parts/Product/sellingprice/AddSelling.vue'
+import EditSelling from '../../components/parts/Product/sellingprice/EditSelling.vue'
+import AddUnit from '../../components/parts/Product/units/AddUnits.vue';
+import EditUnit from '../../components/parts/Product/units/EditUnits.vue';
+import AddCategory from '../../components/parts/Product/category/AddCategory.vue'
+import EditCategory from '../../components/parts/Product/category/EditCategory.vue'
+import AddBrand from '../../components/parts/Product/brands/AddBrand.vue'
+import EditBrand from '../../components/parts/Product/brands/EditBrand.vue'
 export default[
     {
         path: "/",
@@ -9,22 +21,22 @@ export default[
     {
         path: "/user",
         name: "user",
-        component: () => import(/* webpackChunkName: "User" */ "../../views/User.vue"),
+        component: () => import(/* webpackChunkName: "Usermodal" */ "../../views/User.vue"),
         children:[
             {
                 path: "usermodal",
                 name: "usermodal",
                 components:{
-                    default:usermodal,
-                    usermodal:usermodal
+                    default: usermodal,
+                    usermodal: usermodal
                 }
             },
             {
                 path: "edit/:id",
-                name: "edit",
+                name: "edit", 
                 components:{
-                    default:editmodal,
-                    edited:editmodal
+                    default: editmodal,
+                    edited: editmodal
                 }
             },
         ]
@@ -83,9 +95,21 @@ export default[
         component:() => import(/* webpackChunkName: "Customergroup"*/ "../../views/Customergroup.vue"),
         children:[
             {
+                
                 path:'addgroup',
                 name:'add-group',
-                component:() => import(/* webpackChunkName: "Addgroups"*/ "../../components/parts/contacts/customergroup/Addgroups.vue")
+                components:{
+                    default: Addgroup,
+                    addgroup: Addgroup
+                }
+            },
+            {
+                path:'edit-group/:id',
+                name: "edit-group", 
+                components:{
+                    default: EditGroup,
+                    editgroup: EditGroup
+                }
             }
         ]
     },
@@ -133,7 +157,18 @@ export default[
             {
                 path:'add-variation',
                 name:'add-variation',
-                component:() => import(/* webpackChunkName: "newcustomers"*/ "../../components/parts/Product/variation/AddVariation.vue")
+                components:{
+                    default:AddVariation,
+                    Addvariation:AddVariation
+                }
+            },
+            {
+                path:'edit/:id',
+                name:'edit-variation',
+                components:{
+                    default:EditVariation,
+                    editvariation:EditVariation
+                }
             }
         ]
     },
@@ -151,7 +186,18 @@ export default[
             {
                 path:'add-selling',
                 name:'add-selling',
-                component:() => import(/* webpackChunkName: "AddVariation"*/ "../../components/parts/Product/sellingprice/AddSelling.vue")
+                components:{
+                    default:AddSellGroup,
+                    AddSellGroup:AddSellGroup
+                }
+            },
+            {
+                path:'edit/:id',
+                name:'edit-sellgroup',
+                components:{
+                    default:EditSelling,
+                    EditSelling:EditSelling
+                }
             }
         ]
     },
@@ -164,7 +210,19 @@ export default[
             {
                 path:'add-unit',
                 name:'add-unit',
-                component:() => import(/* webpackChunkName: "AddUnits"*/ "../../components/parts/Product/units/AddUnits.vue")
+                component:() => import(/* webpackChunkName: "AddUnits"*/ ""),
+                components:{
+                    default:AddUnit,
+                    AddUnit:AddUnit
+                }
+            },
+            {
+                path:'edit/:id',
+                name:'EditUnit',
+                components:{
+                    default:EditUnit,
+                    EditUnit:EditUnit
+                }
             }
         ]
     },
@@ -176,7 +234,18 @@ export default[
             {
                 path:'add-category',
                 name:'add-category',
-                component:() => import(/* webpackChunkName: "addCategories"*/ "../../components/parts/Product/category/AddCategory.vue")
+                components:{
+                   default: AddCategory,
+                   AddCategory:AddCategory
+                },           
+            },
+            {
+                path:'edit/:id',
+                name:'editcategory',
+                components:{
+                    default:EditCategory,
+                    EditCategory:EditCategory
+                }
             }
         ]
     },
@@ -189,7 +258,18 @@ export default[
             {
                 path:'add-brands',
                 name:'add-brands',
-                component:() => import(/* webpackChunkName: "addbrands"*/ "../../components/parts/Product/brands/AddBrand.vue")
+                components:{
+                    default:AddBrand,
+                    AddBrand:AddBrand
+                }
+            },
+            {
+                path:'edit/:id',
+                name:'edit-brand',
+                components:{
+                    default:EditBrand,
+                    EditBrand:EditBrand
+                }
             }
         ]
     },

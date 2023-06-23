@@ -58,11 +58,11 @@
                             <td>10%</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                <a>
+                                <router-link :to="{name:'edit-group',params:{id:2}}">
                                     <button class="pro-edit-btn">
                                     <img src="../assets/img/edit.svg" alt=""> Edit
                                 </button>
-                                </a>
+                                </router-link >
                                 <button class="pro-delete-btn">
                                     <img src="../assets/img/delete.svg" alt=""> Delete
                                 </button>
@@ -74,11 +74,11 @@
                             <td>10%</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                <a>
+                                <router-link :to="{name:'edit-group',params:{id:2}}">
                                     <button class="pro-edit-btn">
                                     <img src="../assets/img/edit.svg" alt=""> Edit
                                 </button>
-                                </a>
+                                </router-link >
                                 <button class="pro-delete-btn">
                                     <img src="../assets/img/delete.svg" alt=""> Delete
                                 </button>
@@ -90,11 +90,11 @@
                             <td>10%</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                <a>
+                                <router-link :to="{name:'edit-group',params:{id:2}}">
                                     <button class="pro-edit-btn">
                                     <img src="../assets/img/edit.svg" alt=""> Edit
                                 </button>
-                                </a>
+                                </router-link >
                                 <button class="pro-delete-btn">
                                     <img src="../assets/img/delete.svg" alt=""> Delete
                                 </button>
@@ -106,11 +106,11 @@
                             <td>10%</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                <a>
+                                <router-link :to="{name:'edit-group',params:{id:2}}">
                                     <button class="pro-edit-btn">
                                     <img src="../assets/img/edit.svg" alt=""> Edit
                                 </button>
-                                </a>
+                                </router-link >
                                 <button class="pro-delete-btn">
                                     <img src="../assets/img/delete.svg" alt=""> Delete
                                 </button>
@@ -123,7 +123,8 @@
             </div>
         </div>
     </section>
-    <router-view></router-view>
+    <router-view name="addgroup"></router-view>
+    <router-view name="editgroup"></router-view>
 </template>
 
 <script>
