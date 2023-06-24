@@ -210,7 +210,6 @@ export default[
             {
                 path:'add-unit',
                 name:'add-unit',
-                component:() => import(/* webpackChunkName: "AddUnits"*/ ""),
                 components:{
                     default:AddUnit,
                     AddUnit:AddUnit

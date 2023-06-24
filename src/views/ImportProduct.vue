@@ -7,7 +7,11 @@
             <div class="col-lg-12 product-image p-4">
                 <div class="import-image">
                     <div class="drag-area" @dragover="handle">
+                        <label for="file">
                         <img src="../assets/img/importimage.svg" alt="" style="width:70px">
+
+                        </label>
+                        <input type="file" id="file" hidden>
                         <span>Drop your image here or <span class="browse">Browse</span></span>
                         <span>(Only*.peg and *.png images will be accepted)</span>
                     </div>
