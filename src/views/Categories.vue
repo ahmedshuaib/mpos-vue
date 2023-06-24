@@ -15,13 +15,10 @@
 
     <section class="pro-search__section">
           <div class="section__container">
-              <div
-              class="pro__search"
-              >
-              <div class="pro-select-box">
-                  <!-- dropdown menu -->
-
-                  <div class="dropdown-btn">
+              <div class="pro__search">
+                <div class="pro-select-box">
+                    <!-- dropdown menu -->
+                    <div class="dropdown-btn">
                         <div class="select d-flex alig-items-center gap-4">
                             <span class="selected">Export</span>
                             <img src="../assets/img/drop.svg" alt="">
@@ -34,8 +31,8 @@
                             <li>Print</li>
                             <li>Column visibility</li>
                         </ul>
-                  </div> 
-              </div>
+                    </div> 
+                </div>
               </div>
               <div class="col-lg-12 text-center mt-4">
                 <div class="btns">

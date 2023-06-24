@@ -96,11 +96,11 @@ export default[
         children:[
             {
                 
-                path:'addgroup',
+                path:'add-group',
                 name:'add-group',
                 components:{
                     default: Addgroup,
-                    addgroup: Addgroup
+                    Addgroup: Addgroup
                 }
             },
             {
@@ -108,7 +108,7 @@ export default[
                 name: "edit-group", 
                 components:{
                     default: EditGroup,
-                    editgroup: EditGroup
+                    EditGroup: EditGroup
                 }
             }
         ]
