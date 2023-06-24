@@ -103,37 +103,63 @@ export default{
               dropMenu.classList.toggle('drop-menu--active');
             });
           };
+
+          // const accordion = () => {  
+          //   const acHeader=document.querySelectorAll('.accordion-header');
+          //   const unstyle=document.querySelectorAll('.side-List')
+          //   const unstyleImg=document.querySelectorAll('.side-List img')
+          //   acHeader.forEach(function(tab,index){
+          //     tab.addEventListener('click',function() {
+          //       unstyleImg.forEach(function(img){
+          //         img.classList.remove('active')
+          //       })
+          //       unstyle.forEach(function(newtab){
+          //         newtab.classList.remove('active');
+          //       })
+          //       unstyle[index].classList.add('active');
+          //       unstyleImg[index].classList.add('active')
+          //     })   
+          //   })
+          // }
+          const accordion = () => {
+            const acHeader = document.querySelectorAll('.accordion-header');
+            const unstyle = document.querySelectorAll('.side-List');
+            const unstyleImg = document.querySelectorAll('.side-List img');
           
-
-
-
-
-          const accordion = () => {  
-            const acHeader=document.querySelectorAll('.accordion-header');
-            const unstyle=document.querySelectorAll('.side-List')
-            const unstyleImg=document.querySelectorAll('.side-List img')
-
-            acHeader.forEach(function(tab,index){
-
-              tab.addEventListener('click',function() {
-                unstyleImg.forEach(function(img){
-                  img.classList.remove('active')
-                })
-                unstyle.forEach(function(newtab){
-
+            // Check if accordion state is stored in localStorage
+            const accordionState = localStorage.getItem('accordionState');
+            if (accordionState) {
+              const activeIndex = parseInt(accordionState, 10);
+              unstyle.forEach((newtab, index) => {
+                if (index === activeIndex) {
+                  newtab.classList.add('active');
+                  unstyleImg[index].classList.add('active');
+                } else {
                   newtab.classList.remove('active');
-
-                })
-
+                  unstyleImg[index].classList.remove('active');
+                }
+              });
+            }
+          
+            acHeader.forEach(function (tab, index) {
+              tab.addEventListener('click', function () {
+                unstyleImg.forEach(function (img) {
+                  img.classList.remove('active');
+                });
+                unstyle.forEach(function (newtab) {
+                  newtab.classList.remove('active');
+                });
                 unstyle[index].classList.add('active');
-                unstyleImg[index].classList.add('active')
-              })
-              
-            })
-          }
-
-
-
-
+                unstyleImg[index].classList.add('active');
+          
+                // Store the active accordion index in localStorage
+                localStorage.setItem('accordionState', index.toString());
+              });
+            });
+          };
+          
+          // Call the accordion function to initialize
+          accordion();
+          
         },
     }
