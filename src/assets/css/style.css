@@ -1290,6 +1290,7 @@ color: #4B5563;
 }
 .menu li:hover{
   background-color: #07b16d;
+  color:#fff;
 }
 .menu li:first-child{
   border-top-left-radius:10px;
