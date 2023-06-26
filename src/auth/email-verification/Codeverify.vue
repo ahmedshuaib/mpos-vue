@@ -6,7 +6,7 @@
                     <img src="../../assets/img/email.svg" alt="mail">
                     <h4>Check your email</h4>
                     <span class="s1-pass">
-                        We sent a password reset link to 
+                        We sent a password reset link to
                         <span class="email-text text-bold">olivia@untitledui.com</span>
                     </span>
                     <div class="code-container mt-4">
@@ -43,10 +43,10 @@ const codeInputs = document.querySelectorAll('.code');
 codeInputs.forEach((input, index) => {
     input.addEventListener('input', () => {
         const inputValue = input.value;
-        
+
         // Remove any non-digit characters
         const sanitizedValue = inputValue.replace(/\D/g, '');
-        
+
         if (sanitizedValue.length > 1) {
             // If more than one digit is entered, keep only the first digit
             input.value = sanitizedValue[0];

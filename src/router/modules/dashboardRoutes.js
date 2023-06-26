@@ -1,7 +1,5 @@
-import editmodal from '../../components/parts/user/edit.vue';
-import usermodal from '../../components/parts/user/Usermodal.vue';
+import editModal from '../../components/parts/user/edit.vue';
 import EditGroup from '../../components/parts/contacts/customergroup/EditCustomer.vue';
-import Addgroup from '../../components/parts/contacts/customergroup/Addgroups.vue';
 import AddVariation from '../../components/parts/Product/variation/AddVariation.vue';
 import EditVariation from '../../components/parts/Product/variation/EditVariation.vue';
 import AddSellGroup from '../../components/parts/Product/sellingprice/AddSelling.vue'
@@ -12,31 +10,107 @@ import AddCategory from '../../components/parts/Product/category/AddCategory.vue
 import EditCategory from '../../components/parts/Product/category/EditCategory.vue'
 import AddBrand from '../../components/parts/Product/brands/AddBrand.vue'
 import EditBrand from '../../components/parts/Product/brands/EditBrand.vue'
+import Home from "../../views/Home.vue";
+import User from "../../views/User.vue";
+import userModal from "../../components/parts/user/UserModal.vue";
+import Role from "../../views/Role.vue";
+import AddRole from "../../views/AddRole.vue";
+import Sales from "../../views/Sales.vue";
+import SalesModal from "../../components/parts/sales/SalesModal.vue";
+import Suppliers from "../../views/Suppliers.vue";
+import SuppliersModal from "../../components/parts/contacts/suppliers/SuppliersModal.vue";
+import Customers from "../../views/Customers.vue";
+import NewCustomer from "../../components/parts/contacts/customers/NewCustomer.vue";
+import CustomerGroup from "../../views/CustomerGroup.vue";
+import AddGroup from "../../components/parts/contacts/customergroup/AddGroup.vue";
+import CustomerPay from "../../views/CustomerPay.vue";
+import CustomerSms from "../../views/CustomerSms.vue";
+import ImportContact from "../../views/ImportContact.vue";
+import ListProduct from "../../views/ListProduct.vue";
+import AddProduct from "../../views/AddProduct.vue";
+import NewList from "../../views/NewList.vue";
+import PrintLabel from "../../views/PrintLabel.vue";
+import Variations from "../../views/Variations.vue";
+import ImportProduct from "../../views/ImportProduct.vue";
+import SellGroup from "../../views/SellGroup.vue";
+import Units from "../../views/Units.vue";
+import Categories from "../../views/Categories.vue";
+import ListPurchase from "../../views/ListPurchase.vue";
+import AddPurchase from "../../views/AddPurchase.vue";
+import PurchaseReturn from "../../views/PurchaseReturn.vue";
+import AllSales from "../../views/AllSales.vue";
+import DiscountSale from "../../views/DiscountSale.vue";
+import AddSale from "../../views/AddSale.vue";
+import ListPose from "../../views/ListPose.vue";
+import ListDraft from "../../views/ListDraft.vue";
+import ListQuotations from "../../views/ListQuotations.vue";
+import SellReturn from "../../views/SellReturn.vue";
+import StockAdjustment from "../../views/StockAdjustment.vue";
+import AddStockAdjustment from "../../views/AddStockAdjustment.vue";
+import ExpenseCategory from "../../views/ExpenseCategory.vue";
+import Expenses from "../../views/Expenses.vue";
+import Reports from "../../views/Reports.vue";
+import NetBalance from "../../views/NetBalance.vue";
+import SupplierPosition from "../../views/SupplierPosition.vue";
+import SupplierSummery from "../../views/SupplierSummery.vue";
+import SupplierReport from "../../views/SupplierReport.vue";
+import StockPosition from "../../views/StockPosition.vue";
+import StockReceipts from "../../views/StockReceipts.vue";
+import PurchaseSale from "../../views/PurchaseSale.vue";
+import TransferReport from "../../views/TransferReport.vue";
+import TransactionReport from "../../views/TransactionReport.vue";
+import BankUser from "../../views/BankUser.vue";
+import AddBankUser from "../../components/parts/bank/AddBankUser.vue";
+import Bank from "../../views/Bank.vue";
+import Personal from "../../views/Personal.vue";
+import MainPoint from "../../views/MainPoint.vue";
+import ReceiveBalance from "../../views/ReceiveBalance.vue";
+import ReceivePersonal from "../../views/ReceivePersonal.vue";
+import Inbox from "../../views/Inbox.vue";
+import Notification from "../../views/Notification.vue";
+import Comment from "../../views/Comment.vue";
+import Verified from "../../auth/email-verification/Verified.vue";
+import CodeVerify from "../../auth/email-verification/CodeVerify.vue";
+import EmailVerify from "../../auth/email-verification/EmailVerify.vue";
+import SuccessReset from "../../auth/forgot-password/SuccessReset.vue";
+import Reset from "../../auth/forgot-password/Reset.vue";
+import Mail from "../../auth/forgot-password/Mail.vue";
+import Forgot from "../../auth/forgot-password/Forgot.vue";
+import Verification from "../../auth/forgot-password/Verification.vue";
+import Signup from "../../views/Signup.vue";
+import Login from "../../views/Login.vue";
+import Subscription from "../../views/Subscription.vue";
+import TaxRate from "../../views/TaxRate.vue";
+import ReceiptPrinter from "../../views/ReceiptPrinter.vue";
+import BusinessSetting from "../../views/BusinessSetting.vue";
+import BusinessLocation from "../../views/BusinessLocation.vue";
+import Invoice from "../../views/Invoice.vue";
+import BarCode from "../../views/BarCode.vue";
 export default[
     {
         path: "/",
         name: "home",
-        component: () => import(/* webpackChunkName: "Home" */ "../../views/Home.vue"),
+        component: Home,
     },
     {
         path: "/user",
         name: "user",
-        component: () => import(/* webpackChunkName: "Usermodal" */ "../../views/User.vue"),
+        component: User,
         children:[
             {
-                path: "usermodal",
-                name: "usermodal",
+                path: "user-modal",
+                name: "userModal",
                 components:{
-                    default: usermodal,
-                    usermodal: usermodal
+                    default: userModal,
+                    userModal: userModal
                 }
             },
             {
                 path: "edit/:id",
                 name: "edit", 
                 components:{
-                    default: editmodal,
-                    edited: editmodal
+                    default: editModal,
+                    edited: editModal
                 }
             },
         ]
@@ -44,22 +118,22 @@ export default[
     {
         path: "/role",
         name: "role",
-        component: () => import(/* webpackChunkName: "Role" */ "../../views/Role.vue"),
+        component: Role,
     },
     {
-        path:'/addrole',
-        name:'addrole',
-        component:()=>import(/* webpackChunkName: "Addrole" */ "../../views/Addrole.vue"),
+        path:'/add-role',
+        name:'addRole',
+        component: AddRole,
     },
     {
         path: "/sales",
         name: "sales",
-        component: () => import(/* webpackChunkName: "Sales" */ "../../views/Sales.vue"),
+        component: Sales,
         children:[
             {
-                path: "salesmodal",
-                name: "salesmodal",
-                component: () => import(/* webpackChunkName: "salesmodal" */ "../../components/parts/sales/Salesmodal.vue"),
+                path: "sales-modal",
+                name: "salesModal",
+                component:  SalesModal,
             },
             
         ]
@@ -67,12 +141,12 @@ export default[
     {
         path:'/suppliers',
         name:'suppliers',
-        component: () => import(/* webpackChunkName: "suppliers" */ "../../views/Suppliers.vue"),
+        component: Suppliers,
         children:[
             {
-                path: "addcustomer",
-                name: "addcustomer",
-                component: () => import(/* webpackChunkName: "Suppliersmodal" */ "../../components/parts/contacts/suppliers/Suppliersmodal.vue"),
+                path: "add-customer",
+                name: "addCustomer",
+                component: SuppliersModal,
             },
             
         ]
@@ -80,27 +154,27 @@ export default[
     {
         path:'/customers',
         name:'customers',
-        component: () => import(/* webpackChunkName: "Customers" */ "../../views/Customers.vue"),
+        component: Customers,
         children:[
             {
-                path:'newcustomers',
+                path:'new-customers',
                 name:'new-customers',
-                component:() => import(/* webpackChunkName: "Newcustomer"*/ "../../components/parts/contacts/customers/Newcustomer.vue")
+                component: NewCustomer,
             }
         ]
     },
     {
-        path:'/customergroup',
+        path:'/customer-group',
         name:'customer-group',
-        component:() => import(/* webpackChunkName: "Customergroup"*/ "../../views/Customergroup.vue"),
+        component: CustomerGroup,
         children:[
             {
                 
                 path:'add-group',
                 name:'add-group',
                 components:{
-                    default: Addgroup,
-                    Addgroup: Addgroup
+                    default: AddGroup,
+                    AddGroup: AddGroup
                 }
             },
             {
@@ -114,52 +188,52 @@ export default[
         ]
     },
     {
-        path:'/customerpay',
+        path:'/customer-pay',
         name:'customer-pay',
-        component: () => import(/* webpackChunkName: "Customerpay" */ "../../views/Customerpay.vue"),
+        component: CustomerPay,
     },
     {
         path:'/customer-sms',
         name:'customer-sms',
-        component:() => import (/* webpackChunkName: "CustomerSms" */ "../../views/CustomerSms.vue")
+        component: CustomerSms,
     },
     {
         path:'/customer-contact',
         name:'customer-contact',
-        component:() => import (/* webpackChunkName: "ImportContact" */ "../../views/ImportContact.vue")
+        component: ImportContact,
 
     },
     {
         path:'/list-product',
         name:'list-product',
-        component:() => import (/* webpackChunkName: "ListProduct" */ "../../views/ListProduct.vue")
+        component: ListProduct,
     },
     {
         path:'/add-product',
         name:'add-product',
-        component:() => import (/* webpackChunkName: "AddProduct" */ "../../views/AddProduct.vue")
+        component: AddProduct,
     },
     {
         path:'/new-product',
         name:'new-product',
-        component:() => import (/* webpackChunkName: "NewList" */ "../../views/NewList.vue")
+        component: NewList,
     },
     {
         path:'/print-label',
         name:'print-label',
-        component:() => import (/* webpackChunkName: "PrintLabel" */ "../../views/PrintLabel.vue")
+        component: PrintLabel,
     },
     {
         path:'/variations',
         name:'variations',
-        component:() => import (/* webpackChunkName: "Variations" */ "../../views/Variations.vue"),
+        component: Variations,
         children:[
             {
                 path:'add-variation',
                 name:'add-variation',
                 components:{
                     default:AddVariation,
-                    Addvariation:AddVariation
+                    AddVariation:AddVariation
                 }
             },
             {
@@ -167,7 +241,7 @@ export default[
                 name:'edit-variation',
                 components:{
                     default:EditVariation,
-                    editvariation:EditVariation
+                    EditVariation:EditVariation
                 }
             }
         ]
@@ -175,13 +249,13 @@ export default[
     {
         path:'/import-product',
         name:'import-product',
-        component:() => import (/* webpackChunkName: "ImportProduct" */ "../../views/ImportProduct.vue")
+        component: ImportProduct,
     },
 
     {
         path:'/sell-group',
         name:'sell-group',
-        component:() => import (/* webpackChunkName: "SellGroup" */ "../../views/SellGroup.vue"),
+        component: SellGroup,
         children:[
             {
                 path:'add-selling',
@@ -193,7 +267,7 @@ export default[
             },
             {
                 path:'edit/:id',
-                name:'edit-sellgroup',
+                name:'edit-sell-group',
                 components:{
                     default:EditSelling,
                     EditSelling:EditSelling
@@ -205,7 +279,7 @@ export default[
     {
         path:'/units',
         name:'units',
-        component:() => import (/* webpackChunkName: "Units" */ "../../views/Units.vue"),
+        component: Units,
         children:[
             {
                 path:'add-unit',
@@ -228,7 +302,7 @@ export default[
     {
         path:'/categories',
         name:'categories',
-        component:() => import (/* webpackChunkName: "Categories" */ "../../views/Categories.vue"),
+        component: Categories,
         children:[
             {
                 path:'add-category',
@@ -240,7 +314,7 @@ export default[
             },
             {
                 path:'edit/:id',
-                name:'editcategory',
+                name:'edit-category',
                 components:{
                     default:EditCategory,
                     EditCategory:EditCategory
@@ -275,134 +349,134 @@ export default[
     {
         path:'/list-purchase',
         name:'list-purchase',
-        component:() => import (/* webpackChunkName: "ListPurchase" */ "../../views/ListPurchase.vue"),
+        component: ListPurchase,
     },
     {
         path:'/add-purchase',
         name:'add-purchase',
-        component:() => import (/* webpackChunkName: "AddPurchase" */ "../../views/AddPurchase.vue"),
+        component: AddPurchase,
     },  
     {
         path:'/purchase-return',
         name:'purchase-return',
-        component:() => import (/* webpackChunkName: "PurchaseReturn" */ "../../views/PurchaseReturn.vue"),
+        component: PurchaseReturn,
     },
     {
         path:'/all-sales',
         name:'all-sales',
-        component:() => import (/* webpackChunkName: "AllSales" */ "../../views/AllSales.vue"),
+        component: AllSales,
     },
     {
         path:'/discount-sales',
         name:'discount-sales',
-        component:() => import (/* webpackChunkName: "DiscountSale" */ "../../views/DiscountSale.vue"),
+        component: DiscountSale,
     },
     {
         path:'/add-sales',
         name:'add-sales',
-        component:() => import (/* webpackChunkName: "AddSale" */ "../../views/AddSale.vue"),
+        component: AddSale,
     },
     {
         path:'/list-pose',
         name:'list-pose',
-        component:() => import (/* webpackChunkName: "ListPose" */ "../../views/ListPose.vue"),
+        component: ListPose,
     },
     {
         path:'/list-draft',
         name:'list-draft',
-        component:() => import (/* webpackChunkName: "ListDraft" */ "../../views/ListDraft.vue"),
+        component: ListDraft,
     },
     {
         path:'/list-quotations',
         name:'list-quotations',
-        component:() => import (/* webpackChunkName: "ListQuotations" */ "../../views/ListQuotations.vue"),
+        component: ListQuotations,
     },
     {
         path:'/sell-return',
         name:'sell-return',
-        component:() => import (/* webpackChunkName: "SellReturn" */ "../../views/SellReturn.vue"),
+        component: SellReturn,
     },
     {
         path:'/stock-adjust',
         name:'stock-adjust',
-        component:() => import (/* webpackChunkName: "StockAdjustment" */ "../../views/StockAdjustment.vue"),
+        component: StockAdjustment,
     },
     {
         path:'/add-stock',
         name:'add-stock',
-        component:() => import (/* webpackChunkName: "AddStockAdjustment" */ "../../views/AddStockAdjustment.vue"),
+        component: AddStockAdjustment,
     },
     {
         path:'/expenses',
         name:'expenses',
-        component:() => import (/* webpackChunkName: "Expenses" */ "../../views/Expenses.vue"),
+        component: Expenses,
     },
     {
         path:'/expenses-category',
         name:'expenses-category',
-        component:() => import (/* webpackChunkName: "ExpenseCategory" */ "../../views/ExpenseCategory.vue"),
+        component: ExpenseCategory,
     },
     {
         path:'/reports',
         name:'reports',
-        component:() => import (/* webpackChunkName: "Reports" */ "../../views/Reports.vue"),
+        component: Reports,
     },
 
     {
         path:'/net-balance',
         name:'net-balance',
-        component:() => import (/* webpackChunkName: "NetBalance" */ "../../views/NetBalance.vue"),
+        component: NetBalance,
     },
     {
         path:'/supplier-position',
         name:'supplier-position',
-        component:() => import (/* webpackChunkName: "SupplierPosition" */ "../../views/SupplierPosition.vue"),
+        component: SupplierPosition,
     },
     {
         path:'/supplier-summery',
         name:'supplier-summery',
-        component:() => import (/* webpackChunkName: "SupplierSummery" */ "../../views/SupplierSummery.vue"),
+        component: SupplierSummery,
     },
     {
         path:'/supplier-report',
         name:'supplier-report',
-        component:() => import (/* webpackChunkName: "SupplierReport" */ "../../views/SupplierReport.vue"),
+        component: SupplierReport,
     },
     {
         path:'/stock-position',
         name:'stock-position',
-        component:() => import (/* webpackChunkName: "StockPosition" */ "../../views/StockPosition.vue"),
+        component: StockPosition,
     },
     {
         path:'/stock-receipts',
         name:'stock-receipts',
-        component:() => import (/* webpackChunkName: "StockReceipts" */ "../../views/StockReceipts.vue"),
+        component: StockReceipts,
     },
     {
         path:'/purchase-sale',
         name:'purchase-sale',
-        component:() => import (/* webpackChunkName: "PurchaseSale" */ "../../views/PurchaseSale.vue"),
+        component: PurchaseSale,
     },
 
     {
         path:'/transfer-report',
         name:'transfer-report',
-        component:() => import (/* webpackChunkName: "TransferReport" */ "../../views/TransferReport.vue"),
+        component: TransferReport,
     },
     {
         path:'/transaction-report',
         name:'transaction-report',
-        component:() => import (/* webpackChunkName: "TransactionReport" */ "../../views/TransactionReport.vue"),
+        component: TransactionReport,
     },
     {
         path:'/bank-user',
         name:'bank-user',
-        component:() => import (/* webpackChunkName: "BankUser" */ "../../views/BankUser.vue"),
+        component: BankUser,
         children:[
             {
-                path:'addbank-user',
-                name:'addbank-user',
-                component:() => import (/* webpackChunkName: "AddBankUser" */ "../../components/parts/bank/AddBankUser.vue"),
+                path:'add-bank-user',
+                name:'add-bank-user',
+                component: AddBankUser,
 
             }
         ]
@@ -410,116 +484,114 @@ export default[
     {
         path:'/bank',
         name:'bank',
-        component:() => import (/* webpackChunkName: "Bank" */ "../../views/Bank.vue"),
+        component: Bank,
     },
     {
         path:'/personal',
         name:'personal',
-        component:() => import (/* webpackChunkName: "Personal" */ "../../views/Personal.vue"),
+        component: Personal,
     },
     {
         path:'/main-point',
         name:'main-point',
-        component:() => import (/* webpackChunkName: "MainPoint" */ "../../views/MainPoint.vue"),
+        component: MainPoint,
     },
     {
         path:'/receive-balance',
         name:'receive-balance',
-        component:() => import (/* webpackChunkName: "MainPoint" */ "../../views/ReceiveBalance.vue"),
+        component: ReceiveBalance,
     },
     {
         path:'/receive-personal',
         name:'receive-personal',
-        component:() => import (/* webpackChunkName: "MainPoint" */ "../../views/ReceivePersonal.vue"),
+        component: ReceivePersonal,
     },
     {
         path:'/inbox',
         name:'inbox',
-        component:() => import (/* webpackChunkName: "Inbox" */  "../../views/Inbox.vue"),
+        component: Inbox,
     },
     {
         path:'/notification',
         name:'notification',
-        component:() => import (/* webpackChunkName: "Notification" */  "../../views/Notification.vue"),
+        component: Notification,
     },
     {
         path:'/comment',
         name:'comment',
-        component:() => import (/* webpackChunkName: "Comment" */  "../../views/Comment.vue"),
+        component: Comment,
     },
     {
         path:'/business-setting',
         name:'business-setting',
-        component:() => import (/* webpackChunkName: "BusinessSetting" */  "../../views/BusinessSetting.vue"),
+        component: BusinessSetting,
     },
     {
         path:'/business-location',
         name:'business-location',
-        component:() => import (/* webpackChunkName: "BusinessLocation" */  "../../views/BusinessLocation.vue"),
+        component: BusinessLocation,
     },
     {
         path:'/invoice-setting',
         name:'invoice-setting',
-        component:() => import (/* webpackChunkName: "Invoice" */  "../../views/Invoice.vue"),
+        component: Invoice,
     },
     {
         path:'/barcode-setting',
         name:'barcode-setting',
-        component:() => import (/* webpackChunkName: "Barcode" */  "../../views/BarCode.vue"),
+        component: BarCode,
     },
     {
         path:'/receipt-printer',
         name:'receipt-printer',
-        component:() => import (/* webpackChunkName: "ReceiptPrinter" */  "../../views/ReceiptPrinter.vue"),
+        component: ReceiptPrinter,
     },
     {
         path:'/tax-rate',
         name:'tax-rate',
-        component:() => import (/* webpackChunkName: "TextRate" */  "../../views/TaxRate.vue"),
+        component: TaxRate,
     },
     {
         path:'/subscription',
         name:'subscription',
-        component:() => import (/* webpackChunkName: "SubsCription" */  "../../views/SubsCription.vue"),
+        component:  Subscription,
     },
     // login-pages
     {
         path:'/login',
         name:'login',
-        component: () => import(/* webpackChunkName: "login" */ "../../views/Login.vue"),
+        component: Login,
     },
     {
         path:'/signup',
         name:'signup',
-        component: () => import(/* webpackChunkName: "signup" */ "../../views/Signup.vue"),
+        component: Signup,
     },
     // forgot-password-paths
     {
         path:'/verification',
         name:'verification',
-        component: () => import(/* webpackChunkName: "verification" */ "../../auth/forgot-password/Verification.vue"),
+        component: Verification,
     },
     {
         path:'/password/reset/',
         name:'forgot-password',
-        component: () => import(/* webpackChunkName: "forgot-password" */ "../../auth/forgot-password/Forgot.vue"),
+        component: Forgot,
     },
     {
         path:'/password/mail',
         name:'mail',
-        component: () => import(/* webpackChunkName: "mail" */ "../../auth/forgot-password/Mail.vue"),
+        component: Mail,
     },
     {
         path: "/password/new-password",
         name: "new-password",
-        component: () =>
-            import(/* webpackChunkName: "newpassword" */ "../../auth/forgot-password/Reset.vue"),
+        component: Reset,
     },
     {
         path: "/password/success-password",
-        name: "reset-sucess",
-        component: () =>
-            import(/* webpackChunkName: "reset-sucess" */ "../../auth/forgot-password/Successreset.vue"),
+        name: "reset-success",
+        component: SuccessReset,
     },
     // forgot-password-paths-end
 
@@ -527,20 +599,17 @@ export default[
     {
         path: "/email/verification",
         name: "email-verify",
-        component: () =>
-            import(/* webpackChunkName: "forgotPassword" */ "../../auth/email-verification/Emailverify.vue"),
+        component: EmailVerify,
     },
     {
-        path: "/email/verifycode",
+        path: "/email/verify-code",
         name: "verify-code",
-        component: () =>
-            import(/* webpackChunkName: "forgotPassword" */ "../../auth/email-verification/Codeverify.vue"),
+        component: CodeVerify,
     },
     {
         path: "/email/success-verify",
         name: "verify-success",
-        component: () =>
-            import(/* webpackChunkName: "forgotPassword" */ "../../auth/email-verification/Verified.vue"),
+        component: Verified,
     },
     // email-verification-paths-end
 ]

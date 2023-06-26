@@ -64,7 +64,7 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='addbank-user'){
+    if(this.$route.name==='add-bank-user'){
       const modalElement = this.$refs.addgroups;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();

@@ -96,8 +96,8 @@
         </div>
       </div>
     </section>
-    <router-view name="Addvariation"></router-view>
-    <router-view name="editvariation"></router-view>
+    <router-view name="AddVariation"></router-view>
+    <router-view name="EditVariation"></router-view>
 </template>
 
 <script>

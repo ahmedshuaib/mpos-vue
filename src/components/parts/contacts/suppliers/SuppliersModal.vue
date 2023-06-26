@@ -1,5 +1,5 @@
 <template>
-    <div class="modal fade" ref="addcustomer" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
+    <div class="modal fade" ref="addCustomer" tabindex="-1" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel">
       <div class="modal-dialog" >
         <div class="modal-content modal-lg" >
 
@@ -264,8 +264,8 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='addcustomer'){
-      const modalElement = this.$refs.addcustomer;
+    if(this.$route.name==='addCustomer'){
+      const modalElement = this.$refs.addCustomer;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
       }
@@ -274,7 +274,7 @@ export default {
   
   methods:{
     resetModal() {
-      const modalElement = this.$refs.addcustomer;
+      const modalElement = this.$refs.addCustomer;
       const modal = bootstrap.Modal.getInstance(modalElement);
       if (modal) {
         modal.hide();

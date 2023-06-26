@@ -55,7 +55,7 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='edit-sellgroup'){
+    if(this.$route.name==='edit-sell-group'){
       const modalElement = this.$refs.addgroups;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();

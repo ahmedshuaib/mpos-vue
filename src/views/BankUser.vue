@@ -6,7 +6,7 @@
         >
           <h4 class="mb-0">Bank User</h4>
 
-          <router-link :to="{name:'addbank-user'}" class="add-role-link btns">
+          <router-link :to="{name:'add-bank-user'}" class="add-role-link btns">
             <button class="btn green"><span class="me-1">+</span>Add</button>
           </router-link>
         </div>

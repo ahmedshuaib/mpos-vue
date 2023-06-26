@@ -57,7 +57,7 @@
                         <td>Mac Mini Pro M1</td>
                         <td>
                           <div class="d-flex align-items-center gap-2">
-                          <router-link :to="{name:'edit-sellgroup',params:{id:4}}">
+                          <router-link :to="{name:'edit-sell-group',params:{id:4}}">
                               <button class="pro-edit-btn">
                               <img src="../assets/img/edit.svg" alt=""> Edit
                           </button>
@@ -74,7 +74,7 @@
                         <td>Galaxy S22 Ultra</td>
                         <td>
                           <div class="d-flex align-items-center gap-2">
-                          <router-link :to="{name:'edit-sellgroup',params:{id:4}}">
+                          <router-link :to="{name:'edit-sell-group',params:{id:4}}">
                               <button class="pro-edit-btn">
                               <img src="../assets/img/edit.svg" alt=""> Edit
                           </button>
@@ -90,7 +90,7 @@
                         <td>One Plus 9R Pro</td>
                         <td>
                           <div class="d-flex align-items-center gap-2">
-                          <router-link :to="{name:'edit-sellgroup',params:{id:4}}">
+                          <router-link :to="{name:'edit-sell-group',params:{id:4}}">
                               <button class="pro-edit-btn">
                               <img src="../assets/img/edit.svg" alt=""> Edit
                           </button>

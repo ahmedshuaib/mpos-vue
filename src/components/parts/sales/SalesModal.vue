@@ -82,7 +82,7 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='salesmodal'){
+    if(this.$route.name==='salesModal'){
       const modalElement = this.$refs.salesModal;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();

@@ -7,7 +7,7 @@
         >
           <h4 class="mb-0">Stock Adjustments</h4>
           <a  class="add-role-link btns">
-            <button class="btn green"><span class="me-1">+</span>Add</button>
+            <button class="btn green" @click="addStock"><span class="me-1">+</span>Add</button>
           </a>
         </div>
       </div>
@@ -220,6 +220,14 @@
 
 <script>
 export default {
+  methods: {
+    addStock()
+    {
+      this.$router.push({
+        name: "add-stock"
+      })
+    }
+  }
 
 }
 </script>

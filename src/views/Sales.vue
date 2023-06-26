@@ -6,7 +6,7 @@
           >
             <h4 class="mb-0">Sales Commission Agents</h4>
 
-            <router-link :to="{name:'salesmodal'}">
+            <router-link :to="{name:'salesModal'}">
               <button class="user-add-btn" id="user-add-btn" @click="openModal">
               <span class="me-1">+</span>Add
             </button>

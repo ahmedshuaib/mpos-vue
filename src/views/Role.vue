@@ -6,7 +6,7 @@
             class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
           >
             <h4 class="mb-0">Roles</h4>
-            <router-link :to="{name:'addrole'}" class="add-role-link">
+            <router-link :to="{name:'addRole'}" class="add-role-link">
               <span class="user-add-btn"><span class="me-1">+</span>Add</span>
             </router-link>
           </div>
@@ -33,7 +33,7 @@
                         <button class="pro-view-btn">
                           <img src="../assets/img/view.svg" alt="">
                           View Role</button>
-                        <button class="pro-add-btn">
+                        <button class="pro-add-btn" @click="addRole">
                           <img src="../assets/img/grenplus.svg" alt="">
                           Add Role</button>
                         <button class="pro-edit-btn">
@@ -53,7 +53,7 @@
                         <button class="pro-view-btn">
                           <img src="../assets/img/view.svg" alt="">
                           View Role</button>
-                        <button class="pro-add-btn">
+                        <button class="pro-add-btn" @click="addRole">
                           <img src="../assets/img/grenplus.svg" alt="">
                           Add Role</button>
                         <button class="pro-edit-btn">
@@ -73,7 +73,7 @@
                         <button class="pro-view-btn">
                           <img src="../assets/img/view.svg" alt="">
                           View Role</button>
-                        <button class="pro-add-btn">
+                        <button class="pro-add-btn" @click="addRole">
                           <img src="../assets/img/grenplus.svg" alt="">
                           Add Role</button>
                         <button class="pro-edit-btn">
@@ -93,7 +93,7 @@
                         <button class="pro-view-btn">
                           <img src="../assets/img/view.svg" alt="">
                           View Role</button>
-                        <button class="pro-add-btn">
+                        <button class="pro-add-btn" @click="addRole">
                           <img src="../assets/img/grenplus.svg" alt="">
                           Add Role</button>
                         <button class="pro-edit-btn">
@@ -111,11 +111,19 @@
           </div>
         </div>
       </section>
-      
 </template>
 
 <script>
 export default {
+
+  methods:{
+    addRole()
+    {
+      this.$router.push({
+        name: 'addRole'
+      })
+    }
+  }
 
 }
 </script>

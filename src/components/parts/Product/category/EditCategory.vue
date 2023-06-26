@@ -62,7 +62,7 @@ import * as bootstrap from 'bootstrap';
 
 export default {
   mounted(){
-    if(this.$route.name==='editcategory'){
+    if(this.$route.name==='edit-category'){
       const modalElement = this.$refs.addgroups;
       const modal = new bootstrap.Modal(modalElement);
       modal.show();

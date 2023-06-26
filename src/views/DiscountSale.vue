@@ -6,7 +6,7 @@
         >
           <h4 class="mb-0">Discount Sales</h4>
           <a  class="add-role-link btns">
-            <button class="btn green"><span class="me-1">+</span>Add</button>
+            <button class="btn green" @click="addSales"><span class="me-1">+</span>Add</button>
           </a>
         </div>
 
@@ -129,6 +129,14 @@
 
 <script>
 export default {
+  methods:{
+    addSales()
+    {
+      this.$router.push({
+        name: 'add-sales',
+      })
+    }
+  }
 
 }
 </script>

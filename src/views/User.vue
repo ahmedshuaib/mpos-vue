@@ -4,7 +4,7 @@
         <div class="section__container">
             <div class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
                 <h4 class="mb-0">User</h4>
-                <router-link :to="{name:'usermodal'}">
+                <router-link :to="{name:'userModal'}">
                     <button class="user-add-btn" id="user-add-btn">
                         <span class="me-1">+</span>Add
                     </button>
@@ -174,7 +174,7 @@
             </div>
         </div>
     </section>
-    <router-view name="usermodal"></router-view>
+    <router-view name="userModal"></router-view>
     <router-view name="edited"></router-view>
     
 </template>

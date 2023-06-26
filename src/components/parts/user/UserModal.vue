@@ -110,7 +110,7 @@
   export default {
 
     mounted(){
-      if(this.$route.name==='usermodal'){
+      if(this.$route.name==='userModal'){
           const modalElement = this.$refs.userModdal;
           const modal = new bootstrap.Modal(modalElement);
           modal.show();
