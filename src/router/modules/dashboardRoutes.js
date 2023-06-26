@@ -69,14 +69,6 @@ import ReceivePersonal from "../../views/ReceivePersonal.vue";
 import Inbox from "../../views/Inbox.vue";
 import Notification from "../../views/Notification.vue";
 import Comment from "../../views/Comment.vue";
-import Verified from "../../auth/email-verification/Verified.vue";
-import CodeVerify from "../../auth/email-verification/CodeVerify.vue";
-import EmailVerify from "../../auth/email-verification/EmailVerify.vue";
-import SuccessReset from "../../auth/forgot-password/SuccessReset.vue";
-import Reset from "../../auth/forgot-password/Reset.vue";
-import Mail from "../../auth/forgot-password/Mail.vue";
-import Forgot from "../../auth/forgot-password/Forgot.vue";
-import Verification from "../../auth/forgot-password/Verification.vue";
 import Signup from "../../views/Signup.vue";
 import Login from "../../views/Login.vue";
 import Subscription from "../../views/Subscription.vue";
@@ -86,476 +78,497 @@ import BusinessSetting from "../../views/BusinessSetting.vue";
 import BusinessLocation from "../../views/BusinessLocation.vue";
 import Invoice from "../../views/Invoice.vue";
 import BarCode from "../../views/BarCode.vue";
+import CodeVerify from "../../components/auth/email-verification/CodeVerify.vue";
+import Verified from "../../components/auth/email-verification/Verified.vue";
+import EmailVerify from "../../components/auth/email-verification/EmailVerify.vue";
+import SuccessReset from "../../components/auth/forgot-password/SuccessReset.vue";
+import Reset from "../../components/auth/forgot-password/Reset.vue";
+import Mail from "../../components/auth/forgot-password/Mail.vue";
+import Forgot from "../../components/auth/forgot-password/Forgot.vue";
+import Verification from "../../components/auth/forgot-password/Verification.vue";
+import DashboardLayout from "@/layouts/DashboardLayout.vue";
+
+
 export default[
-    {
-        path: "/",
-        name: "home",
-        component: Home,
-    },
-    {
-        path: "/user",
-        name: "user",
-        component: User,
-        children:[
-            {
-                path: "user-modal",
-                name: "userModal",
-                components:{
-                    default: userModal,
-                    userModal: userModal
-                }
-            },
-            {
-                path: "edit/:id",
-                name: "edit", 
-                components:{
-                    default: editModal,
-                    edited: editModal
-                }
-            },
-        ]
-    },
-    {
-        path: "/role",
-        name: "role",
-        component: Role,
-    },
-    {
-        path:'/add-role',
-        name:'addRole',
-        component: AddRole,
-    },
-    {
-        path: "/sales",
-        name: "sales",
-        component: Sales,
-        children:[
-            {
-                path: "sales-modal",
-                name: "salesModal",
-                component:  SalesModal,
-            },
-            
-        ]
-    },
-    {
-        path:'/suppliers',
-        name:'suppliers',
-        component: Suppliers,
-        children:[
-            {
-                path: "add-customer",
-                name: "addCustomer",
-                component: SuppliersModal,
-            },
-            
-        ]
-    },
-    {
-        path:'/customers',
-        name:'customers',
-        component: Customers,
-        children:[
-            {
-                path:'new-customers',
-                name:'new-customers',
-                component: NewCustomer,
-            }
-        ]
-    },
-    {
-        path:'/customer-group',
-        name:'customer-group',
-        component: CustomerGroup,
-        children:[
-            {
-                
-                path:'add-group',
-                name:'add-group',
-                components:{
-                    default: AddGroup,
-                    AddGroup: AddGroup
-                }
-            },
-            {
-                path:'edit-group/:id',
-                name: "edit-group", 
-                components:{
-                    default: EditGroup,
-                    EditGroup: EditGroup
-                }
-            }
-        ]
-    },
-    {
-        path:'/customer-pay',
-        name:'customer-pay',
-        component: CustomerPay,
-    },
-    {
-        path:'/customer-sms',
-        name:'customer-sms',
-        component: CustomerSms,
-    },
-    {
-        path:'/customer-contact',
-        name:'customer-contact',
-        component: ImportContact,
-
-    },
-    {
-        path:'/list-product',
-        name:'list-product',
-        component: ListProduct,
-    },
-    {
-        path:'/add-product',
-        name:'add-product',
-        component: AddProduct,
-    },
-    {
-        path:'/new-product',
-        name:'new-product',
-        component: NewList,
-    },
-    {
-        path:'/print-label',
-        name:'print-label',
-        component: PrintLabel,
-    },
-    {
-        path:'/variations',
-        name:'variations',
-        component: Variations,
-        children:[
-            {
-                path:'add-variation',
-                name:'add-variation',
-                components:{
-                    default:AddVariation,
-                    AddVariation:AddVariation
-                }
-            },
-            {
-                path:'edit/:id',
-                name:'edit-variation',
-                components:{
-                    default:EditVariation,
-                    EditVariation:EditVariation
-                }
-            }
-        ]
-    },
-    {
-        path:'/import-product',
-        name:'import-product',
-        component: ImportProduct,
-    },
 
     {
-        path:'/sell-group',
-        name:'sell-group',
-        component: SellGroup,
-        children:[
+        path: '',
+        name: 'dashboard',
+        component: DashboardLayout,
+        children: [
             {
-                path:'add-selling',
-                name:'add-selling',
-                components:{
-                    default:AddSellGroup,
-                    AddSellGroup:AddSellGroup
-                }
+                path: "",
+                name: "home",
+                component: Home,
             },
             {
-                path:'edit/:id',
-                name:'edit-sell-group',
-                components:{
-                    default:EditSelling,
-                    EditSelling:EditSelling
-                }
-            }
-        ]
-    },
-
-    {
-        path:'/units',
-        name:'units',
-        component: Units,
-        children:[
-            {
-                path:'add-unit',
-                name:'add-unit',
-                components:{
-                    default:AddUnit,
-                    AddUnit:AddUnit
-                }
+                path: "user",
+                name: "user",
+                component: User,
+                children:[
+                    {
+                        path: "user-modal",
+                        name: "userModal",
+                        components:{
+                            default: userModal,
+                            userModal: userModal
+                        }
+                    },
+                    {
+                        path: "edit/:id",
+                        name: "edit",
+                        components:{
+                            default: editModal,
+                            edited: editModal
+                        }
+                    },
+                ]
             },
             {
-                path:'edit/:id',
-                name:'EditUnit',
-                components:{
-                    default:EditUnit,
-                    EditUnit:EditUnit
-                }
-            }
-        ]
-    },
-    {
-        path:'/categories',
-        name:'categories',
-        component: Categories,
-        children:[
-            {
-                path:'add-category',
-                name:'add-category',
-                components:{
-                   default: AddCategory,
-                   AddCategory:AddCategory
-                },           
+                path: "/role",
+                name: "role",
+                component: Role,
             },
             {
-                path:'edit/:id',
-                name:'edit-category',
-                components:{
-                    default:EditCategory,
-                    EditCategory:EditCategory
-                }
-            }
-        ]
-    },
-
-    {
-        path:'/brands',
-        name:'brands',
-        component:() => import (/* webpackChunkName: "brands" */ "../../views/Brands.vue"),
-        children:[
-            {
-                path:'add-brands',
-                name:'add-brands',
-                components:{
-                    default:AddBrand,
-                    AddBrand:AddBrand
-                }
+                path:'/add-role',
+                name:'addRole',
+                component: AddRole,
             },
             {
-                path:'edit/:id',
-                name:'edit-brand',
-                components:{
-                    default:EditBrand,
-                    EditBrand:EditBrand
-                }
-            }
-        ]
-    },
-    {
-        path:'/list-purchase',
-        name:'list-purchase',
-        component: ListPurchase,
-    },
-    {
-        path:'/add-purchase',
-        name:'add-purchase',
-        component: AddPurchase,
-    },  
-    {
-        path:'/purchase-return',
-        name:'purchase-return',
-        component: PurchaseReturn,
-    },
-    {
-        path:'/all-sales',
-        name:'all-sales',
-        component: AllSales,
-    },
-    {
-        path:'/discount-sales',
-        name:'discount-sales',
-        component: DiscountSale,
-    },
-    {
-        path:'/add-sales',
-        name:'add-sales',
-        component: AddSale,
-    },
-    {
-        path:'/list-pose',
-        name:'list-pose',
-        component: ListPose,
-    },
-    {
-        path:'/list-draft',
-        name:'list-draft',
-        component: ListDraft,
-    },
-    {
-        path:'/list-quotations',
-        name:'list-quotations',
-        component: ListQuotations,
-    },
-    {
-        path:'/sell-return',
-        name:'sell-return',
-        component: SellReturn,
-    },
-    {
-        path:'/stock-adjust',
-        name:'stock-adjust',
-        component: StockAdjustment,
-    },
-    {
-        path:'/add-stock',
-        name:'add-stock',
-        component: AddStockAdjustment,
-    },
-    {
-        path:'/expenses',
-        name:'expenses',
-        component: Expenses,
-    },
-    {
-        path:'/expenses-category',
-        name:'expenses-category',
-        component: ExpenseCategory,
-    },
-    {
-        path:'/reports',
-        name:'reports',
-        component: Reports,
-    },
+                path: "/sales",
+                name: "sales",
+                component: Sales,
+                children:[
+                    {
+                        path: "sales-modal",
+                        name: "salesModal",
+                        component: SalesModal,
+                    },
 
-    {
-        path:'/net-balance',
-        name:'net-balance',
-        component: NetBalance,
-    },
-    {
-        path:'/supplier-position',
-        name:'supplier-position',
-        component: SupplierPosition,
-    },
-    {
-        path:'/supplier-summery',
-        name:'supplier-summery',
-        component: SupplierSummery,
-    },
-    {
-        path:'/supplier-report',
-        name:'supplier-report',
-        component: SupplierReport,
-    },
-    {
-        path:'/stock-position',
-        name:'stock-position',
-        component: StockPosition,
-    },
-    {
-        path:'/stock-receipts',
-        name:'stock-receipts',
-        component: StockReceipts,
-    },
-    {
-        path:'/purchase-sale',
-        name:'purchase-sale',
-        component: PurchaseSale,
-    },
-
-    {
-        path:'/transfer-report',
-        name:'transfer-report',
-        component: TransferReport,
-    },
-    {
-        path:'/transaction-report',
-        name:'transaction-report',
-        component: TransactionReport,
-    },
-    {
-        path:'/bank-user',
-        name:'bank-user',
-        component: BankUser,
-        children:[
+                ]
+            },
             {
-                path:'add-bank-user',
-                name:'add-bank-user',
-                component: AddBankUser,
+                path:'/suppliers',
+                name:'suppliers',
+                component: Suppliers,
+                children:[
+                    {
+                        path: "add-customer",
+                        name: "addCustomer",
+                        component: SuppliersModal,
+                    },
 
-            }
+                ]
+            },
+            {
+                path:'/customers',
+                name:'customers',
+                component: Customers,
+                children:[
+                    {
+                        path:'new-customers',
+                        name:'new-customers',
+                        component: NewCustomer,
+                    }
+                ]
+            },
+            {
+                path:'/customer-group',
+                name:'customer-group',
+                component: CustomerGroup,
+                children:[
+                    {
+
+                        path:'add-group',
+                        name:'add-group',
+                        components:{
+                            default: AddGroup,
+                            AddGroup: AddGroup
+                        }
+                    },
+                    {
+                        path:'edit-group/:id',
+                        name: "edit-group",
+                        components:{
+                            default: EditGroup,
+                            EditGroup: EditGroup
+                        }
+                    }
+                ]
+            },
+            {
+                path:'/customer-pay',
+                name:'customer-pay',
+                component: CustomerPay,
+            },
+            {
+                path:'/customer-sms',
+                name:'customer-sms',
+                component: CustomerSms,
+            },
+            {
+                path:'/customer-contact',
+                name:'customer-contact',
+                component: ImportContact,
+
+            },
+            {
+                path:'/list-product',
+                name:'list-product',
+                component: ListProduct,
+            },
+            {
+                path:'/add-product',
+                name:'add-product',
+                component: AddProduct,
+            },
+            {
+                path:'/new-product',
+                name:'new-product',
+                component: NewList,
+            },
+            {
+                path:'/print-label',
+                name:'print-label',
+                component: PrintLabel,
+            },
+            {
+                path:'/variations',
+                name:'variations',
+                component: Variations,
+                children:[
+                    {
+                        path:'add-variation',
+                        name:'add-variation',
+                        components:{
+                            default:AddVariation,
+                            AddVariation:AddVariation
+                        }
+                    },
+                    {
+                        path:'edit/:id',
+                        name:'edit-variation',
+                        components:{
+                            default:EditVariation,
+                            EditVariation:EditVariation
+                        }
+                    }
+                ]
+            },
+            {
+                path:'/import-product',
+                name:'import-product',
+                component: ImportProduct,
+            },
+
+            {
+                path:'/sell-group',
+                name:'sell-group',
+                component: SellGroup,
+                children:[
+                    {
+                        path:'add-selling',
+                        name:'add-selling',
+                        components:{
+                            default:AddSellGroup,
+                            AddSellGroup:AddSellGroup
+                        }
+                    },
+                    {
+                        path:'edit/:id',
+                        name:'edit-sell-group',
+                        components:{
+                            default:EditSelling,
+                            EditSelling:EditSelling
+                        }
+                    }
+                ]
+            },
+
+            {
+                path:'/units',
+                name:'units',
+                component: Units,
+                children:[
+                    {
+                        path:'add-unit',
+                        name:'add-unit',
+                        components:{
+                            default:AddUnit,
+                            AddUnit:AddUnit
+                        }
+                    },
+                    {
+                        path:'edit/:id',
+                        name:'EditUnit',
+                        components:{
+                            default:EditUnit,
+                            EditUnit:EditUnit
+                        }
+                    }
+                ]
+            },
+            {
+                path:'/categories',
+                name:'categories',
+                component: Categories,
+                children:[
+                    {
+                        path:'add-category',
+                        name:'add-category',
+                        components:{
+                            default: AddCategory,
+                            AddCategory:AddCategory
+                        },
+                    },
+                    {
+                        path:'edit/:id',
+                        name:'edit-category',
+                        components:{
+                            default:EditCategory,
+                            EditCategory:EditCategory
+                        }
+                    }
+                ]
+            },
+
+            {
+                path:'/brands',
+                name:'brands',
+                component:() => import (/* webpackChunkName: "brands" */ "../../views/Brands.vue"),
+                children:[
+                    {
+                        path:'add-brands',
+                        name:'add-brands',
+                        components:{
+                            default:AddBrand,
+                            AddBrand:AddBrand
+                        }
+                    },
+                    {
+                        path:'edit/:id',
+                        name:'edit-brand',
+                        components:{
+                            default:EditBrand,
+                            EditBrand:EditBrand
+                        }
+                    }
+                ]
+            },
+            {
+                path:'/list-purchase',
+                name:'list-purchase',
+                component: ListPurchase,
+            },
+            {
+                path:'/add-purchase',
+                name:'add-purchase',
+                component: AddPurchase,
+            },
+            {
+                path:'/purchase-return',
+                name:'purchase-return',
+                component: PurchaseReturn,
+            },
+            {
+                path:'/all-sales',
+                name:'all-sales',
+                component: AllSales,
+            },
+            {
+                path:'/discount-sales',
+                name:'discount-sales',
+                component: DiscountSale,
+            },
+            {
+                path:'/add-sales',
+                name:'add-sales',
+                component: AddSale,
+            },
+            {
+                path:'/list-pose',
+                name:'list-pose',
+                component: ListPose,
+            },
+            {
+                path:'/list-draft',
+                name:'list-draft',
+                component: ListDraft,
+            },
+            {
+                path:'/list-quotations',
+                name:'list-quotations',
+                component: ListQuotations,
+            },
+            {
+                path:'/sell-return',
+                name:'sell-return',
+                component: SellReturn,
+            },
+            {
+                path:'/stock-adjust',
+                name:'stock-adjust',
+                component: StockAdjustment,
+            },
+            {
+                path:'/add-stock',
+                name:'add-stock',
+                component: AddStockAdjustment,
+            },
+            {
+                path:'/expenses',
+                name:'expenses',
+                component: Expenses,
+            },
+            {
+                path:'/expenses-category',
+                name:'expenses-category',
+                component: ExpenseCategory,
+            },
+            {
+                path:'/reports',
+                name:'reports',
+                component: Reports,
+            },
+
+            {
+                path:'/net-balance',
+                name:'net-balance',
+                component: NetBalance,
+            },
+            {
+                path:'/supplier-position',
+                name:'supplier-position',
+                component: SupplierPosition,
+            },
+            {
+                path:'/supplier-summery',
+                name:'supplier-summery',
+                component: SupplierSummery,
+            },
+            {
+                path:'/supplier-report',
+                name:'supplier-report',
+                component: SupplierReport,
+            },
+            {
+                path:'/stock-position',
+                name:'stock-position',
+                component: StockPosition,
+            },
+            {
+                path:'/stock-receipts',
+                name:'stock-receipts',
+                component: StockReceipts,
+            },
+            {
+                path:'/purchase-sale',
+                name:'purchase-sale',
+                component: PurchaseSale,
+            },
+
+            {
+                path:'/transfer-report',
+                name:'transfer-report',
+                component: TransferReport,
+            },
+            {
+                path:'/transaction-report',
+                name:'transaction-report',
+                component: TransactionReport,
+            },
+            {
+                path:'/bank-user',
+                name:'bank-user',
+                component: BankUser,
+                children:[
+                    {
+                        path:'add-bank-user',
+                        name:'add-bank-user',
+                        component: AddBankUser,
+
+                    }
+                ]
+            },
+            {
+                path:'/bank',
+                name:'bank',
+                component: Bank,
+            },
+            {
+                path:'/personal',
+                name:'personal',
+                component: Personal,
+            },
+            {
+                path:'/main-point',
+                name:'main-point',
+                component: MainPoint,
+            },
+            {
+                path:'/receive-balance',
+                name:'receive-balance',
+                component: ReceiveBalance,
+            },
+            {
+                path:'/receive-personal',
+                name:'receive-personal',
+                component: ReceivePersonal,
+            },
+            {
+                path:'/inbox',
+                name:'inbox',
+                component: Inbox,
+            },
+            {
+                path:'/notification',
+                name:'notification',
+                component: Notification,
+            },
+            {
+                path:'/comment',
+                name:'comment',
+                component: Comment,
+            },
+            {
+                path:'/business-setting',
+                name:'business-setting',
+                component: BusinessSetting,
+            },
+            {
+                path:'/business-location',
+                name:'business-location',
+                component: BusinessLocation,
+            },
+            {
+                path:'/invoice-setting',
+                name:'invoice-setting',
+                component: Invoice,
+            },
+            {
+                path:'/barcode-setting',
+                name:'barcode-setting',
+                component: BarCode,
+            },
+            {
+                path:'/receipt-printer',
+                name:'receipt-printer',
+                component: ReceiptPrinter,
+            },
+            {
+                path:'/tax-rate',
+                name:'tax-rate',
+                component: TaxRate,
+            },
+            {
+                path:'/subscription',
+                name:'subscription',
+                component:  Subscription,
+            },
         ]
+        
     },
-    {
-        path:'/bank',
-        name:'bank',
-        component: Bank,
-    },
-    {
-        path:'/personal',
-        name:'personal',
-        component: Personal,
-    },
-    {
-        path:'/main-point',
-        name:'main-point',
-        component: MainPoint,
-    },
-    {
-        path:'/receive-balance',
-        name:'receive-balance',
-        component: ReceiveBalance,
-    },
-    {
-        path:'/receive-personal',
-        name:'receive-personal',
-        component: ReceivePersonal,
-    },
-    {
-        path:'/inbox',
-        name:'inbox',
-        component: Inbox,
-    },
-    {
-        path:'/notification',
-        name:'notification',
-        component: Notification,
-    },
-    {
-        path:'/comment',
-        name:'comment',
-        component: Comment,
-    },
-    {
-        path:'/business-setting',
-        name:'business-setting',
-        component: BusinessSetting,
-    },
-    {
-        path:'/business-location',
-        name:'business-location',
-        component: BusinessLocation,
-    },
-    {
-        path:'/invoice-setting',
-        name:'invoice-setting',
-        component: Invoice,
-    },
-    {
-        path:'/barcode-setting',
-        name:'barcode-setting',
-        component: BarCode,
-    },
-    {
-        path:'/receipt-printer',
-        name:'receipt-printer',
-        component: ReceiptPrinter,
-    },
-    {
-        path:'/tax-rate',
-        name:'tax-rate',
-        component: TaxRate,
-    },
-    {
-        path:'/subscription',
-        name:'subscription',
-        component:  Subscription,
-    },
+   
     // login-pages
     {
         path:'/login',

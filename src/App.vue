@@ -1,10 +1,5 @@
 <template>
-    <tnavigation></tnavigation>
-    <tsidebar></tsidebar>
-    <div class="main__body">
-        <router-view ></router-view>
-        <tfooter></tfooter>
-    </div>
+  <router-view ></router-view>
 </template>
 
 <script>

@@ -3,7 +3,7 @@
         <div class="col-lg-5">
             <div class="card m-auto" style="width: 28rem;">
                 <div class="card-body">
-                    <img src="../../assets/img/password.svg" alt="pass" class="text-center">
+                    <img src="../../../assets/img/password.svg" alt="pass" class="text-center">
                     <h4 class="forgot-pass">Set new password</h4>
                     <span class="instruction">
                         Your new password must be diffrent to previous used passwords
@@ -23,7 +23,7 @@
                     </div>
                     <div class=" text-center mt-4">
                         <router-link :to="{name:'login'}" class="back">
-                            <img src="../../assets/img/back.svg" alt="back">
+                            <img src="../../../assets/img/back.svg" alt="back">
                             <span>Back to log in</span>
                         </router-link>
                     </div>

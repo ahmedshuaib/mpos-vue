@@ -3,7 +3,7 @@
         <div class="col-lg-5">
             <div class="card m-auto" style="width: 28rem;">
                 <div class="card-body">
-                    <img src="../../assets/img/password.svg" alt="pass" class="text-center">
+                    <img src="../../../assets/img/password.svg" alt="pass" class="text-center">
                     <h4 class="forgot-pass">Forgot password</h4>
                     <span class="instruction">
                         No worries,we'll send you reset instruction
