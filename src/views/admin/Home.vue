@@ -1,5 +1,4 @@
 <template>
-    <!-- <div class="main__body"> -->
     <section class="hero__section">
         <div class="section__container">
             <div
