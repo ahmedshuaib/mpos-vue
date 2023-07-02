@@ -27,13 +27,13 @@
                             >
                             <h5 class="mb-0 text-light">Total Purchase</h5>
                             <div class="header__icon">
-                            <img src="../assets/img/sales.svg" alt="sales" />
+                            <img src="../../assets/img/sales.svg" alt="sales" />
                             </div>
                             </div>
                              <h2 class="mb-0 text-light mt-3">$200.00</h2>
                             <div class="card__footer">
                                 <p class="mb-0 text-light mt-2">
-                                <img src="../assets/img/sales-2.svg" alt="" />
+                                <img src="../../assets/img/sales-2.svg" alt="" />
                                 <span class="sales-point mb-0 ms-2">8.5%</span>
                                 Up from yesterday
                                 </p>
@@ -48,13 +48,13 @@
                             >
                             <h5 class="mb-0 text-light">Total Sales</h5>
                             <div class="header__icon">
-                            <img src="../assets/img/sales.svg" alt="sales" />
+                            <img src="../../assets/img/sales.svg" alt="sales" />
                             </div>
                             </div>
                             <h2 class="mb-0 text-light mt-3">$200.00</h2>
                             <div class="card__footer">
                                 <p class="mb-0 text-light mt-2">
-                                    <img src="../assets/img/sales-2.svg" alt="" />
+                                    <img src="../../assets/img/sales-2.svg" alt="" />
                                     <span class="sales-point mb-0 ms-2">8.5%</span>
                                     Up from yesterday
                                 </p>
@@ -69,13 +69,13 @@
                             >
                             <h5 class="mb-0 text-light">Total Due</h5>
                             <div class="header__icon">
-                            <img src="../assets/img/sales.svg" alt="sales" />
+                            <img src="../../assets/img/sales.svg" alt="sales" />
                             </div>
                             </div>
                             <h2 class="mb-0 text-light mt-3">$200.00</h2>
                             <div class="card__footer">
                                 <p class="mb-0 text-light mt-2">
-                                    <img src="../assets/img/sales-2.svg" alt="logo" />
+                                    <img src="../../assets/img/sales-2.svg" alt="logo" />
                                     <span class="sales-point mb-0 ms-2">8.5%</span>
                                     Up from yesterday
                                 </p>
@@ -88,13 +88,13 @@
                             <div class="card__header d-flex align-items-center justify-content-between">
                                 <h5 class="mb-0 text-light">Invoice Due</h5>
                                 <div class="header__icon">
-                                <img src="../assets/img/sales.svg" alt="sales" />
+                                <img src="../../assets/img/sales.svg" alt="sales" />
                                 </div>
                             </div>
                            <h2 class="mb-0 text-light mt-3">$200.00</h2>
                             <div class="card__footer">
                                 <p class="mb-0 text-light mt-2">
-                                <img src="../assets/img/sales-2.svg" alt="" />
+                                <img src="../../assets/img/sales-2.svg" alt="" />
                                 <span class="sales-point mb-0 ms-2">8.5%</span>
                                 Up from yesterday
                                 </p>
@@ -137,7 +137,7 @@
                     <div class="card border-0 bg-white">
                     <div class="d-flex align-items-center mb-3">
                     <h4 class="mb-0 me-2">User Data Tables</h4>
-                    <img src="../assets/img/alert-circle.svg" alt="logo" />
+                    <img src="../../assets/img/alert-circle.svg" alt="logo" />
                     </div>
                     <table ref="table1" style="width:100%">
                         <thead>
@@ -181,7 +181,7 @@
                         <div class="card border-0 bg-white">
                             <div class="d-flex align-items-center mb-3">
                             <h4 class="mb-0 me-2">Purchase Payment Due</h4>
-                            <img src="../assets/img/alert-circle.svg" alt="logo" />
+                            <img src="../../assets/img/alert-circle.svg" alt="logo" />
                             </div>
                             <table ref="table2" style="width:100%">
                                 <thead>
@@ -231,7 +231,7 @@
                 <div class="card border-0 bg-white p-4">
                     <div class="d-flex align-items-center mb-3">
                     <h4 class="mb-0 me-2">Product Stock Alert</h4>
-                    <img src="../assets/img/alert-circle.svg" alt="logo" />
+                    <img src="../../assets/img/alert-circle.svg" alt="logo" />
                     </div>
 
                     <table ref="table3" style="width:100%">
@@ -248,7 +248,7 @@
                     <tr>
                     <td>
                     <span className="stock-img"
-                        ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                        ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                         <span className=" d-inline-block"
                         >Feelin' Peachy Socks</span
                         ></span
@@ -262,7 +262,7 @@
                     <tr>
                     <td>
                     <span className="stock-img"
-                        ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                        ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                         <span className=" d-inline-block"
                         >Feelin' Peachy Socks</span
                         ></span
@@ -276,7 +276,7 @@
                     <tr>
                     <td>
                     <span className="stock-img"
-                        ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                        ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                         <span className=" d-inline-block"
                         >Feelin' Peachy Socks</span
                         ></span
@@ -290,7 +290,7 @@
                     <tr>
                     <td>
                     <span className="stock-img"
-                        ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                        ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                         <span className=" d-inline-block"
                         >Weekender Soda</span
                         ></span
@@ -304,7 +304,7 @@
                     <tr>
                     <td>
                     <span className="stock-img"
-                        ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                        ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                         <span className=" d-inline-block"
                         >Feelin' Peachy Socks</span
                         ></span>
@@ -333,13 +333,13 @@
                                 >
                                 <h5 class="mb-0 text-light">Total Purchase</h5>
                                 <div class="header__icon">
-                                <img src="../assets/img/sales.svg" alt="sales" />
+                                <img src="../../assets/img/sales.svg" alt="sales" />
                                 </div>
                                 </div>
                             <h2 class="mb-0 text-light mt-3">$300.00</h2>
                             <div class="card__footer">
                                 <p class="mb-0 text-light mt-2">
-                                <img src="../assets/img/sales-2.svg" alt="" />
+                                <img src="../../assets/img/sales-2.svg" alt="" />
                                 <span class="sales-point mb-0 ms-2">8.5%</span>
                                 Up from yesterday
                                 </p>
@@ -354,13 +354,13 @@
                                     >
                                     <h5 class="mb-0 text-light">Total Sales</h5>
                                     <div class="header__icon">
-                                    <img src="../assets/img/sales.svg" alt="sales" />
+                                    <img src="../../assets/img/sales.svg" alt="sales" />
                                     </div>
                                 </div>
                                 <h2 class="mb-0 text-light mt-3">$900.00</h2>
                                     <div class="card__footer">
                                     <p class="mb-0 text-light mt-2">
-                                    <img src="../assets/img/sales-2.svg" alt="" />
+                                    <img src="../../assets/img/sales-2.svg" alt="" />
                                     <span class="sales-point mb-0 ms-2">8.5%</span>
                                     Up from yesterday
                                     </p>
@@ -375,13 +375,13 @@
                             >
                             <h5 class="mb-0 text-light">Total Due</h5>
                             <div class="header__icon">
-                            <img src="../assets/img/sales.svg" alt="sales" />
+                            <img src="../../assets/img/sales.svg" alt="sales" />
                             </div>
                             </div>
                             <h2 class="mb-0 text-light mt-3">$230.00</h2>
                             <div class="card__footer">
                             <p class="mb-0 text-light mt-2">
-                            <img src="../assets/img/sales-2.svg" alt="logo" />
+                            <img src="../../assets/img/sales-2.svg" alt="logo" />
                             <span class="sales-point mb-0 ms-2">8.5%</span>
                             Up from yesterday
                             </p>
@@ -396,13 +396,13 @@
                                     >
                                     <h5 class="mb-0 text-light">Invoice Due</h5>
                                     <div class="header__icon">
-                                    <img src="../assets/img/sales.svg" alt="sales" />
+                                    <img src="../../assets/img/sales.svg" alt="sales" />
                                     </div>
                                 </div>
                                 <h2 class="mb-0 text-light mt-3">$200.00</h2>
                                 <div class="card__footer">
                                     <p class="mb-0 text-light mt-2">
-                                    <img src="../assets/img/sales-2.svg" alt="" />
+                                    <img src="../../assets/img/sales-2.svg" alt="" />
                                     <span class="sales-point mb-0 ms-2">8.5%</span>
                                     Up from yesterday
                                     </p>
@@ -445,7 +445,7 @@
                         <div class="card border-0 bg-white">
                             <div class="d-flex align-items-center mb-3">
                                 <h4 class="mb-0 me-2">User Data Tables</h4>
-                                <img src="../assets/img/alert-circle.svg" alt="logo" />
+                                <img src="../../assets/img/alert-circle.svg" alt="logo" />
                             </div>
 
                             <table class="table" ref="table7">
@@ -490,7 +490,7 @@
                         <div class="card border-0 bg-white">
                             <div class="d-flex align-items-center mb-3">
                             <h4 class="mb-0 me-2">Purchase Payment Due</h4>
-                            <img src="../assets/img/alert-circle.svg" alt="logo" />
+                            <img src="../../assets/img/alert-circle.svg" alt="logo" />
                             </div>
                             <table class="table" ref="table9">
                                 <thead>
@@ -540,7 +540,7 @@
                 <div class="card border-0 bg-white p-4">
                     <div class="d-flex align-items-center mb-3">
                     <h4 class="mb-0 me-2">Product Stock Alert</h4>
-                    <img src="../assets/img/alert-circle.svg" alt="logo" />
+                    <img src="../../assets/img/alert-circle.svg" alt="logo" />
                     </div>
 
                     <table ref="table8" class="table" width="100%">
@@ -557,7 +557,7 @@
                             <tr>
                                 <td>
                                 <span className="stock-img">
-                                    <img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    <img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block">
                                         Feelin' Peachy Socks
                                     </span>
@@ -571,7 +571,7 @@
                             <tr>
                                 <td>
                                     <span className="stock-img"
-                                        ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                        ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                         <span className=" d-inline-block"
                                         >Feelin' Peachy Socks</span
                                         >
@@ -585,7 +585,7 @@
                             <tr>
                             <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -598,7 +598,7 @@
 
                             <tr>
                                 <td>
-                                    <span className="stock-img"><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    <span className="stock-img"><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block">Weekender Soda</span></span>
                                 </td>
                                 <td>Alor Pothe</td>
@@ -608,7 +608,7 @@
 
                             <tr>
                                 <td>
-                                    <span className="stock-img"><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    <span className="stock-img"><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block">Feelin' Peachy Socks</span></span>
                                 </td>
                                 <td>Alor Pothe</td>
@@ -635,13 +635,13 @@
                         >
                         <h5 class="mb-0 text-light">Total Purchase</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$980.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="" />
+                        <img src="../../assets/img/sales-2.svg" alt="" />
                         <span class="sales-point mb-0 ms-2">5.5%</span>
                         Up from yesterday
                         </p>
@@ -656,13 +656,13 @@
                         >
                         <h5 class="mb-0 text-light">Total Sales</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$270.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="" />
+                        <img src="../../assets/img/sales-2.svg" alt="" />
                         <span class="sales-point mb-0 ms-2">8.5%</span>
                         Up from yesterday
                         </p>
@@ -677,13 +677,13 @@
                         >
                         <h5 class="mb-0 text-light">Total Due</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$700.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="logo" />
+                        <img src="../../assets/img/sales-2.svg" alt="logo" />
                         <span class="sales-point mb-0 ms-2">8.5%</span>
                         Up from yesterday
                         </p>
@@ -698,13 +698,13 @@
                         >
                         <h5 class="mb-0 text-light">Invoice Due</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$900.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="" />
+                        <img src="../../assets/img/sales-2.svg" alt="" />
                         <span class="sales-point mb-0 ms-2">8.5%</span>
                         Up from yesterday
                         </p>
@@ -747,7 +747,7 @@
                             <div class="card border-0 bg-white">
                                 <div class="d-flex align-items-center mb-3">
                                 <h4 class="mb-0 me-2">User Data Tables</h4>
-                                <img src="../assets/img/alert-circle.svg" alt="logo" />
+                                <img src="../../assets/img/alert-circle.svg" alt="logo" />
                                 </div>
 
                                 <table class="table" ref="table11">
@@ -792,7 +792,7 @@
                             <div class="card border-0 bg-white">
                                 <div class="d-flex align-items-center mb-3">
                                 <h4 class="mb-0 me-2">Purchase Payment Due</h4>
-                                <img src="../assets/img/alert-circle.svg" alt="logo" />
+                                <img src="../../assets/img/alert-circle.svg" alt="logo" />
                                 </div>
                                 <table class="table" id="table_two" ref="table12">
                                     <thead>
@@ -842,7 +842,7 @@
                     <div class="card border-0 bg-white p-4">
                         <div class="d-flex align-items-center mb-3">
                             <h4 class="mb-0 me-2">Product Stock Alert</h4>
-                            <img src="../assets/img/alert-circle.svg" alt="logo" />
+                            <img src="../../assets/img/alert-circle.svg" alt="logo" />
                         </div>
                         <table ref="table10"  width="100%">
                             <thead>
@@ -858,7 +858,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -872,7 +872,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -886,7 +886,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -900,7 +900,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Weekender Soda</span
                                     ></span
@@ -914,7 +914,7 @@
                                 <tr>
                             <td>
                             <span className="stock-img"
-                                ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                 <span className=" d-inline-block"
                                 >Feelin' Peachy Socks</span
                                 ></span
@@ -944,13 +944,13 @@
                         >
                         <h5 class="mb-0 text-light">Total Purchase</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$700.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="" />
+                        <img src="../../assets/img/sales-2.svg" alt="" />
                         <span class="sales-point mb-0 ms-2">9.5%</span>
                         Up from yesterday
                         </p>
@@ -965,13 +965,13 @@
                         >
                         <h5 class="mb-0 text-light">Total Sales</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$500.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="" />
+                        <img src="../../assets/img/sales-2.svg" alt="" />
                         <span class="sales-point mb-0 ms-2">3.5%</span>
                         Up from yesterday
                         </p>
@@ -986,13 +986,13 @@
                         >
                         <h5 class="mb-0 text-light">Total Due</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$100.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="logo" />
+                        <img src="../../assets/img/sales-2.svg" alt="logo" />
                         <span class="sales-point mb-0 ms-2">8.5%</span>
                         Up from yesterday
                         </p>
@@ -1007,13 +1007,13 @@
                         >
                         <h5 class="mb-0 text-light">Invoice Due</h5>
                         <div class="header__icon">
-                        <img src="../assets/img/sales.svg" alt="sales" />
+                        <img src="../../assets/img/sales.svg" alt="sales" />
                         </div>
                         </div>
                         <h2 class="mb-0 text-light mt-3">$200.00</h2>
                         <div class="card__footer">
                         <p class="mb-0 text-light mt-2">
-                        <img src="../assets/img/sales-2.svg" alt="" />
+                        <img src="../../assets/img/sales-2.svg" alt="" />
                         <span class="sales-point mb-0 ms-2">8.5%</span>
                         Up from yesterday
                         </p>
@@ -1056,7 +1056,7 @@
                             <div class="card border-0 bg-white">
                                 <div class="d-flex align-items-center mb-3">
                                 <h4 class="mb-0 me-2">User Data Tables</h4>
-                                <img src="../assets/img/alert-circle.svg" alt="logo" />
+                                <img src="../../assets/img/alert-circle.svg" alt="logo" />
                                 </div>
 
                                 <table ref="table14" class="table">
@@ -1101,7 +1101,7 @@
                             <div class="card border-0 bg-white">
                                 <div class="d-flex align-items-center mb-3">
                                 <h4 class="mb-0 me-2">Purchase Payment Due</h4>
-                                <img src="../assets/img/alert-circle.svg" alt="logo" />
+                                <img src="../../assets/img/alert-circle.svg" alt="logo" />
                                 </div>
                                 <table class="table" ref="table15">
                                 <thead>
@@ -1151,7 +1151,7 @@
                     <div class="card border-0 bg-white p-4">
                         <div class="d-flex align-items-center mb-3">
                         <h4 class="mb-0 me-2">Product Stock Alert</h4>
-                        <img src="../assets/img/alert-circle.svg" alt="logo" />
+                        <img src="../../assets/img/alert-circle.svg" alt="logo" />
                         </div>
 
                         <table ref="table13" width="100%">
@@ -1168,7 +1168,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -1182,7 +1182,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -1196,7 +1196,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span
@@ -1210,7 +1210,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Weekender Soda</span
                                     ></span
@@ -1224,7 +1224,7 @@
                                 <tr>
                                 <td>
                                 <span className="stock-img"
-                                    ><img class="me-2" src="../assets/img/watch.svg" alt="img" />
+                                    ><img class="me-2" src="../../assets/img/watch.svg" alt="img" />
                                     <span className=" d-inline-block"
                                     >Feelin' Peachy Socks</span
                                     ></span

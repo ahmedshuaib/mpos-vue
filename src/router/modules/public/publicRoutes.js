@@ -1,7 +1,10 @@
+import Home from "@/views/admin/Home.vue";
+
 export default [
     {
         path: "/",
         name: "home",
+        component: Home,
     },
     {
         path: "/packages",
