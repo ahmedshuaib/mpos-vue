@@ -1,28 +1,30 @@
-import Usermodal from "@/components/admin/user/Usermodal";
-import editmodal from "@/components/admin/user/Edit";
+
+import User from "@/views/admin/User.vue";
+import userModal from "@/components/parts/user/UserModal.vue";
+import editModal from "@/components/parts/user/Edit.vue";
+
 
 export default [
     {
-        path: "/user",
+        path: "user",
         name: "user",
-        component: () =>
-            import(/* webpackChunkName: "User" */ "@/views/admin/User.vue"),
+        component: User,
         children: [
             {
-                path: "usermodal",
-                name: "usermodal",
-                components: {
-                    default: Usermodal,
-                    usermodal: Usermodal,
-                },
+                path: "user-modal",
+                name: "userModal",
+                components:{
+                    default: userModal,
+                    userModal: userModal
+                }
             },
             {
                 path: "edit/:id",
                 name: "edit",
-                components: {
-                    default: editmodal,
-                    edited: editmodal,
-                },
+                components:{
+                    default: editModal,
+                    edited: editModal
+                }
             },
         ],
     },

@@ -1,4 +1,4 @@
-import editModal from '../../components/parts/user/edit.vue';
+
 import EditGroup from '../../components/parts/contacts/customergroup/EditCustomer.vue';
 import AddVariation from '../../components/parts/Product/variation/AddVariation.vue';
 import EditVariation from '../../components/parts/Product/variation/EditVariation.vue';
@@ -10,16 +10,9 @@ import AddCategory from '../../components/parts/Product/category/AddCategory.vue
 import EditCategory from '../../components/parts/Product/category/EditCategory.vue'
 import AddBrand from '../../components/parts/Product/brands/AddBrand.vue'
 import EditBrand from '../../components/parts/Product/brands/EditBrand.vue'
-import Home from "../../views/Home.vue";
-import User from "../../views/User.vue";
-import userModal from "../../components/parts/user/UserModal.vue";
-import Role from "../../views/Role.vue";
 import AddRole from "../../views/AddRole.vue";
-import Sales from "../../views/Sales.vue";
 import SalesModal from "../../components/parts/sales/SalesModal.vue";
-import Suppliers from "../../views/Suppliers.vue";
 import SuppliersModal from "../../components/parts/contacts/suppliers/SuppliersModal.vue";
-import Customers from "../../views/Customers.vue";
 import NewCustomer from "../../components/parts/contacts/customers/NewCustomer.vue";
 import CustomerGroup from "../../views/CustomerGroup.vue";
 import AddGroup from "../../components/parts/contacts/customergroup/AddGroup.vue";
@@ -69,8 +62,6 @@ import ReceivePersonal from "../../views/ReceivePersonal.vue";
 import Inbox from "../../views/Inbox.vue";
 import Notification from "../../views/Notification.vue";
 import Comment from "../../views/Comment.vue";
-import Signup from "../../views/Signup.vue";
-import Login from "../../views/Login.vue";
 import Subscription from "../../views/Subscription.vue";
 import TaxRate from "../../views/TaxRate.vue";
 import ReceiptPrinter from "../../views/ReceiptPrinter.vue";
@@ -78,15 +69,12 @@ import BusinessSetting from "../../views/BusinessSetting.vue";
 import BusinessLocation from "../../views/BusinessLocation.vue";
 import Invoice from "../../views/Invoice.vue";
 import BarCode from "../../views/BarCode.vue";
-import CodeVerify from "../../components/auth/email-verification/CodeVerify.vue";
-import Verified from "../../components/auth/email-verification/Verified.vue";
-import EmailVerify from "../../components/auth/email-verification/EmailVerify.vue";
-import SuccessReset from "../../components/auth/forgot-password/SuccessReset.vue";
-import Reset from "../../components/auth/forgot-password/Reset.vue";
-import Mail from "../../components/auth/forgot-password/Mail.vue";
-import Forgot from "../../components/auth/forgot-password/Forgot.vue";
-import Verification from "../../components/auth/forgot-password/Verification.vue";
 import DashboardLayout from "@/layouts/DashboardLayout.vue";
+import Home from "@/views/admin/Home.vue";
+import Role from "@/views/admin/Role.vue";
+import Sales from "@/views/admin/Sales.vue";
+import Suppliers from "@/views/admin/Suppliers.vue";
+import Customers from "@/views/admin/Customers.vue";
 
 
 export default[
@@ -100,29 +88,6 @@ export default[
                 path: "",
                 name: "home",
                 component: Home,
-            },
-            {
-                path: "user",
-                name: "user",
-                component: User,
-                children:[
-                    {
-                        path: "user-modal",
-                        name: "userModal",
-                        components:{
-                            default: userModal,
-                            userModal: userModal
-                        }
-                    },
-                    {
-                        path: "edit/:id",
-                        name: "edit",
-                        components:{
-                            default: editModal,
-                            edited: editModal
-                        }
-                    },
-                ]
             },
             {
                 path: "/role",
@@ -566,63 +531,7 @@ export default[
                 component:  Subscription,
             },
         ]
-        
-    },
-   
-    // login-pages
-    {
-        path:'/login',
-        name:'login',
-        component: Login,
-    },
-    {
-        path:'/signup',
-        name:'signup',
-        component: Signup,
-    },
-    // forgot-password-paths
-    {
-        path:'/verification',
-        name:'verification',
-        component: Verification,
-    },
-    {
-        path:'/password/reset/',
-        name:'forgot-password',
-        component: Forgot,
-    },
-    {
-        path:'/password/mail',
-        name:'mail',
-        component: Mail,
-    },
-    {
-        path: "/password/new-password",
-        name: "new-password",
-        component: Reset,
-    },
-    {
-        path: "/password/success-password",
-        name: "reset-success",
-        component: SuccessReset,
-    },
-    // forgot-password-paths-end
 
-    // email-verification-paths
-    {
-        path: "/email/verification",
-        name: "email-verify",
-        component: EmailVerify,
     },
-    {
-        path: "/email/verify-code",
-        name: "verify-code",
-        component: CodeVerify,
-    },
-    {
-        path: "/email/success-verify",
-        name: "verify-success",
-        component: Verified,
-    },
-    // email-verification-paths-end
+
 ]

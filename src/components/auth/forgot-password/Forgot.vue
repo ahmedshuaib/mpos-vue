@@ -20,7 +20,7 @@
                         </div>
                         <div class="mt-4 text-center">
                             <router-link :to="{name:'login'}" class="back">
-                                <img src="../../assets/img/back.svg" alt="back">
+                                <img src="../../../assets/img/back.svg" alt="back">
                                 <span>Back to log in</span>
                             </router-link>
                         </div>

@@ -9,7 +9,7 @@
             <form @submit.prevent="validateForm">
                 <div class="google-account">
                     <button class="btn" @click="google">
-                        <img src="../assets/img/goggle.svg" alt="google">
+                        <img src="../../assets/img/goggle.svg" alt="google">
                         <span>Sign up with Goggle</span>
                     </button>
                 </div>
