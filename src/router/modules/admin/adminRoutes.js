@@ -1,12 +1,26 @@
 import editmodal from "@/components/admin/user/Edit.vue";
 import usermodal from "@/components/admin/user/Usermodal.vue";
 import userRoutes from "./userRoutes";
+import Layout from "@/views/admin/App.vue";
+
 export default [
     {
         path: "/admin",
-        name: "home",
-        component: () =>
-            import(/* webpackChunkName: "Home" */ "@/views/admin/Home.vue"),
-        children: [...userRoutes],
+        name: "dashboard",
+        component: import(
+            /* webpackChunkName: dashboard */ "@/views/admin/App.vue"
+        ),
+        children: [
+            {
+                path: "/check",
+                name: "dashboard.index",
+                component: {
+                    homeComponent: import(
+                        /* webpackChunkName: home */ "@/components/admin/home/Home.vue"
+                    ),
+                },
+            },
+            ...userRoutes,
+        ],
     },
 ];
