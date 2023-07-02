@@ -6,7 +6,7 @@
             class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
           >
             <h4 class="mb-0">Roles</h4>
-            <router-link :to="{name:'addrole'}" class="add-role-link">
+            <router-link :to="{name:'addRole'}" class="add-role-link">
               <span class="user-add-btn"><span class="me-1">+</span>Add</span>
             </router-link>
           </div>
@@ -28,13 +28,20 @@
                 <tbody>
                   <tr>
                     <td>Admin</td>
-
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn" @click="addRole">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -43,10 +50,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn" @click="addRole">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -55,10 +70,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn" @click="addRole">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -67,58 +90,18 @@
 
                     <td style="width: 50%">
                       <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-
-                    <td style="width: 50%">
-                      <div class="d-flex align-items-center gap-2">
-                        <button class="pro-view-btn">View Role</button>
-                        <button class="pro-add-btn">Add Role</button>
-                        <button class="pro-edit-btn">Edit Role</button>
-                        <button class="pro-delete-btn">Delete Role</button>
+                        <button class="pro-view-btn">
+                          <img src="../assets/img/view.svg" alt="">
+                          View Role</button>
+                        <button class="pro-add-btn" @click="addRole">
+                          <img src="../assets/img/grenplus.svg" alt="">
+                          Add Role</button>
+                        <button class="pro-edit-btn">
+                          <img src="../assets/img/edit.svg" alt="">
+                          Edit Role</button>
+                        <button class="pro-delete-btn">
+                          <img src="../assets/img/delete.svg" alt="">
+                          Delete Role</button>
                       </div>
                     </td>
                   </tr>
@@ -128,11 +111,19 @@
           </div>
         </div>
       </section>
-      
 </template>
 
 <script>
 export default {
+
+  methods:{
+    addRole()
+    {
+      this.$router.push({
+        name: 'addRole'
+      })
+    }
+  }
 
 }
 </script>

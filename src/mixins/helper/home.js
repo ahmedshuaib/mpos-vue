@@ -3,9 +3,7 @@ import { Chart ,registerables} from 'chart.js';
 
 
 export default{
-
   mounted(){
-
       const dropMenu = document?.querySelector('.drop-menu');
       const dropBtn = document?.querySelector('.drop-btn');
       const dOptions = document?.querySelectorAll('.d-option');

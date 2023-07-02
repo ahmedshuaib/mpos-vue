@@ -1,10 +1,66 @@
 export default{
+  data(){
+    return{
+      error:{}
+    }
+  },
   methods:{
-    popup(){
-      document.body.style.overflowY = 'scroll'; // Reset the overflow-y property
-      document.body.style.padding = '0'; // Reset the overflow-y property
+    handle(){
 
+      this.error={};
+      try{
+        const dragarea=document.querySelector('.drag-area');
+  
+  
+        dragarea.addEventListener('dragover',function(event){
+            event.preventDefault();
+        })
+    
+        dragarea.addEventListener('dragleave',function(event){
+    
+    
+        })
+        dragarea.addEventListener('drop', function(event) {
+          event.preventDefault();
+          const file = event.dataTransfer.files[0];
+          let fileType = file.type;
+          let validExtensions = ['image/jpeg', 'image/jpg', 'image/png'];
+      
+          if (validExtensions.includes(fileType)) {
+              let fileReader = new FileReader();
+      
+              fileReader.onload = () => {
+                  let fileURL = fileReader.result;
+      
+                  let imgTag = document.createElement('img');
+                  imgTag.src = fileURL;
+                  imgTag.alt = '';
+      
+                  // Clear existing content of the dragarea div
+                  dragarea.innerHTML = '';
+      
+                  // Append the dropped image to the dragarea div
+                  dragarea.appendChild(imgTag);
+              };
+      
+              fileReader.readAsDataURL(file);
+          }
+      });
+
+      }catch(err){
+        this.error=err;
+      }
     },
+
+
+
+
+
+
+
+
+
+    
     
     searchBar(){
       const mobile__input = document.querySelector('.mobile__input');
@@ -20,65 +76,21 @@ export default{
       mainHeader.classList.toggle('active');
       console.log('asdf')
     },
-
-    selectBtn() {
-        const optionMenu = document.querySelector('.select-menu');
-        const selectBtn = document.querySelector('.select-btn');
-        const options = document.querySelectorAll('.option');
-        const sBtn_text = document.querySelector('.sBtn-text');
-
-
-        options.forEach((option) => {
-          option.addEventListener('click', () => {
-            let selected = option.querySelector('.option-text').innerText;
-            sBtn_text.innerText = selected;
-            optionMenu.classList.remove('select-menu--active');
-          });
-        });
-
-        selectBtn.addEventListener('click', () => {
-          optionMenu.classList.add('select-menu--active');
-        });
-        optionMenu.classList.add('select-menu--active');
-    },
-
   },
+
     mounted(){
         window.addEventListener('load', () => {
-            dropDown();
-            dotsMenu();
             accordion();
+            dropDown();
           });
-          const accordion = () => {  
-            const acHeader=document.querySelectorAll('.accordion-header');
-            const unstyle=document.querySelectorAll('.side-List')
-            const unstyleImg=document.querySelectorAll('.side-List img')
+          this.handle();
 
-            acHeader.forEach(function(tab,index){
-
-              tab.addEventListener('click',function() {
-                unstyleImg.forEach(function(img){
-                  img.classList.remove('active')
-                })
-                unstyle.forEach(function(newtab){
-
-                  newtab.classList.remove('active');
-
-                })
-
-                unstyle[index].classList.add('active');
-                unstyleImg[index].classList.add('active')
-              })
-              
-            })
-          }
 
           const dropDown = () => {
             const dropMenu = document?.querySelector('.drop-menu');
             const dropBtn = document?.querySelector('.drop-btn');
             const dOptions = document?.querySelectorAll('.d-option');
             const dBtn_text = document?.querySelector('.dBtn-text');
-            const popup_close=document.querySelector('#popup-close');
             dOptions?.forEach((option) => {
               option?.addEventListener('click', () => {
                 let selected = option.querySelector('.d-option-text').innerText;
@@ -91,27 +103,63 @@ export default{
               dropMenu.classList.toggle('drop-menu--active');
             });
           };
-          
-          const dotsMenu = () => {
-            const dotsMenu = document.querySelector('.dots-menu');
-            const tOptions = document.querySelectorAll('.t-option');
-            const dotsBtn = document.querySelectorAll('.dots-btn');
-          
-            dotsBtn.forEach((btn) => {
-              btn.addEventListener('click', () => {
-                btn.classList.toggle('dots--active');
-                 console.log('asdf')
 
-              });
-            });
+          // const accordion = () => {  
+          //   const acHeader=document.querySelectorAll('.accordion-header');
+          //   const unstyle=document.querySelectorAll('.side-List')
+          //   const unstyleImg=document.querySelectorAll('.side-List img')
+          //   acHeader.forEach(function(tab,index){
+          //     tab.addEventListener('click',function() {
+          //       unstyleImg.forEach(function(img){
+          //         img.classList.remove('active')
+          //       })
+          //       unstyle.forEach(function(newtab){
+          //         newtab.classList.remove('active');
+          //       })
+          //       unstyle[index].classList.add('active');
+          //       unstyleImg[index].classList.add('active')
+          //     })   
+          //   })
+          // }
+          const accordion = () => {
+            const acHeader = document.querySelectorAll('.accordion-header');
+            const unstyle = document.querySelectorAll('.side-List');
+            const unstyleImg = document.querySelectorAll('.side-List img');
           
-            tOptions.forEach((opt) => {
-              opt.addEventListener('click', () => {
-                dotsBtn.forEach((btn) => {
-                  btn.classList.remove('dots--active');
+            // Check if accordion state is stored in localStorage
+            const accordionState = localStorage.getItem('accordionState');
+            if (accordionState) {
+              const activeIndex = parseInt(accordionState, 10);
+              unstyle.forEach((newtab, index) => {
+                if (index === activeIndex) {
+                  newtab.classList.add('active');
+                  unstyleImg[index].classList.add('active');
+                } else {
+                  newtab.classList.remove('active');
+                  unstyleImg[index].classList.remove('active');
+                }
+              });
+            }
+          
+            acHeader.forEach(function (tab, index) {
+              tab.addEventListener('click', function () {
+                unstyleImg.forEach(function (img) {
+                  img.classList.remove('active');
                 });
+                unstyle.forEach(function (newtab) {
+                  newtab.classList.remove('active');
+                });
+                unstyle[index].classList.add('active');
+                unstyleImg[index].classList.add('active');
+          
+                // Store the active accordion index in localStorage
+                localStorage.setItem('accordionState', index.toString());
               });
             });
           };
-        }
+          
+          // Call the accordion function to initialize
+          accordion();
+          
+        },
     }
