@@ -791,276 +791,74 @@
                         </div>
                       </div>
 
-                        <!-- <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingTwo">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo"
-                                    aria-expanded="false"
-                                    aria-controls="collapseTwo"
-                                >
-                                    User Management
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseTwo"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'user' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        >Product
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'role' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        >Role
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'sales' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        href="sales.html"
-                                        >Sales</router-link
-                                    >
-                                </div>
-                            </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingTwl">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwl"
+                              aria-expanded="false"
+                              aria-controls="collapseTwl"
+                          >
+                            Settings
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseTwl"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwl"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'business-setting' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Business Settings</p>
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'business-location' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Business Location</p>
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'invoice-setting' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Invoice Setting</p>
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'barcode-setting' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Barcode Settings</p>
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'receipt-printer' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Receipt Printer</p>
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'tax-rate' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Tax Rate</p>
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'subscription' }"
+                                class="text-decoration-none"
+                                href="#"
+                            ><p class="mb-0">Subscription</p>
+                            </router-link>
+                          </div>
                         </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingThree">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree"
-                                    aria-expanded="false"
-                                    aria-controls="collapseThree"
-                                >
-                                    Contacts
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseThree"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'suppliers' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        href="#"
-                                        exact
-                                        >Suppliers
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'customers' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        >Customers
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'customer-pay' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        >Customer Payable
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'customer-group' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        >Customer Group
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'customer-sms' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Customer SMS
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'customer-contact' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Import Contact
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingFour">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFour"
-                                >
-                                    Product
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseFour"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'list-product' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        List Product
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'new-product' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        New Product List
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'print-label' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Print Label
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'variations' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Variations
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'import-product' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Import Product
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'sell-group' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Selling Price Group
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'units' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Units
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'categories' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Categories
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'brands' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Brands
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'list-purchase' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        List Purchase
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'purchase-return' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Purchase Return
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingTwl">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwl"
-                                    aria-expanded="false"
-                                    aria-controls="collapseTwl"
-                                >
-                                    Settings
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseTwl"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingTwl"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'business-setting' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Business Settings</p>
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'business-location' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Business Location</p>
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'invoice-setting' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Invoice Setting</p>
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'barcode-setting' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Barcode Settings</p>
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'receipt-printer' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Receipt Printer</p>
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'tax-rate' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Tax Rate</p>
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'subscription' }"
-                                        class="text-decoration-none"
-                                        href="#"
-                                        ><p class="mb-0">Subscription</p>
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div> -->
+                      </div>
                     </div>
 
-                    <!-- <hr
+                    <hr
                         style="
                             border-top: 1px solid #ededed;
                             opacity: 1;
@@ -1096,7 +894,7 @@
                             ><p class="mb-0">Comment</p>
                             <div class="count">9</div>
                         </router-link>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
