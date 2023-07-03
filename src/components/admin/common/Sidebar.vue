@@ -14,7 +14,7 @@
             >
                 <img
                     class="logo"
-                    src="../../assets/img/wafah-pos.svg"
+                    src="../../../assets/img/wafah-pos.svg"
                     alt="logo"
                 />
             </div>
@@ -31,7 +31,7 @@
                             href="index.html"
                         >
                             <img
-                                src="../../assets/img/Home.svg"
+                                src="../../../assets/img/Home.svg"
                                 alt=""
                                 class="active"
                             />
@@ -46,7 +46,7 @@
                             href="product.html"
                         >
                             <img
-                                src="../../assets/img/Discovery.svg"
+                                src="../../../assets/img/Discovery.svg"
                                 alt="logo"
                             />
                         </a>
@@ -60,7 +60,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/profile-circle.svg"
+                                src="../../../assets/img/profile-circle.svg"
                                 alt="logo"
                             />
                         </a>
@@ -72,7 +72,7 @@
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="product.html"
                         >
-                            <img src="../../assets/img/Bag.svg" alt="logo" />
+                            <img src="../../../assets/img/Bag.svg" alt="logo" />
                         </a>
                     </li>
                     <li
@@ -83,7 +83,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/receipt-minus.svg"
+                                src="../../../assets/img/receipt-minus.svg"
                                 alt="logo"
                             />
                         </a>
@@ -96,7 +96,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/Activity.svg"
+                                src="../../../assets/img/Activity.svg"
                                 alt="logo"
                             />
                         </a>
@@ -108,7 +108,7 @@
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="#"
                         >
-                            <img src="../../assets/img/Chart.svg" alt="logo" />
+                            <img src="../../../assets/img/Chart.svg" alt="logo" />
                         </a>
                     </li>
 
@@ -120,7 +120,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/money-send.svg"
+                                src="../../../assets/img/money-send.svg"
                                 alt="logo"
                             />
                         </a>
@@ -133,7 +133,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/user-remove.svg"
+                                src="../../../assets/img/user-remove.svg"
                                 alt="logo"
                             />
                         </a>
@@ -147,7 +147,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/empty-wallet-change.svg"
+                                src="../../../assets/img/empty-wallet-change.svg"
                                 alt="logo"
                             />
                         </a>
@@ -160,7 +160,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/wallet-add.svg"
+                                src="../../../assets/img/wallet-add.svg"
                                 alt="logo"
                             />
                         </a>
@@ -173,7 +173,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/Setting.svg"
+                                src="../../../assets/img/Setting.svg"
                                 alt="logo"
                             />
                         </a>
@@ -195,7 +195,7 @@
                             href="#"
                         >
                             <img
-                                src="../../assets/img/message-text.svg"
+                                src="../../../assets/img/message-text.svg"
                                 alt="logo"
                             />
                         </a>
@@ -207,7 +207,7 @@
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="#"
                         >
-                            <img src="../../assets/img/notify.svg" alt="logo" />
+                            <img src="../../../assets/img/notify.svg" alt="logo" />
                         </a>
                     </li>
                     <li
@@ -217,7 +217,7 @@
                             class="text-decoration-none d-flex align-items-center justify-content-center"
                             href="#"
                         >
-                            <img src="../../assets/img/Chat.svg" alt="logo" />
+                            <img src="../../../assets/img/Chat.svg" alt="logo" />
                         </a>
                     </li>
                 </ul>
@@ -263,6 +263,46 @@
                                 </div>
                             </div>
                         </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingTwo">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                          >
+                            User Management
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'list-product' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >Product
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'role' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >Role
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'sales' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                                href="sales.html"
+                            >Sales</router-link
+                            >
+                          </div>
+                        </div>
+                      </div>
 
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
