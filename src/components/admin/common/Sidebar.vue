@@ -678,6 +678,83 @@
                         </div>
                       </div>
 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingNine">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseNine"
+                              aria-expanded="false"
+                              aria-controls="collapseNine"
+                          >
+                            Bank User
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseNine"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingNine"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'bank-user' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Bank User
+                            </router-link>
+                            <a
+                                class="text-decoration-none d-block py-2 mb-0"
+                                href="#"
+                            >Sub item two</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingTen">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTen"
+                              aria-expanded="false"
+                              aria-controls="collapseTen"
+                          >
+                            Transfer Balance
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseTen"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTen"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'bank' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Bank
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'personal' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Personal
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'main-point' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Main Point
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
+
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
                                 <button
@@ -874,82 +951,9 @@
 
 
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingNine">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseNine"
-                                    aria-expanded="false"
-                                    aria-controls="collapseNine"
-                                >
-                                    Bank User
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseNine"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingNine"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'bank-user' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Bank User
-                                    </router-link>
-                                    <a
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                        href="#"
-                                        >Sub item two</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingTen">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTen"
-                                    aria-expanded="false"
-                                    aria-controls="collapseTen"
-                                >
-                                    Transfer Balance
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseTen"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingTen"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'bank' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Bank
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'personal' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Personal
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'main-point' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Main Point
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
+
+
 
                         <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingElv">
