@@ -518,6 +518,93 @@
                         </div>
                       </div>
 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingSix">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseSix"
+                              aria-expanded="false"
+                              aria-controls="collapseSix"
+                          >
+                            Report
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'reports' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Profit/Loss Report
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'net-balance' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Net Balance
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'supplier-position' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Supplier Wise Sales Position
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'supplier-summery' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Supplier Wise Stock Summery
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'supplier-report' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Supplier Wise Product Sell Report
+                            </router-link>
+
+                            <router-link
+                                :to="{ name: 'stock-position' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Supplier Wise Detail Stock Position of
+                              shop
+                            </router-link>
+
+                            <router-link
+                                :to="{ name: 'stock-receipts' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Supplier Wise Stock Receipts Report
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'purchase-sale' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Purchase & Sale Report
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'transfer-report' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Transfer Report
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'transaction-report' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Transaction Report
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
+
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
                                 <button
@@ -708,92 +795,7 @@
 
 
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingSix">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSix"
-                                >
-                                    Report
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseSix"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingSix"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'reports' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Profit/Loss Report
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'net-balance' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Net Balance
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'supplier-position' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Supplier Wise Sales Position
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'supplier-summery' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Supplier Wise Stock Summery
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'supplier-report' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Supplier Wise Product Sell Report
-                                    </router-link>
 
-                                    <router-link
-                                        :to="{ name: 'stock-position' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Supplier Wise Detail Stock Position of
-                                        shop
-                                    </router-link>
-
-                                    <router-link
-                                        :to="{ name: 'stock-receipts' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Supplier Wise Stock Receipts Report
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'purchase-sale' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Purchase & Sale Report
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'transfer-report' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Transfer Report
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'transaction-report' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Transaction Report
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingSeven">

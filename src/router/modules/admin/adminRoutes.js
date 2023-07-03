@@ -1,6 +1,7 @@
 import userRoutes from "./userRoutes";
 import productRoutes from "@/router/modules/admin/productRoutes";
 import saleRoutes from "@/router/modules/admin/saleRoutes";
+import reportRoutes from "@/router/modules/admin/reportRoutes";
 
 export default [
     {
@@ -24,7 +25,7 @@ export default [
                         /* webpackChunkName: notification */ "@/views/admin/Home.vue"
                     ),
             },
-            ...userRoutes, ...productRoutes, ...saleRoutes
+            ...userRoutes, ...productRoutes, ...saleRoutes, ...reportRoutes
         ],
     },
 ];
