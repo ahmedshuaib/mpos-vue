@@ -452,6 +452,71 @@
                         </div>
                       </div>
 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingFive">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive"
+                              aria-expanded="false"
+                              aria-controls="collapseFive"
+                          >
+                            Sales
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'all-sales' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              All Sales
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'discount-sales' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Discount Sale
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'add-sales' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Add Sale
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'list-pose' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              List Pos
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'list-draft' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              List Draft
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'list-quotations' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              List quotations
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'sell-return' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Sell Return
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
 
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
@@ -641,71 +706,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingFive">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFive"
-                                >
-                                    Sales
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseFive"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'all-sales' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        All Sales
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'discount-sales' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Discount Sale
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'add-sales' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Add Sale
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'list-pose' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        List Pos
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'list-draft' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        List Draft
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'list-quotations' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        List quotations
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'sell-return' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Sell Return
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingSix">
