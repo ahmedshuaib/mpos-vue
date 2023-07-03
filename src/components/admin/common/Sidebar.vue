@@ -755,6 +755,42 @@
                         </div>
                       </div>
 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingElv">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseElv"
+                              aria-expanded="false"
+                              aria-controls="collapseElv"
+                          >
+                            Receive Balance
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseElv"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingElv"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'receive-balance' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Bank
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'receive-personal' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Personal
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
+
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
                                 <button
@@ -955,41 +991,7 @@
 
 
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingElv">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseElv"
-                                    aria-expanded="false"
-                                    aria-controls="collapseElv"
-                                >
-                                    Receive Balance
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseElv"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingElv"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'receive-balance' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Bank
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'receive-personal' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Personal
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwl">

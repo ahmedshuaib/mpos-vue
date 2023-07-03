@@ -6,6 +6,7 @@ import stockRoutes from "@/router/modules/admin/stockRoutes";
 import expenseRoutes from "@/router/modules/admin/expenseRoutes";
 import bankRoutes from "@/router/modules/admin/bankRoutes";
 import transferBalanceRoutes from "@/router/modules/admin/transferBalanceRoutes";
+import receiveBalanceRoutes from "@/router/modules/admin/receiveBalanceRoutes";
 
 export default [
     {
@@ -30,7 +31,8 @@ export default [
                     ),
             },
             ...userRoutes, ...productRoutes, ...saleRoutes, ...reportRoutes,
-            ...stockRoutes, ...expenseRoutes, ...bankRoutes,...transferBalanceRoutes
+            ...stockRoutes, ...expenseRoutes, ...bankRoutes,...transferBalanceRoutes,
+            ...receiveBalanceRoutes
         ],
     },
 ];
