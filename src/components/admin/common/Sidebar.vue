@@ -285,9 +285,9 @@
                         >
                           <div class="accordion-body">
                             <router-link
-                                :to="{ name: 'list-product' }"
+                                :to="{ name: 'user' }"
                                 class="text-decoration-none d-block py-2 mb-0"
-                            >Product
+                            >User
                             </router-link>
                             <router-link
                                 :to="{ name: 'role' }"
@@ -300,6 +300,64 @@
                                 href="sales.html"
                             >Sales</router-link
                             >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingThree">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                          >
+                            Contacts
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'suppliers' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                                href="#"
+                                exact
+                            >Suppliers
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'customers' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >Customers
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'customer-pay' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >Customer Payable
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'customer-group' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >Customer Group
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'customer-sms' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Customer SMS
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'customer-contact' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Import Contact
+                            </router-link>
                           </div>
                         </div>
                       </div>

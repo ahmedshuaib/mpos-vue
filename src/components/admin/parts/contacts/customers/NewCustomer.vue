@@ -73,7 +73,7 @@
                         </div>
                       </div>
                       <div class="col-lg-6 mt-4">
-                        <label for="contact" style="vertical-align: middle;">Pay Term: <img src="../../../../assets/img/pay.svg" alt="logo"></label>
+                        <label for="contact" style="vertical-align: middle;">Pay Term: <img src="../../../../../assets/img/pay.svg" alt="logo"></label>
                         <select class="form-select" aria-label="Default select example">
                           <option selected>Pay term | Please Select</option>
                           <option value="1">One</option>
@@ -93,7 +93,7 @@
                         </div>
                       </div>
                       <div class="col-lg-6 mt-4">
-                        <label for="contact" style="vertical-align: middle;">Selling Price Group:<img src="../../../../assets/img/pay.svg" alt="logo"></label>
+                        <label for="contact" style="vertical-align: middle;">Selling Price Group:<img src="../../../../../assets/img/pay.svg" alt="logo"></label>
                         <select class="form-select" aria-label="Default select example">
                           <option selected>Default Selling Price</option>
                           <option value="1">One</option>
