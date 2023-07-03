@@ -3,7 +3,7 @@ import AddBankUser from "@/components/admin/parts/bank/AddBankUser.vue";
 
 export default [
         {
-            path:'/bank-user',
+            path:'bank-user',
             name:'bank-user',
             component: BankUser,
             children:[

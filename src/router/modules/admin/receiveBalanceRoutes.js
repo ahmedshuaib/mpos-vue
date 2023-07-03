@@ -3,12 +3,12 @@ import ReceivePersonal from "@/views/ReceivePersonal.vue";
 
 export default [
         {
-            path:'/receive-balance',
+            path:'receive-balance',
             name:'receive-balance',
             component: ReceiveBalance,
         },
         {
-            path:'/receive-personal',
+            path:'receive-personal',
             name:'receive-personal',
             component: ReceivePersonal,
         },

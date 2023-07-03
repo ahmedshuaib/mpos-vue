@@ -23,10 +23,6 @@ import AddPurchase from "@/views/AddPurchase.vue";
 import PurchaseReturn from "@/views/PurchaseReturn.vue";
 
 export default [
-    // {
-    //     path: "/product",
-    //     name: "product",
-    // },
 
         {
             path:'list-product',
@@ -125,7 +121,7 @@ export default [
             ]
         },
         {
-            path:'/categories',
+            path:'categories',
             name:'categories',
             component: Categories,
             children:[
@@ -172,17 +168,17 @@ export default [
             ]
         },
         {
-            path:'/list-purchase',
+            path:'list-purchase',
             name:'list-purchase',
             component: ListPurchase,
         },
         {
-            path:'/add-purchase',
+            path:'add-purchase',
             name:'add-purchase',
             component: AddPurchase,
         },
         {
-            path:'/purchase-return',
+            path:'purchase-return',
             name:'purchase-return',
             component: PurchaseReturn,
         },
