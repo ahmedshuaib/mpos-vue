@@ -1,4 +1,4 @@
-import Login from "@/views/Login.vue";
+import Login from "@/views/admin/Login.vue";
 import Signup from "@/views/admin/Signup.vue";
 import Verification from "@/components/auth/forgot-password/Verification.vue";
 import Forgot from "@/components/auth/forgot-password/Forgot.vue";

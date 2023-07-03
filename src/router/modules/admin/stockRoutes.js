@@ -1,5 +1,5 @@
-import StockAdjustment from "@/views/StockAdjustment.vue";
-import AddStockAdjustment from "@/views/AddStockAdjustment.vue";
+import StockAdjustment from "@/views/admin/pages/StockAdjustment.vue";
+import AddStockAdjustment from "@/views/admin/pages/AddStockAdjustment.vue";
 
 
 export default [

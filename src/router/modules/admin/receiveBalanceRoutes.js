@@ -1,5 +1,5 @@
-import ReceiveBalance from "@/views/ReceiveBalance.vue";
-import ReceivePersonal from "@/views/ReceivePersonal.vue";
+import ReceiveBalance from "@/views/admin/pages/ReceiveBalance.vue";
+import ReceivePersonal from "@/views/admin/pages/ReceivePersonal.vue";
 
 export default [
         {

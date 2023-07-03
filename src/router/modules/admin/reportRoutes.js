@@ -1,13 +1,13 @@
-import Reports from "@/views/Reports.vue";
-import NetBalance from "@/views/NetBalance.vue";
-import SupplierPosition from "@/views/SupplierPosition.vue";
-import SupplierSummery from "@/views/SupplierSummery.vue";
-import SupplierReport from "@/views/SupplierReport.vue";
-import StockPosition from "@/views/StockPosition.vue";
-import StockReceipts from "@/views/StockReceipts.vue";
-import PurchaseSale from "@/views/PurchaseSale.vue";
-import TransferReport from "@/views/TransferReport.vue";
-import TransactionReport from "@/views/TransactionReport.vue";
+import Reports from "@/views/admin/pages/Reports.vue";
+import NetBalance from "@/views/admin/pages/NetBalance.vue";
+import SupplierPosition from "@/views/admin/pages/SupplierPosition.vue";
+import SupplierSummery from "@/views/admin/pages/SupplierSummery.vue";
+import SupplierReport from "@/views/admin/pages/SupplierReport.vue";
+import StockPosition from "@/views/admin/pages/StockPosition.vue";
+import StockReceipts from "@/views/admin/pages/StockReceipts.vue";
+import PurchaseSale from "@/views/admin/pages/PurchaseSale.vue";
+import TransferReport from "@/views/admin/pages/TransferReport.vue";
+import TransactionReport from "@/views/admin/pages/TransactionReport.vue";
 
 
 export default [

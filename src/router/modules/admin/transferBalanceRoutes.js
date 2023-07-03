@@ -1,6 +1,6 @@
-import Bank from "@/views/Bank.vue";
-import Personal from "@/views/Personal.vue";
-import MainPoint from "@/views/MainPoint.vue";
+import Bank from "@/views/admin/pages/Bank.vue";
+import Personal from "@/views/admin/pages/Personal.vue";
+import MainPoint from "@/views/admin/pages/MainPoint.vue";
 
 
 export default [

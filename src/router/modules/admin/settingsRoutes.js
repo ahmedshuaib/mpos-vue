@@ -1,13 +1,13 @@
-import BusinessSetting from "@/views/BusinessSetting.vue";
-import BusinessLocation from "@/views/BusinessLocation.vue";
-import Invoice from "@/views/Invoice.vue";
-import BarCode from "@/views/BarCode.vue";
-import ReceiptPrinter from "@/views/ReceiptPrinter.vue";
-import TaxRate from "@/views/TaxRate.vue";
-import Subscription from "@/views/Subscription.vue";
-import Inbox from "@/views/Inbox.vue";
-import Comment from "@/views/Comment.vue";
-import Notification from "@/views/Notification.vue";
+import BusinessSetting from "@/views/admin/pages/BusinessSetting.vue";
+import BusinessLocation from "@/views/admin/pages/BusinessLocation.vue";
+import Invoice from "@/views/admin/pages/Invoice.vue";
+import BarCode from "@/views/admin/pages/BarCode.vue";
+import ReceiptPrinter from "@/views/admin/pages/ReceiptPrinter.vue";
+import TaxRate from "@/views/admin/pages/TaxRate.vue";
+import Subscription from "@/views/admin/pages/Subscription.vue";
+import Inbox from "@/views/admin/pages/Inbox.vue";
+import Comment from "@/views/admin/pages/Comment.vue";
+import Notification from "@/views/admin/pages/Notification.vue";
 
 export default [
         {

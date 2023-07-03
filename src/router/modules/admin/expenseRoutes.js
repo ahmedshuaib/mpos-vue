@@ -1,5 +1,5 @@
-import Expenses from "@/views/Expenses.vue";
-import ExpenseCategory from "@/views/ExpenseCategory.vue";
+import Expenses from "@/views/admin/pages/Expenses.vue";
+import ExpenseCategory from "@/views/admin/pages/ExpenseCategory.vue";
 
 export default [
 

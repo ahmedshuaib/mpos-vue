@@ -2,12 +2,12 @@ import Suppliers from "@/views/admin/Suppliers.vue";
 import SuppliersModal from "@/components/admin/parts/contacts/suppliers/SuppliersModal.vue";
 import Customers from "@/views/admin/Customers.vue";
 import NewCustomer from "@/components/admin/parts/contacts/customers/NewCustomer.vue";
-import CustomerGroup from "@/views/CustomerGroup.vue";
+import CustomerGroup from "@/views/admin/pages/CustomerGroup.vue";
 import AddGroup from "@/components/admin/parts/contacts/customergroup/AddGroup.vue";
 import Edit from "@/components/admin/user/Edit.vue";
-import CustomerPay from "@/views/Customerpay.vue";
-import CustomerSms from "@/views/CustomerSms.vue";
-import ImportContact from "@/views/ImportContact.vue";
+import CustomerPay from "@/views/admin/pages/Customerpay.vue";
+import CustomerSms from "@/views/admin/pages/CustomerSms.vue";
+import ImportContact from "@/views/admin/pages/ImportContact.vue";
 
 export default [
     {

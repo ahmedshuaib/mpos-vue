@@ -1,4 +1,4 @@
-import BankUser from "@/views/BankUser.vue";
+import BankUser from "@/views/admin/pages/BankUser.vue";
 import AddBankUser from "@/components/admin/parts/bank/AddBankUser.vue";
 
 export default [

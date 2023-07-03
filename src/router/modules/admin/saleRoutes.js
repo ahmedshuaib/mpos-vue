@@ -1,14 +1,14 @@
-import AllSales from "@/views/AllSales.vue";
-import DiscountSale from "@/views/DiscountSale.vue";
-import AddSale from "@/views/AddSale.vue";
-import ListPose from "@/views/ListPose.vue";
-import ListDraft from "@/views/ListDraft.vue";
-import ListQuotations from "@/views/ListQuotations.vue";
-import SellReturn from "@/views/SellReturn.vue";
-import StockAdjustment from "@/views/StockAdjustment.vue";
-import AddStockAdjustment from "@/views/AddStockAdjustment.vue";
-import Expenses from "@/views/Expenses.vue";
-import ExpenseCategory from "@/views/ExpenseCategory.vue";
+import AllSales from "@/views/admin/pages/AllSales.vue";
+import DiscountSale from "@/views/admin/pages/DiscountSale.vue";
+import AddSale from "@/views/admin/pages/AddSale.vue";
+import ListPose from "@/views/admin/pages/ListPose.vue";
+import ListDraft from "@/views/admin/pages/ListDraft.vue";
+import ListQuotations from "@/views/admin/pages/ListQuotations.vue";
+import SellReturn from "@/views/admin/pages/SellReturn.vue";
+import StockAdjustment from "@/views/admin/pages/StockAdjustment.vue";
+import AddStockAdjustment from "@/views/admin/pages/AddStockAdjustment.vue";
+import Expenses from "@/views/admin/pages/Expenses.vue";
+import ExpenseCategory from "@/views/admin/pages/ExpenseCategory.vue";
 
 
 export default [
