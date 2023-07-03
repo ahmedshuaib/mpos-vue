@@ -362,6 +362,97 @@
                         </div>
                       </div>
 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingFour">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour"
+                              aria-expanded="false"
+                              aria-controls="collapseFour"
+                          >
+                            Product
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'list-product' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              List Product
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'new-product' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              New Product List
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'print-label' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Print Label
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'variations' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Variations
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'import-product' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Import Product
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'sell-group' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Selling Price Group
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'units' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Units
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'categories' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Categories
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'brands' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Brands
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'list-purchase' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              List Purchase
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'purchase-return' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Purchase Return
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
+
+
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
                                 <button

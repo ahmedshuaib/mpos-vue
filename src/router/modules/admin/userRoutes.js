@@ -15,6 +15,7 @@ import CustomerSms from "@/views/CustomerSms.vue";
 import ImportContact from "@/views/ImportContact.vue";
 import CustomerPay from "@/views/CustomerPay.vue";
 import Edit from "@/components/admin/user/Edit.vue";
+
 export default [
     {
         path: "user",
