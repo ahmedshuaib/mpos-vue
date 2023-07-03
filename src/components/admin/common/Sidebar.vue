@@ -605,6 +605,79 @@
                         </div>
                       </div>
 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingSeven">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseSeven"
+                              aria-expanded="false"
+                              aria-controls="collapseSeven"
+                          >
+                            Stock Adjustment
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'stock-adjust' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Stock Adjustment
+                            </router-link>
+                            <router-link
+                                :to="{ name: 'add-stock' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Add Stock
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-0" id="headingEigth">
+                          <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseEigth"
+                              aria-expanded="false"
+                              aria-controls="collapseEigth"
+                          >
+                            Expense
+                          </button>
+                        </h2>
+                        <div
+                            id="collapseEigth"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingEigth"
+                            data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <router-link
+                                :to="{ name: 'expenses' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Expenses
+                            </router-link>
+
+                            <router-link
+                                :to="{ name: 'expenses-category' }"
+                                class="text-decoration-none d-block py-2 mb-0"
+                            >
+                              Expense Categories
+                            </router-link>
+                          </div>
+                        </div>
+                      </div>
+
                         <!-- <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingTwo">
                                 <button
@@ -797,78 +870,9 @@
 
 
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingSeven">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSeven"
-                                >
-                                    Stoke Adjustment
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseSeven"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingSeven"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'stock-adjust' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Stock Adjustment
-                                    </router-link>
-                                    <router-link
-                                        :to="{ name: 'add-stock' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Add Stock
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingEigth">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEigth"
-                                    aria-expanded="false"
-                                    aria-controls="collapseEigth"
-                                >
-                                    Expense
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseEigth"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="headingEigth"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div class="accordion-body">
-                                    <router-link
-                                        :to="{ name: 'expenses' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Expenses
-                                    </router-link>
 
-                                    <router-link
-                                        :to="{ name: 'expenses-category' }"
-                                        class="text-decoration-none d-block py-2 mb-0"
-                                    >
-                                        Expense Categories
-                                    </router-link>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="accordion-item">
                             <h2 class="accordion-header mb-0" id="headingNine">
