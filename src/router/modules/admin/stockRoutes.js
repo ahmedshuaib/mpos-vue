@@ -6,11 +6,17 @@ export default [
         {
             path:'stock-adjust',
             name:'stock-adjust',
-            component: StockAdjustment,
+            component: () =>
+                import(
+                    /* webpackChunkName: stock-adjust */ "@/views/admin/pages/StockAdjustment.vue"
+                ),
         },
         {
             path:'add-stock',
             name:'add-stock',
-            component: AddStockAdjustment,
+            component: () =>
+                import(
+                    /* webpackChunkName: add-stock */ "@/views/admin/pages/AddStockAdjustment.vue"
+                ),
         },
 ]

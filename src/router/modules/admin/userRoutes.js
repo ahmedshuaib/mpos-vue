@@ -37,22 +37,34 @@ export default [
         {
             path: "role",
             name: "role",
-            component: Role,
+            component: () =>
+                import(
+                    /* webpackChunkName: role */ "@/views/admin/pages/Role.vue"
+                ),
         },
         {
             path:'add-role',
             name:'addRole',
-            component: AddRole,
+            component: () =>
+                import(
+                    /* webpackChunkName: addRole */ "@/views/admin/pages/AddRole.vue"
+                ),
         },
         {
             path: "sales",
             name: "sales",
-            component: Sales,
+            component: () =>
+                import(
+                    /* webpackChunkName: sales */ "@/views/admin/pages/Sales.vue"
+                ),
             children:[
                 {
                     path: "sales-modal",
                     name: "salesModal",
-                    component: SalesModal,
+                    component: () =>
+                        import(
+                            /* webpackChunkName: salesModal */ "@/components/admin/parts/sales/SalesModal.vue"
+                        ),
                 },
 
             ]

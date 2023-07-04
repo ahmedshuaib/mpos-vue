@@ -18,7 +18,10 @@ export default [
             {
                 path: "add-customer",
                 name: "addCustomer",
-                component: SuppliersModal,
+                component: () =>
+                    import(
+                        /* webpackChunkName: suppliers */ "@/components/admin/parts/contacts/suppliers/SuppliersModal.vue"
+                    ),
             },
 
         ]
@@ -31,14 +34,20 @@ export default [
             {
                 path:'new-customers',
                 name:'new-customers',
-                component: NewCustomer,
+                component: () =>
+                    import(
+                        /* webpackChunkName: customers */ "@/components/admin/parts/contacts/customers/NewCustomer.vue"
+                    ),
             }
         ]
     },
     {
         path:'customer-group',
         name:'customer-group',
-        component: CustomerGroup,
+        component: () =>
+            import(
+                /* webpackChunkName: customer-group */ "@/views/admin/pages/CustomerGroup.vue"
+            ),
         children:[
             {
 
@@ -62,17 +71,26 @@ export default [
     {
         path:'customer-pay',
         name:'customer-pay',
-        component: CustomerPay,
+        component: () =>
+            import(
+                /* webpackChunkName: customer-pay */ "@/views/admin/pages/Customerpay.vue"
+            ),
     },
     {
         path:'customer-sms',
         name:'customer-sms',
-        component: CustomerSms,
+        component: () =>
+            import(
+                /* webpackChunkName: customer-sms */ "@/views/admin/pages/CustomerSms.vue"
+            ),
     },
     {
         path:'customer-contact',
         name:'customer-contact',
-        component: ImportContact,
+        component: () =>
+            import(
+                /* webpackChunkName: customer-contact */ "@/views/admin/pages/ImportContact.vue"
+            ),
 
     },
 ]

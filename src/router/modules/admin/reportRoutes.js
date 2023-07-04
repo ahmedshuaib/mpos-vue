@@ -14,54 +14,92 @@ export default [
         {
             path:'reports',
             name:'reports',
-            component: Reports,
+            component: () =>
+                import(
+                    /* webpackChunkName: reports */
+                    "@/views/admin/pages/Reports.vue"
+                ),
         },
 
         {
             path:'net-balance',
             name:'net-balance',
-            component: NetBalance,
+            component: () =>
+                import(
+                    /* webpackChunkName: net-balance */
+                    "@/views/admin/pages/NetBalance.vue"
+                ),
         },
         {
             path:'supplier-position',
             name:'supplier-position',
-            component: SupplierPosition,
+            component: () =>
+                import(
+                    /* webpackChunkName: supplier-position */ "@/views/admin/pages/SupplierPosition.vue"
+                ),
         },
         {
             path:'supplier-summery',
             name:'supplier-summery',
-            component: SupplierSummery,
+            component: () =>
+                import(
+                    /* webpackChunkName: supplier-summery */ "@/views/admin/pages/SupplierSummery.vue"
+                    ),
         },
         {
             path:'supplier-report',
             name:'supplier-report',
-            component: SupplierReport,
+            component: () =>
+                import(
+                    /* webpackChunkName: supplier-report */
+                    "@/views/admin/pages/SupplierReport.vue"
+                    ),
         },
 
         {
             path:'stock-position',
             name:'stock-position',
-            component: StockPosition,
+            component: () =>
+                import(
+                    /* webpackChunkName: stock-position */
+                    "@/views/admin/pages/StockPosition.vue"
+                    ),
         },
         {
             path:'stock-receipts',
             name:'stock-receipts',
-            component: StockReceipts,
+            component: () =>
+                import(
+                    /* webpackChunkName: stock-receipts */
+                    "@/views/admin/pages/StockReceipts.vue"
+                    ),
         },
         {
             path:'purchase-sale',
             name:'purchase-sale',
-            component: PurchaseSale,
+            component: () =>
+                import(
+                    /* webpackChunkName: purchase-sale */
+                    "@/views/admin/pages/PurchaseSale.vue"
+                    ),
         },
 
         {
             path:'transfer-report',
             name:'transfer-report',
-            component: TransferReport,
+            component: () =>
+                import(
+                    /* webpackChunkName: transfer-report */
+                    "@/views/admin/pages/TransferReport.vue"
+                    ),
         },
         {
             path:'transaction-report',
             name:'transaction-report',
-            component: TransactionReport,
+            component: () =>
+                import(
+                    /* webpackChunkName: transaction-report */
+                    "@/views/admin/pages/TransactionReport.vue"
+                    ),
         },
 ]

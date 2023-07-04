@@ -2,7 +2,7 @@
     <section class="pro-users__section">
       <div class="section__container">
           <div class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
-              <h4 class="mb-0">Add New Product</h4>
+              <h4 class="mb-0">Business Settings</h4>
           </div>
           <div class="row">
                 <div class="col-lg-2">

@@ -27,27 +27,42 @@ export default [
         {
             path:'list-product',
             name:'list-product',
-            component: ListProduct,
+            component: () =>
+                import(
+                    /* webpackChunkName: list-product */ "@/views/admin/pages/ListProduct.vue"
+                ),
         },
         {
             path:'add-product',
             name:'add-product',
-            component: AddProduct,
+            component: () =>
+                import(
+                    /* webpackChunkName: add-product */ "@/views/admin/pages/AddProduct.vue"
+                ),
         },
         {
             path:'new-product',
             name:'new-product',
-            component: NewList,
+            component: () =>
+                import(
+                    /* webpackChunkName: new-product */ "@/views/admin/pages/NewList.vue"
+                ),
         },
         {
             path:'print-label',
             name:'print-label',
-            component: PrintLabel,
+            component: () =>
+                import(
+                    /* webpackChunkName: print-label */ "@/views/admin/pages/PrintLabel.vue"
+                ),
         },
         {
             path:'variations',
             name:'variations',
-            component: Variations,
+            component: () =>
+                import(
+                    /* webpackChunkName: variations */ "@/views/admin/pages/Variations.vue"
+                ),
             children:[
                 {
                     path:'add-variation',
@@ -70,13 +85,19 @@ export default [
         {
             path:'import-product',
             name:'import-product',
-            component: ImportProduct,
+            component: () =>
+                import(
+                    /* webpackChunkName: import-product */ "@/views/admin/pages/ImportProduct.vue"
+                ),
         },
 
         {
             path:'sell-group',
             name:'sell-group',
-            component: SellGroup,
+            component: () =>
+                import(
+                    /* webpackChunkName: sell-group */ "@/views/admin/pages/SellGroup.vue"
+                ),
             children:[
                 {
                     path:'add-selling',
@@ -100,7 +121,10 @@ export default [
         {
             path:'units',
             name:'units',
-            component: Units,
+            component: () =>
+                import(
+                    /* webpackChunkName: units */ "@/views/admin/pages/Units.vue"
+                ),
             children:[
                 {
                     path:'add-unit',
@@ -123,7 +147,10 @@ export default [
         {
             path:'categories',
             name:'categories',
-            component: Categories,
+            component: () =>
+                import(
+                    /* webpackChunkName: categories */ "@/views/admin/pages/Categories.vue"
+                ),
             children:[
                 {
                     path:'add-category',
@@ -147,7 +174,10 @@ export default [
         {
             path:'brands',
             name:'brands',
-            component: Brands,
+            component: () =>
+                import(
+                    /* webpackChunkName: brands */ "@/views/admin/pages/Brands.vue"
+                ),
             children:[
                 {
                     path:'add-brands',
@@ -170,17 +200,26 @@ export default [
         {
             path:'list-purchase',
             name:'list-purchase',
-            component: ListPurchase,
+            component: () =>
+                import(
+                    /* webpackChunkName: list-purchase */ "@/views/admin/pages/ListPurchase.vue"
+                ),
         },
         {
             path:'add-purchase',
             name:'add-purchase',
-            component: AddPurchase,
+            component: () =>
+                import(
+                    /* webpackChunkName: add-purchase */ "@/views/admin/pages/AddPurchase.vue"
+                ),
         },
         {
             path:'purchase-return',
             name:'purchase-return',
-            component: PurchaseReturn,
+            component: () =>
+                import(
+                    /* webpackChunkName: purchase-return */ "@/views/admin/pages/PurchaseReturn.vue"
+                ),
         },
 
 ];

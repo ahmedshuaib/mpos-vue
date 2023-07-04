@@ -15,56 +15,100 @@ export default [
         {
             path:'all-sales',
             name:'all-sales',
-            component: AllSales,
+            component: () =>
+                import(
+                    /* webpackChunkName: all-sales */
+                    "@/views/admin/pages/AllSales.vue"
+                    ),
         },
         {
             path:'discount-sales',
             name:'discount-sales',
-            component: DiscountSale,
+            component: () =>
+                import(
+                    /* webpackChunkName: discount-sales */
+                    "@/views/admin/pages/DiscountSale.vue"
+                    ),
         },
         {
             path:'add-sales',
             name:'add-sales',
-            component: AddSale,
+            component: () =>
+                import(
+                    /* webpackChunkName: add-sales */
+                    "@/views/admin/pages/AddSale.vue"
+                    ),
         },
         {
             path:'list-pose',
             name:'list-pose',
-            component: ListPose,
+            component: () =>
+                import(
+                    /* webpackChunkName: list-pose */
+                    "@/views/admin/pages/ListPose.vue"
+                    ),
         },
         {
             path:'list-draft',
             name:'list-draft',
-            component: ListDraft,
+            component: () =>
+                import(
+                    /* webpackChunkName: list-draft */
+                    "@/views/admin/pages/ListDraft.vue"
+                    ),
         },
         {
             path:'list-quotations',
             name:'list-quotations',
-            component: ListQuotations,
+            component: () =>
+                import(
+                    /* webpackChunkName: list-quotations */
+                    "@/views/admin/pages/ListQuotations.vue"
+                    ),
         },
         {
             path:'sell-return',
             name:'sell-return',
-            component: SellReturn,
+            component: () =>
+                import(
+                    /* webpackChunkName: sell-return */
+                    "@/views/admin/pages/SellReturn.vue"
+                    ),
         },
         {
             path:'stock-adjust',
             name:'stock-adjust',
-            component: StockAdjustment,
+            component: () =>
+                import(
+                    /* webpackChunkName: stock-adjust */
+                    "@/views/admin/pages/StockAdjustment.vue"
+                    ),
         },
         {
             path:'add-stock',
             name:'add-stock',
-            component: AddStockAdjustment,
+            component: () =>
+                import(
+                    /* webpackChunkName: add-stock */
+                    "@/views/admin/pages/AddStockAdjustment.vue"
+                    ),
         },
         {
             path:'expenses',
             name:'expenses',
-            component: Expenses,
+            component: () =>
+                import(
+                    /* webpackChunkName: expenses */
+                    "@/views/admin/pages/Expenses.vue"
+                    ),
         },
         {
             path:'expenses-category',
             name:'expenses-category',
-            component: ExpenseCategory,
+            component: () =>
+                import(
+                    /* webpackChunkName: expenses-category */
+                    "@/views/admin/pages/ExpenseCategory.vue"
+                    ),
         },
 ]

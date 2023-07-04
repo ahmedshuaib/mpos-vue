@@ -13,38 +13,59 @@ export default [
     {
         path: "/login",
         name: "login",
-        component: Login,
+        component: () =>
+            import(
+                /* webpackChunkName: login */ "@/components/auth/Login.vue"
+            ),
     },
     {
         path: "/register",
         name: "signup",
-        component: Signup,
+        component: () =>
+            import(
+                /* webpackChunkName: signup */ "@/views/admin/Signup.vue"
+            ),
     },
     // forgot-password-paths
     {
         path: "/verification",
         name: "verification",
-        component: Verification,
+        component: () =>
+            import(
+                /* webpackChunkName: verification */ "@/components/auth/forgot-password/Verification.vue"
+            ),
     },
     {
         path: "/password/reset/",
         name: "forgot-password",
-        component: Forgot,
+        component: () =>
+            import(
+                /* webpackChunkName: forgot-password */ "@/components/auth/forgot-password/Forgot.vue"
+            ),
     },
     {
         path: "/password/mail",
         name: "mail",
-        component: Mail,
+        component: () =>
+            import(
+                /* webpackChunkName: mail */ "@/components/auth/forgot-password/Mail.vue"
+            ),
     },
     {
         path: "/password/new-password",
         name: "new-password",
-        component: Reset,
+        component: () =>
+            import(
+                /* webpackChunkName: new-password */ "@/components/auth/forgot-password/Reset.vue"
+            ),
     },
     {
         path: "/password/success-password",
         name: "reset-success",
-        component: SuccessReset,
+        component: () =>
+            import(
+                /* webpackChunkName: reset-success */ "@/components/auth/forgot-password/SuccessReset.vue"
+            ),
     },
     // forgot-password-paths-end
 
@@ -52,17 +73,26 @@ export default [
     {
         path: "/email/verification",
         name: "email-verify",
-        component: EmailVerify,
+        component: () =>
+            import(
+                /* webpackChunkName: email-verify */ "@/components/auth/email-verification/EmailVerify.vue"
+            ),
     },
     {
         path: "/email/verify-code",
         name: "verify-code",
-        component: CodeVerify,
+        component: () =>
+            import(
+                /* webpackChunkName: verify-code */ "@/components/auth/email-verification/Codeverify.vue"
+            ),
     },
     {
         path: "/email/success-verify",
         name: "verify-success",
-        component: Verified,
+        component: () =>
+            import(
+                /* webpackChunkName: verify-success */ "@/components/auth/email-verification/Verified.vue"
+            ),
     },
     // email-verification-paths-end
 ];

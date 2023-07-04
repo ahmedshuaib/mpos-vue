@@ -21,7 +21,7 @@ export default [
                 name: "dashboard",
                 component: () =>
                     import(
-                        /* webpackChunkName: home */ "@/views/admin/Home.vue"
+                        /* webpackChunkName: dashboard */ "@/views/admin/Home.vue"
                     ),
             },
             {

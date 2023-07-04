@@ -4,7 +4,10 @@ export default [
     {
         path: "/",
         name: "home",
-        component: Home,
+        component: () =>
+            import(
+                /* webpackChunkName: home */ "@/views/public/Index.vue"
+            ),
     },
     {
         path: "/packages",

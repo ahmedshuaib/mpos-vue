@@ -7,16 +7,25 @@ export default [
         {
             path:'bank',
             name:'bank',
-            component: Bank,
+            component: () =>
+                import(
+                    /* webpackChunkName: bank */ "@/views/admin/pages/Bank.vue"
+                ),
         },
         {
             path:'personal',
             name:'personal',
-            component: Personal,
+            component: () =>
+                import(
+                    /* webpackChunkName: personal */ "@/views/admin/pages/Personal.vue"
+                ),
         },
         {
             path:'main-point',
             name:'main-point',
-            component: MainPoint,
+            component: () =>
+                import(
+                    /* webpackChunkName: main-point */ "@/views/admin/pages/MainPoint.vue"
+                ),
         },
 ]
