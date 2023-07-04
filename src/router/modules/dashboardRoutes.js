@@ -71,10 +71,10 @@ import Invoice from "../../views/admin/pages/Invoice.vue";
 import BarCode from "../../views/admin/pages/BarCode.vue";
 import DashboardLayout from "@/layouts/DashboardLayout.vue";
 import Home from "@/views/admin/Home.vue";
-import Role from "@/views/admin/Role.vue";
-import Sales from "@/views/admin/Sales.vue";
-import Suppliers from "@/views/admin/Suppliers.vue";
-import Customers from "@/views/admin/Customers.vue";
+import Role from "@/views/admin/pages/Role.vue";
+import Sales from "@/views/admin/pages/Sales.vue";
+import Suppliers from "@/views/admin/pages/Suppliers.vue";
+import Customers from "@/views/admin/pages/Customers.vue";
 
 
 export default[

@@ -23,7 +23,7 @@
                         <div class="dropdown-btn">
                         <div class="select d-flex alig-items-center gap-4">
                             <span class="selected">Export</span>
-                            <img src="../assets/img/drop.svg" alt="">
+                            <img src="../../../assets/img/drop.svg" alt="">
                         </div>
                         <ul class="menu">
                             <li>Copy</li>
@@ -65,11 +65,11 @@
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit',params:{id:'1'}}">
                                     <button class="pro-edit-btn">
-                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
                                 <button class="pro-delete-btn">
-                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
                             </td>
@@ -84,11 +84,11 @@
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit',params:{id:'1'}}">
                                     <button class="pro-edit-btn">
-                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
                                 <button class="pro-delete-btn">
-                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
                             </td>
@@ -103,11 +103,11 @@
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit',params:{id:'1'}}">
                                     <button class="pro-edit-btn">
-                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
                                 <button class="pro-delete-btn">
-                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
                             </td>
@@ -122,11 +122,11 @@
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit',params:{id:'1'}}">
                                     <button class="pro-edit-btn">
-                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
                                 <button class="pro-delete-btn">
-                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
                             </td>
@@ -141,11 +141,11 @@
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit',params:{id:'1'}}">
                                     <button class="pro-edit-btn">
-                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
                                 <button class="pro-delete-btn">
-                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
                             </td>
@@ -160,11 +160,11 @@
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit',params:{id:'1'}}">
                                     <button class="pro-edit-btn">
-                                    <img src="../assets/img/edit.svg" alt=""> Edit
+                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
                                 <button class="pro-delete-btn">
-                                    <img src="../assets/img/delete.svg" alt=""> Delete
+                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
                             </td>

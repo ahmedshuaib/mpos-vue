@@ -6,11 +6,17 @@ export default [
         {
             path:'expenses',
             name:'expenses',
-            component: Expenses,
+            component: () =>
+                import(
+                    /* webpackChunkName: expenses */ "@/views/admin/pages/Expenses.vue"
+                ),
         },
         {
             path:'expenses-category',
             name:'expenses-category',
-            component: ExpenseCategory,
+            component: () =>
+                import(
+                    /* webpackChunkName: expenses-category */ "@/views/admin/pages/ExpenseCategory.vue"
+                ),
         },
 ]
