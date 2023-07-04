@@ -5,12 +5,18 @@ export default [
         {
             path:'bank-user',
             name:'bank-user',
-            component: BankUser,
+            component: () =>
+                    import(
+                    /* webpackChunkName: bank-user */ "@/views/admin/pages/BankUser.vue"
+                    ),
             children:[
                 {
                     path:'add-bank-user',
                     name:'add-bank-user',
-                    component: AddBankUser,
+                    component: () =>
+                        import(
+                            /* webpackChunkName: add-bank-user */ "@/components/admin/parts/bank/AddBankUser.vue"
+                            ),
 
                 }
             ]
