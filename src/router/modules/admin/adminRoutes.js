@@ -32,9 +32,17 @@ export default [
                         /* webpackChunkName: notification */ "@/views/admin/Home.vue"
                     ),
             },
-            ...userRoutes, ...productRoutes, ...saleRoutes, ...reportRoutes,
-            ...stockRoutes, ...expenseRoutes, ...bankRoutes,...transferBalanceRoutes,
-            ...receiveBalanceRoutes,...settingsRoutes,...contactRoutes
+            ...userRoutes,
+            ...productRoutes,
+            ...saleRoutes,
+            ...reportRoutes,
+            ...stockRoutes,
+            ...expenseRoutes,
+            ...bankRoutes,
+            ...transferBalanceRoutes,
+            ...receiveBalanceRoutes,
+            ...settingsRoutes,
+            ...contactRoutes,
         ],
     },
 ];

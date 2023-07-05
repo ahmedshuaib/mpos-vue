@@ -2,14 +2,15 @@
     <!-- start design here... -->
     <section class="pro-users__section">
         <div class="section__container">
-            <div class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2">
+            <div
+                class="d-flex align-items-center justify-content-between heading-box flex-wrap gap-2"
+            >
                 <h4 class="mb-0">User</h4>
-                <router-link :to="{name:'userModal'}">
+                <router-link :to="{ name: 'userModal' }">
                     <button class="user-add-btn" id="user-add-btn">
                         <span class="me-1">+</span>Add
                     </button>
                 </router-link>
-
             </div>
         </div>
     </section>
@@ -25,15 +26,6 @@
                             <span class="selected">Export</span>
                             <img src="../../../assets/img/drop.svg" alt="">
                         </div>
-                        <ul class="menu">
-                            <li>Copy</li>
-                            <li>Export to CSV</li>
-                            <li class="active">Export to Excel</li>
-                            <li>Export to PDF</li>
-                            <li>Print</li>
-                            <li>Column visibility</li>
-                        </ul>
-                         </div> 
                     </keep-alive>
                 </div>
             </div>
@@ -43,7 +35,7 @@
     <section class="stock__section mt-5">
         <div class="section__container">
             <div class="card border-0 bg-white p-4">
-                <table ref="table4" style="width:100%">
+                <table ref="table4" style="width: 100%">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -176,17 +168,12 @@
     </section>
     <router-view name="userModal"></router-view>
     <router-view name="edited"></router-view>
-    
 </template>
 
 <script>
-
 export default {
-    name:'User',
-
-}
+    name: "User",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
