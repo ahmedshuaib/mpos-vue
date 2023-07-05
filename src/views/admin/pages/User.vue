@@ -22,9 +22,10 @@
                     <!-- dropdown menu -->
                     <keep-alive>
                         <div class="dropdown-btn">
-                        <div class="select d-flex alig-items-center gap-4">
-                            <span class="selected">Export</span>
-                            <img src="../../../assets/img/drop.svg" alt="">
+                          <div class="select d-flex alig-items-center gap-4">
+                              <span class="selected">Export</span>
+                              <img src="../../../assets/img/drop.svg" alt="">
+                          </div>
                         </div>
                     </keep-alive>
                 </div>
