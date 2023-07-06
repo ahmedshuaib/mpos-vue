@@ -13,15 +13,26 @@ export default [
     {
         path:'suppliers',
         name:'suppliers',
-        component: Suppliers,
+        component: () =>
+            import(
+                /* webpackChunkName: suppliers */
+                "@/views/admin/pages/Suppliers.vue"
+            ),
+        meta: {
+            isProtected: true
+        },
         children:[
             {
                 path: "add-customer",
                 name: "addCustomer",
                 component: () =>
                     import(
-                        /* webpackChunkName: suppliers */ "@/components/admin/parts/contacts/suppliers/SuppliersModal.vue"
+                        /* webpackChunkName: addCustomer */
+                        "@/components/admin/parts/contacts/suppliers/SuppliersModal.vue"
                     ),
+                meta: {
+                    isProtected: true
+                },
             },
 
         ]
@@ -29,15 +40,26 @@ export default [
     {
         path:'customers',
         name:'customers',
-        component: Customers,
+        component: () =>
+            import(
+                /* webpackChunkName: customers */
+                "@/views/admin/pages/CustomerGroup.vue"
+            ),
+        meta: {
+            isProtected: true
+        },
         children:[
             {
                 path:'new-customers',
                 name:'new-customers',
                 component: () =>
                     import(
-                        /* webpackChunkName: customers */ "@/components/admin/parts/contacts/customers/NewCustomer.vue"
+                        /* webpackChunkName: new-customers */
+                        "@/components/admin/parts/contacts/customers/NewCustomer.vue"
                     ),
+                meta: {
+                    isProtected: true
+                },
             }
         ]
     },
@@ -46,8 +68,12 @@ export default [
         name:'customer-group',
         component: () =>
             import(
-                /* webpackChunkName: customer-group */ "@/views/admin/pages/CustomerGroup.vue"
+                /* webpackChunkName: customer-group */
+                "@/views/admin/pages/CustomerGroup.vue"
             ),
+        meta: {
+            isProtected: true
+        },
         children:[
             {
 
@@ -56,7 +82,10 @@ export default [
                 components:{
                     default: AddGroup,
                     AddGroup: AddGroup
-                }
+                },
+                meta: {
+                    isProtected: true
+                },
             },
             {
                 path:'edit-group/:id',
@@ -64,7 +93,10 @@ export default [
                 components:{
                     default: Edit,
                     EditGroup: Edit
-                }
+                },
+                meta: {
+                    isProtected: true
+                },
             }
         ]
     },
@@ -73,24 +105,36 @@ export default [
         name:'customer-pay',
         component: () =>
             import(
-                /* webpackChunkName: customer-pay */ "@/views/admin/pages/Customerpay.vue"
+                /* webpackChunkName: customer-pay */
+                "@/views/admin/pages/Customerpay.vue"
             ),
+        meta: {
+            isProtected: true
+        },
     },
     {
         path:'customer-sms',
         name:'customer-sms',
         component: () =>
             import(
-                /* webpackChunkName: customer-sms */ "@/views/admin/pages/CustomerSms.vue"
+                /* webpackChunkName: customer-sms */
+                "@/views/admin/pages/CustomerSms.vue"
             ),
+        meta: {
+            isProtected: true
+        },
     },
     {
         path:'customer-contact',
         name:'customer-contact',
         component: () =>
             import(
-                /* webpackChunkName: customer-contact */ "@/views/admin/pages/ImportContact.vue"
+                /* webpackChunkName: customer-contact */
+                "@/views/admin/pages/ImportContact.vue"
             ),
+        meta: {
+            isProtected: true
+        },
 
     },
 ]

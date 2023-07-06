@@ -1,3 +1,7 @@
+/**
+ * @deprecated This file is no longer actively maintained and should not be used.
+ */
+
 
 import EditGroup from '../../components/parts/contacts/customergroup/EditCustomer.vue';
 import AddVariation from '../../components/parts/Product/variation/AddVariation.vue';

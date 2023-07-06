@@ -8,7 +8,10 @@ export default [
         component: () =>
             import(
                 /* webpackChunkName: purchase-return */ "@/views/admin/pages/ReceiveBalance.vue"
-            )
+            ),
+        meta: {
+            isProtected: true
+        },
     },
     {
         path: 'receive-personal',
@@ -17,5 +20,8 @@ export default [
             import(
                 /* webpackChunkName: purchase-return */ "@/views/admin/pages/ReceivePersonal.vue"
             ),
+        meta: {
+            isProtected: true
+        },
     },
 ]

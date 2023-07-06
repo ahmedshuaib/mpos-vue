@@ -10,6 +10,9 @@ export default [
                 import(
                     /* webpackChunkName: expenses */ "@/views/admin/pages/Expenses.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'expenses-category',
@@ -18,5 +21,8 @@ export default [
                 import(
                     /* webpackChunkName: expenses-category */ "@/views/admin/pages/ExpenseCategory.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
 ]

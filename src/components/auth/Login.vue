@@ -1,4 +1,12 @@
 <template>
+
+  <div
+      v-if="isLoginFailed"
+      style="border-radius: 10px"
+      class="red white--text pa-2 ma-3 text-center app-title-small"
+  >Login failed! Invalid credentials
+  </div>
+
     <div class="login-section">
         <div class="container">
             <div class="col-lg-10 col-md-8 col-sm-12 m-auto ">
@@ -20,11 +28,11 @@
                 </div>
                 <div class="mb-4">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="email"  v-model="email" aria-describedby="emailHelp" placeholder="Enter your email" @keyup.enter="onLogin">
                 </div>
                 <div class="mb-4">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="password">
+                    <input type="password" class="form-control" id="password"  v-model="password" placeholder="password" @keyup.enter="onLogin">
                 </div>
                 <div class="login-footer">
                     <div class="mb-3 form-check" style="vertical-align: center;">
@@ -32,14 +40,15 @@
                         <label class="form-check-label" for="check">Remember for 30 days</label>
                     </div>
                     <div class="forgot-link">
-                        <a href="#">Forgot password</a>
+                        <a @click="forgotPassPage">Forgot password</a>
                     </div>
                 </div>
 
-                <button type="submit" class="btn submit">Submit</button>
+                <button :disabled="!form"
+                        :loading="loading" type="submit" class="btn submit" @click="onLogin">Submit</button>
             </form>
             <div class="create-account text-center">
-                <span>Don't have an acocunt? <a href="#" class="account">Create an Account</a></span>
+                <span>Don't have an acocunt? <a @click="registerPage" class="account">Create an Account</a></span>
             </div>
          </div>
         </div>
@@ -47,11 +56,52 @@
 </template>
 
 <script>
+import AuthService from "@/services/AuthService";
+
 export default {
+  data: () => ({
+    form: true,
+    email: null,
+    password: null,
+    loading: false,
+    isLoginFailed: false,
+  }),
+  mounted() {
+    console.log("AUTH", AuthService.isAuthenticated());
+  },
+
+  methods: {
+    registerPage(){
+      this.$router.push({
+        name: 'signup'
+      });
+    },
+    forgotPassPage(){
+      this.$router.push({
+        name: 'forgot-password'
+      });
+    },
+    async onLogin() {
+      // this.isLoginFailed = false;
+      // this.loading =true;
+      if(!(await AuthService.login({email: this.email, password: this.password}))){
+        this.loading = true
+      }
+    },
+  }
+
+
 
 }
 </script>
 
-<style>
+<style scoped>
+
+.account{
+  cursor: pointer;
+}
+.forgot-link{
+  cursor: pointer;
+}
 
 </style>

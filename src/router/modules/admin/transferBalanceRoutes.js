@@ -9,23 +9,35 @@ export default [
             name:'bank',
             component: () =>
                 import(
-                    /* webpackChunkName: bank */ "@/views/admin/pages/Bank.vue"
+                    /* webpackChunkName: bank */
+                    "@/views/admin/pages/Bank.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'personal',
             name:'personal',
             component: () =>
                 import(
-                    /* webpackChunkName: personal */ "@/views/admin/pages/Personal.vue"
+                    /* webpackChunkName: personal */
+                    "@/views/admin/pages/Personal.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'main-point',
             name:'main-point',
             component: () =>
                 import(
-                    /* webpackChunkName: main-point */ "@/views/admin/pages/MainPoint.vue"
+                    /* webpackChunkName: main-point */
+                    "@/views/admin/pages/MainPoint.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
 ]

@@ -13,24 +13,37 @@ import contactRoutes from "@/router/modules/admin/contactRoutes";
 export default [
     {
         path: "/admin",
+        name: "admin",
         component: () =>
-            import(/* webpackChunkName: dashboard */ "@/views/admin/App.vue"),
+            import(/* webpackChunkName: dashboard */
+                "@/views/admin/App.vue"),
+        meta: {
+            isProtected: true
+        },
         children: [
             {
                 path: "",
                 name: "dashboard",
                 component: () =>
                     import(
-                        /* webpackChunkName: dashboard */ "@/views/admin/Home.vue"
+                        /* webpackChunkName: dashboard */
+                        "@/views/admin/Home.vue"
                     ),
+                meta: {
+                    isProtected: true
+                },
             },
             {
                 path: "profile",
                 name: "notification",
                 component: () =>
                     import(
-                        /* webpackChunkName: notification */ "@/views/admin/Home.vue"
+                        /* webpackChunkName: notification */
+                        "@/views/admin/Home.vue"
                     ),
+                meta: {
+                    isProtected: true
+                },
             },
             ...userRoutes,
             ...productRoutes,

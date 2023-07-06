@@ -8,15 +8,23 @@ export default [
             name:'stock-adjust',
             component: () =>
                 import(
-                    /* webpackChunkName: stock-adjust */ "@/views/admin/pages/StockAdjustment.vue"
+                    /* webpackChunkName: stock-adjust */
+                    "@/views/admin/pages/StockAdjustment.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'add-stock',
             name:'add-stock',
             component: () =>
                 import(
-                    /* webpackChunkName: add-stock */ "@/views/admin/pages/AddStockAdjustment.vue"
+                    /* webpackChunkName: add-stock */
+                    "@/views/admin/pages/AddStockAdjustment.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
 ]

@@ -31,6 +31,9 @@ export default [
                 import(
                     /* webpackChunkName: list-product */ "@/views/admin/pages/ListProduct.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'add-product',
@@ -39,6 +42,9 @@ export default [
                 import(
                     /* webpackChunkName: add-product */ "@/views/admin/pages/AddProduct.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'new-product',
@@ -47,6 +53,9 @@ export default [
                 import(
                     /* webpackChunkName: new-product */ "@/views/admin/pages/NewList.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'print-label',
@@ -55,6 +64,9 @@ export default [
                 import(
                     /* webpackChunkName: print-label */ "@/views/admin/pages/PrintLabel.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'variations',
@@ -63,6 +75,9 @@ export default [
                 import(
                     /* webpackChunkName: variations */ "@/views/admin/pages/Variations.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
             children:[
                 {
                     path:'add-variation',
@@ -70,7 +85,10 @@ export default [
                     components:{
                         default:AddVariation,
                         AddVariation:AddVariation
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 },
                 {
                     path:'edit/:id',
@@ -78,7 +96,10 @@ export default [
                     components:{
                         default:EditVariation,
                         EditVariation:EditVariation
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 }
             ]
         },
@@ -89,6 +110,9 @@ export default [
                 import(
                     /* webpackChunkName: import-product */ "@/views/admin/pages/ImportProduct.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
 
         {
@@ -98,6 +122,9 @@ export default [
                 import(
                     /* webpackChunkName: sell-group */ "@/views/admin/pages/SellGroup.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
             children:[
                 {
                     path:'add-selling',
@@ -105,7 +132,10 @@ export default [
                     components:{
                         default:AddSelling,
                         AddSellGroup:AddSelling
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 },
                 {
                     path:'edit/:id',
@@ -113,7 +143,10 @@ export default [
                     components:{
                         default:EditSelling,
                         EditSelling:EditSelling
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 }
             ]
         },
@@ -125,6 +158,9 @@ export default [
                 import(
                     /* webpackChunkName: units */ "@/views/admin/pages/Units.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
             children:[
                 {
                     path:'add-unit',
@@ -132,7 +168,10 @@ export default [
                     components:{
                         default:AddUnits,
                         AddUnit:AddUnits
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 },
                 {
                     path:'edit/:id',
@@ -140,7 +179,11 @@ export default [
                     components:{
                         default:EditUnits,
                         EditUnit:EditUnits
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
+
                 }
             ]
         },
@@ -151,6 +194,9 @@ export default [
                 import(
                     /* webpackChunkName: categories */ "@/views/admin/pages/Categories.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
             children:[
                 {
                     path:'add-category',
@@ -159,6 +205,9 @@ export default [
                         default: AddCategory,
                         AddCategory:AddCategory
                     },
+                    meta: {
+                        isProtected: true
+                    },
                 },
                 {
                     path:'edit/:id',
@@ -166,7 +215,10 @@ export default [
                     components:{
                         default:EditCategory,
                         EditCategory:EditCategory
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 }
             ]
         },
@@ -178,6 +230,9 @@ export default [
                 import(
                     /* webpackChunkName: brands */ "@/views/admin/pages/Brands.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
             children:[
                 {
                     path:'add-brands',
@@ -185,7 +240,10 @@ export default [
                     components:{
                         default:AddBrand,
                         AddBrand:AddBrand
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 },
                 {
                     path:'edit/:id',
@@ -193,7 +251,10 @@ export default [
                     components:{
                         default:EditBrand,
                         EditBrand:EditBrand
-                    }
+                    },
+                    meta: {
+                        isProtected: true
+                    },
                 }
             ]
         },
@@ -204,6 +265,9 @@ export default [
                 import(
                     /* webpackChunkName: list-purchase */ "@/views/admin/pages/ListPurchase.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'add-purchase',
@@ -212,6 +276,9 @@ export default [
                 import(
                     /* webpackChunkName: add-purchase */ "@/views/admin/pages/AddPurchase.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'purchase-return',
@@ -220,6 +287,9 @@ export default [
                 import(
                     /* webpackChunkName: purchase-return */ "@/views/admin/pages/PurchaseReturn.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
 
 ];

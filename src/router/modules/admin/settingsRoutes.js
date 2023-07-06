@@ -17,7 +17,10 @@ export default [
                 import(
                     /* webpackChunkName: business-setting */
                     "@/views/admin/pages/BusinessSetting.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'business-location',
@@ -26,7 +29,10 @@ export default [
                 import(
                     /* webpackChunkName: business-location */
                     "@/views/admin/pages/BusinessLocation.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'invoice-setting',
@@ -35,7 +41,10 @@ export default [
                 import(
                     /* webpackChunkName: invoice-setting */
                     "@/views/admin/pages/Invoice.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'barcode-setting',
@@ -44,7 +53,10 @@ export default [
                 import(
                     /* webpackChunkName: barcode-setting */
                     "@/views/admin/pages/BarCode.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'receipt-printer',
@@ -53,7 +65,10 @@ export default [
                 import(
                     /* webpackChunkName: receipt-printer */
                     "@/views/admin/pages/ReceiptPrinter.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'tax-rate',
@@ -62,7 +77,10 @@ export default [
                 import(
                     /* webpackChunkName: tax-rate */
                     "@/views/admin/pages/TaxRate.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'subscription',
@@ -71,7 +89,10 @@ export default [
                 import(
                     /* webpackChunkName: subscription */
                     "@/views/admin/pages/Subscription.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
 
         {
@@ -81,7 +102,10 @@ export default [
                 import(
                     /* webpackChunkName: inbox */
                     "@/views/admin/pages/Inbox.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'notification',
@@ -90,7 +114,10 @@ export default [
                 import(
                     /* webpackChunkName: notification */
                     "@/views/admin/pages/Notification.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'comment',
@@ -99,6 +126,9 @@ export default [
                 import(
                     /* webpackChunkName: comment */
                     "@/views/admin/pages/Comment.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
 ]

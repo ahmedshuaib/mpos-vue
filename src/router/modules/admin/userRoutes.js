@@ -12,8 +12,12 @@ export default [
         name: "user",
         component: () =>
             import(
-                /* webpackChunkName: user */ "@/views/admin/pages/User.vue"
+                /* webpackChunkName: user */
+                "@/views/admin/pages/User.vue"
             ),
+        meta: {
+            isProtected: true
+        },
 
         children: [
             {
@@ -22,7 +26,10 @@ export default [
                 components:{
                     default: userModal,
                     userModal: userModal
-                }
+                },
+                meta: {
+                    isProtected: true
+                },
             },
             {
                 path: "edit/:id",
@@ -30,7 +37,10 @@ export default [
                 components:{
                     default: editModal,
                     edited: editModal
-                }
+                },
+                meta: {
+                    isProtected: true
+                },
             },
         ],
     },
@@ -39,32 +49,48 @@ export default [
             name: "role",
             component: () =>
                 import(
-                    /* webpackChunkName: role */ "@/views/admin/pages/Role.vue"
+                    /* webpackChunkName: role */
+                    "@/views/admin/pages/Role.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'add-role',
             name:'addRole',
             component: () =>
                 import(
-                    /* webpackChunkName: addRole */ "@/views/admin/pages/AddRole.vue"
+                    /* webpackChunkName: addRole */
+                    "@/views/admin/pages/AddRole.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path: "sales",
             name: "sales",
             component: () =>
                 import(
-                    /* webpackChunkName: sales */ "@/views/admin/pages/Sales.vue"
+                    /* webpackChunkName: sales */
+                    "@/views/admin/pages/Sales.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
             children:[
                 {
                     path: "sales-modal",
                     name: "salesModal",
                     component: () =>
                         import(
-                            /* webpackChunkName: salesModal */ "@/components/admin/parts/sales/SalesModal.vue"
+                            /* webpackChunkName: salesModal */
+                            "@/components/admin/parts/sales/SalesModal.vue"
                         ),
+                    meta: {
+                        isProtected: true
+                    },
                 },
 
             ]

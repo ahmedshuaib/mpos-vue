@@ -17,6 +17,9 @@ export default [
             import(
                 /* webpackChunkName: login */ "@/components/auth/Login.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/register",
@@ -25,6 +28,9 @@ export default [
             import(
                 /* webpackChunkName: signup */ "@/views/admin/Signup.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     // forgot-password-paths
     {
@@ -34,6 +40,9 @@ export default [
             import(
                 /* webpackChunkName: verification */ "@/components/auth/forgot-password/Verification.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/password/reset/",
@@ -42,6 +51,9 @@ export default [
             import(
                 /* webpackChunkName: forgot-password */ "@/components/auth/forgot-password/Forgot.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/password/mail",
@@ -50,6 +62,9 @@ export default [
             import(
                 /* webpackChunkName: mail */ "@/components/auth/forgot-password/Mail.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/password/new-password",
@@ -58,6 +73,9 @@ export default [
             import(
                 /* webpackChunkName: new-password */ "@/components/auth/forgot-password/Reset.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/password/success-password",
@@ -66,6 +84,9 @@ export default [
             import(
                 /* webpackChunkName: reset-success */ "@/components/auth/forgot-password/SuccessReset.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     // forgot-password-paths-end
 
@@ -77,6 +98,9 @@ export default [
             import(
                 /* webpackChunkName: email-verify */ "@/components/auth/email-verification/EmailVerify.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/email/verify-code",
@@ -85,6 +109,9 @@ export default [
             import(
                 /* webpackChunkName: verify-code */ "@/components/auth/email-verification/Codeverify.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     {
         path: "/email/success-verify",
@@ -93,6 +120,9 @@ export default [
             import(
                 /* webpackChunkName: verify-success */ "@/components/auth/email-verification/Verified.vue"
             ),
+        meta: {
+            isProtected: false
+        }
     },
     // email-verification-paths-end
 ];

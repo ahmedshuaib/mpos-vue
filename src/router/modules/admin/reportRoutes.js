@@ -19,6 +19,9 @@ export default [
                     /* webpackChunkName: reports */
                     "@/views/admin/pages/Reports.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
 
         {
@@ -29,6 +32,9 @@ export default [
                     /* webpackChunkName: net-balance */
                     "@/views/admin/pages/NetBalance.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'supplier-position',
@@ -37,6 +43,9 @@ export default [
                 import(
                     /* webpackChunkName: supplier-position */ "@/views/admin/pages/SupplierPosition.vue"
                 ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'supplier-summery',
@@ -44,7 +53,10 @@ export default [
             component: () =>
                 import(
                     /* webpackChunkName: supplier-summery */ "@/views/admin/pages/SupplierSummery.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'supplier-report',
@@ -53,7 +65,10 @@ export default [
                 import(
                     /* webpackChunkName: supplier-report */
                     "@/views/admin/pages/SupplierReport.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
 
         {
@@ -63,7 +78,10 @@ export default [
                 import(
                     /* webpackChunkName: stock-position */
                     "@/views/admin/pages/StockPosition.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'stock-receipts',
@@ -72,7 +90,10 @@ export default [
                 import(
                     /* webpackChunkName: stock-receipts */
                     "@/views/admin/pages/StockReceipts.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'purchase-sale',
@@ -81,7 +102,10 @@ export default [
                 import(
                     /* webpackChunkName: purchase-sale */
                     "@/views/admin/pages/PurchaseSale.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
 
         {
@@ -91,7 +115,10 @@ export default [
                 import(
                     /* webpackChunkName: transfer-report */
                     "@/views/admin/pages/TransferReport.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'transaction-report',
@@ -100,6 +127,9 @@ export default [
                 import(
                     /* webpackChunkName: transaction-report */
                     "@/views/admin/pages/TransactionReport.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
 ]

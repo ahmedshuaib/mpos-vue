@@ -19,7 +19,10 @@ export default [
                 import(
                     /* webpackChunkName: all-sales */
                     "@/views/admin/pages/AllSales.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'discount-sales',
@@ -28,7 +31,10 @@ export default [
                 import(
                     /* webpackChunkName: discount-sales */
                     "@/views/admin/pages/DiscountSale.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'add-sales',
@@ -37,7 +43,10 @@ export default [
                 import(
                     /* webpackChunkName: add-sales */
                     "@/views/admin/pages/AddSale.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'list-pose',
@@ -46,7 +55,10 @@ export default [
                 import(
                     /* webpackChunkName: list-pose */
                     "@/views/admin/pages/ListPose.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'list-draft',
@@ -55,7 +67,10 @@ export default [
                 import(
                     /* webpackChunkName: list-draft */
                     "@/views/admin/pages/ListDraft.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'list-quotations',
@@ -64,7 +79,10 @@ export default [
                 import(
                     /* webpackChunkName: list-quotations */
                     "@/views/admin/pages/ListQuotations.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'sell-return',
@@ -73,7 +91,10 @@ export default [
                 import(
                     /* webpackChunkName: sell-return */
                     "@/views/admin/pages/SellReturn.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'stock-adjust',
@@ -82,7 +103,10 @@ export default [
                 import(
                     /* webpackChunkName: stock-adjust */
                     "@/views/admin/pages/StockAdjustment.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'add-stock',
@@ -91,7 +115,10 @@ export default [
                 import(
                     /* webpackChunkName: add-stock */
                     "@/views/admin/pages/AddStockAdjustment.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'expenses',
@@ -100,7 +127,10 @@ export default [
                 import(
                     /* webpackChunkName: expenses */
                     "@/views/admin/pages/Expenses.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
         {
             path:'expenses-category',
@@ -109,6 +139,9 @@ export default [
                 import(
                     /* webpackChunkName: expenses-category */
                     "@/views/admin/pages/ExpenseCategory.vue"
-                    ),
+                ),
+            meta: {
+                isProtected: true
+            },
         },
 ]
