@@ -39,8 +39,8 @@
                 <table ref="table4" style="width: 100%">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>User Name</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
                             <th>Role</th>
                             <th>Email</th>
                             <th>Salary</th>
@@ -48,11 +48,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Kamrul Islam</td>
-                            <td>@kamrul</td>
-                            <td>Admin</td>
-                            <td>No Parent Unit</td>
+                        <tr v-for="user in userList" :key="user.id">
+                            <td>{{ user.first_name }}</td>
+                            <td>{{ user.last_name }}</td>
+                            <td>
+                              <ul>
+                                <li v-for="(role, index) in user.roles" :key="role.id">
+                                  {{ role.name }}
+                                  <span v-if="index < user.roles.length - 1">, </span>
+                                </li>
+                              </ul>
+                            </td>
+                            <td>{{ user.email }}</td>
                             <td>$1000</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
@@ -67,101 +74,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Kamrul Islam</td>
-                            <td>@kamrul</td>
-                            <td>Admin</td>
-                            <td>No Parent Unit</td>
-                            <td>$1000</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit',params:{id:'1'}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link>
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Kamrul Islam</td>
-                            <td>@kamrul</td>
-                            <td>Admin</td>
-                            <td>No Parent Unit</td>
-                            <td>$1000</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit',params:{id:'1'}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link>
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Kamrul Islam</td>
-                            <td>@kamrul</td>
-                            <td>Admin</td>
-                            <td>No Parent Unit</td>
-                            <td>$1000</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit',params:{id:'1'}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link>
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Kamrul Islam</td>
-                            <td>@kamrul</td>
-                            <td>Admin</td>
-                            <td>No Parent Unit</td>
-                            <td>$1000</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit',params:{id:'1'}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link>
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Kamrul Islam</td>
-                            <td>@kamrul</td>
-                            <td>Admin</td>
-                            <td>No Parent Unit</td>
-                            <td>$1000</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit',params:{id:'1'}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link>
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -172,9 +85,42 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
     name: "User",
+  data() {
+      return {
+        userList: [],
+      };
+  },
+  created() {
+    this.getAllUsers();
+  },
+  methods: {
+      getAllUsers() {
+        const apiUrl = 'http://127.0.0.1:8000/api/user-manage/users'
+
+        axios.get(apiUrl)
+            .then(response => {
+              this.userList = response.data.data
+            })
+            .catch(error =>{
+              console.log('Error fetching user data', error)
+            })
+      }
+  }
 };
 </script>
 
-<style></style>
+<style scoped>
+
+button#user-add-btn {
+  cursor: pointer;
+  line-height: 20px;
+  padding: 12px 12px;
+  border: 1px solid var(--gray-text-background, #E1E5E6);
+  background: var(--primary-1, #229269);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+</style>

@@ -12,6 +12,7 @@ export default {
 
     login: async form => {
         const token = (await axios.post('http://127.0.0.1:8000/api/user-manage/login', form)).data.token;
+        console.log('token', token);
         localStorage.setItem('auth_token', token)
         axios.defaults.headers.common['Authorization'] = 'Bearer '+ token;
     },

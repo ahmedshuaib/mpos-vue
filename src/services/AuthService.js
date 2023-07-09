@@ -14,7 +14,7 @@ const isAuthenticated = () => store.getters.isAuthenticated
 /**
  * Register
  * @param form
- * @return {Promise<Route>}
+ * @return {Promise<boolean>}
  */
 export const register = async form => {
     try {
@@ -35,7 +35,7 @@ export const register = async form => {
 /**
  * Login
  * @param form
- * @return {Promise<Route>}
+ * @return {Promise<boolean>}
  */
 export const login = async form => {
     try {

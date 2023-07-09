@@ -1,6 +1,6 @@
 import axios from 'axios';
-import router from "../router/index.js";
-import {kickOut} from "../services/AuthService.js";
+import {kickOut} from "@/services/AuthService";
+import router from "@/router";
 
 const token = localStorage.getItem('auth_token');
 if (token) {

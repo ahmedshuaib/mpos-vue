@@ -1,15 +1,13 @@
 <template>
-
-  <div
-      v-if="isLoginFailed"
-      style="border-radius: 10px"
-      class="red white--text pa-2 ma-3 text-center app-title-small"
-  >Login failed! Invalid credentials
-  </div>
-
     <div class="login-section">
         <div class="container">
             <div class="col-lg-10 col-md-8 col-sm-12 m-auto ">
+              <div
+                  v-if="isLoginFailed"
+                  style="border-radius: 10px"
+                  class="red white--text pa-2 ma-3 text-center app-title-small"
+              >Login failed! Invalid credentials
+              </div>
             <div class="form-header">
                 <h1>Log in</h1>
                 <h6>Welcome back! Please enter your details</h6>
@@ -48,7 +46,7 @@
                         :loading="loading" type="submit" class="btn submit" @click="onLogin">Submit</button>
             </form>
             <div class="create-account text-center">
-                <span>Don't have an acocunt? <a @click="registerPage" class="account">Create an Account</a></span>
+                <span>Don't have an account? <a @click="registerPage" class="account">Create an Account</a></span>
             </div>
          </div>
         </div>
@@ -84,24 +82,23 @@ export default {
     async onLogin() {
       // this.isLoginFailed = false;
       // this.loading =true;
+      console.log('email 1',this.email);
       if(!(await AuthService.login({email: this.email, password: this.password}))){
+        console.log('email 2',this.email);
         this.loading = true
       }
     },
   }
 
-
-
 }
 </script>
 
-<style scoped>
 
+<style scoped>
 .account{
   cursor: pointer;
 }
 .forgot-link{
   cursor: pointer;
 }
-
 </style>
