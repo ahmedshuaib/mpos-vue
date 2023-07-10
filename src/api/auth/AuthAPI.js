@@ -11,17 +11,19 @@ export default {
     },
 
     login: async form => {
+
         const token = (await axios.post('http://127.0.0.1:8000/api/user-manage/login', form)).data.token;
-        console.log('token', token);
+        // console.log('token', token);
         localStorage.setItem('auth_token', token)
         axios.defaults.headers.common['Authorization'] = 'Bearer '+ token;
     },
+
     logout: () => {
         axios.post('http://127.0.0.1:8000/api/user-manage/logout');
     },
     getAuthUser: async () =>  {
         const res = (await axios.get('http://127.0.0.1:8000/api/user-manage/auth/users')).data;
-        console.log('dd', res);
+        console.log('auth user', res);
         return new User({
             id: res?.id,
             first_name: res?.first_name,

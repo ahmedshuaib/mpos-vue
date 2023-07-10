@@ -42,10 +42,7 @@ export const login = async form => {
         console.log('login');
         await AuthAPI.login(form)
         await authUser();
-        router.push({
-            name: 'admin'
-        });
-
+        router.push({ name: 'admin' });
     } catch (e) {
         console.log('LOGIN FAILED', e)
         return false;
@@ -82,7 +79,7 @@ export const checkRouteAuthentication = (to, from, next) => {
         if(isProtected) {
             next()
         } else { //unprotected route
-            next({name: 'role'})
+            next({name: 'admin'})
         }
     } else { // not logged in user
         if (isProtected) {

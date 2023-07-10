@@ -32,12 +32,13 @@ export default [
                 },
             },
             {
-                path: "edit/:id",
+                path: "edit/:userId",
                 name: "edit",
                 components:{
                     default: editModal,
                     edited: editModal
                 },
+                props:true,
                 meta: {
                     isProtected: true
                 },

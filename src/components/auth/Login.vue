@@ -26,11 +26,11 @@
                 </div>
                 <div class="mb-4">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email"  v-model="email" aria-describedby="emailHelp" placeholder="Enter your email" @keyup.enter="onLogin">
+                    <input type="email" class="form-control" id="email"  v-model="email" aria-describedby="emailHelp" placeholder="Enter your email">
                 </div>
                 <div class="mb-4">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password"  v-model="password" placeholder="password" @keyup.enter="onLogin">
+                    <input type="password" class="form-control" id="password"  v-model="password" placeholder="password">
                 </div>
                 <div class="login-footer">
                     <div class="mb-3 form-check" style="vertical-align: center;">
@@ -79,10 +79,11 @@ export default {
         name: 'forgot-password'
       });
     },
-    async onLogin() {
+    async onLogin(event) {
+      event.preventDefault();
       // this.isLoginFailed = false;
       // this.loading =true;
-      console.log('email 1',this.email);
+      console.log('email 1');
       if(!(await AuthService.login({email: this.email, password: this.password}))){
         console.log('email 2',this.email);
         this.loading = true

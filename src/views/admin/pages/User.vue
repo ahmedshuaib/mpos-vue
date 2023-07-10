@@ -63,12 +63,12 @@
                             <td>$1000</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit',params:{id:'1'}}">
+                                <router-link :to="{name:'edit',params:{userId: user.id}}">
                                     <button class="pro-edit-btn">
                                     <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link>
-                                <button class="pro-delete-btn">
+                                <button class="pro-delete-btn" @click="confirmDelete(user.id)">
                                     <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
@@ -108,7 +108,25 @@ export default {
             .catch(error =>{
               console.log('Error fetching user data', error)
             })
+      },
+    confirmDelete(userId) {
+      if (confirm("Are you sure you want to delete this user?")) {
+        this.deleteUser(userId);
       }
+    },
+    deleteUser(userId) {
+      const apiUrl = `http://127.0.0.1:8000/api/user-manage/user/${userId}`;
+      axios
+          .delete(apiUrl)
+          .then((response) => {
+            console.log("User deleted successfully");
+            // Remove the deleted user from the user list
+            this.userList = this.userList.filter((user) => user.id !== userId);
+          })
+          .catch((error) => {
+            console.log("Error deleting user", error);
+          });
+    },
   }
 };
 </script>

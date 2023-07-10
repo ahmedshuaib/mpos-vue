@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import { adminRoutes } from "./modules/admin";
 import { publicRoutes } from "./modules/public";
 import { authRoutes } from "./modules/auth";
+import {checkRouteAuthentication} from "@/services/AuthService";
 
 
 
@@ -14,4 +15,5 @@ const router = createRouter({
     mode: "history", // or 'hash' if using hash mode
 });
 
+// router.beforeEach(checkRouteAuthentication)
 export default router;

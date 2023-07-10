@@ -72,7 +72,7 @@
                                 <input
                                 class="form-control"
                                 id="password"
-                                type="text"
+                                type="password"
                                 placeholder="Password"
                                 v-model="user.password"
                                 />
@@ -93,6 +93,7 @@
                                 <div class="d-flex gap-3 align-items-center">
                                   <button class="popup-save-btn" type="submit" @click="createUser">Save</button>
                                   <button class="popup-clear-btn" type="submit" @click="resetForm">Clear</button>
+                                  <router-link :to="{name:'user'}"><span class="popup-close-btn" data-bs-dismiss="modal" >Close</span></router-link>
                                 </div>
                             </div>
                         </form>
