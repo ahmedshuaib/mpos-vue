@@ -115,7 +115,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 button#add-role-link {
   cursor: pointer;
   line-height: 20px;
