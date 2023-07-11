@@ -5,7 +5,7 @@
           <div
             class="d-flex align-items-center justify-content-between heading-box"
           >
-            <h4 class="mb-0">Add role</h4>
+            <h4 class="mb-0">Update Role</h4>
           </div>
         </div>
       </section>
@@ -108,8 +108,8 @@
               </div>
             </div>
             <div class="d-flex justify-content-end">
-              <button class="permission-save-btn" type="submit" @click="createRole">Save</button>
-              <button class="permission-clear-btn" type="submit" @click="resetForm">Clear</button>
+              <button class="permission-save-btn" type="submit" @click="updateRole">Save</button>
+              <button class="permission-clear-btn" type="submit" @click="">Clear</button>
 
             </div>
           </form>
@@ -121,7 +121,8 @@
 import axios from "axios";
 
 export default {
-  name:'addRole',
+  name:'updateRole',
+  props: ['roleId'],
   data() {
     return {
       role:{
@@ -130,26 +131,35 @@ export default {
     };
   },
   methods: {
-    createRole(e) {
-      e.preventDefault();
-      const apiUrl = 'http://127.0.0.1:8000/api/user-manage/roles';
 
-      axios.post(apiUrl, this.role)
-          .then(response => {
-            console.log("Role created successfully:", response.data);
-            this.$router.push({
-              name: 'role'
-            })
-            this.resetForm();
-          })
-          .catch(error => {
-            console.error("Error creating Role:", error.response.data);
-          });
+    async getRole() {
+      try {
+        const apiUrl = `http://127.0.0.1:8000/api/user-manage/roles/${this.roleId}`;
+        const response = await axios.get(apiUrl);
+        const roleData = response.data.role; // Assuming the role data is wrapped in a "data" field
+        this.role = { ...roleData };
+        console.log('role',roleData)// Copy the user data properties to the "user" object
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+      }
     },
-    resetForm(e) {
-      e.preventDefault();
-      this.role.name = "";
+
+    async updateRole(e) {
+      e.preventDefault()
+      try {
+        const apiUrl = `http://127.0.0.1:8000/api/user-manage/roles/${this.roleId}`;
+        const response = await axios.put(apiUrl, this.role);
+        console.log('response', response);
+        const updateRole = response.data.role;
+        console.log('updatedUser', updateRole);
+      } catch (error) {
+        console.error('Error updating user data:', error);
+      }
     },
+
+  },
+  mounted() {
+    this.getRole(); // Call the getRole method when the component is mounted
   },
 }
 </script>
