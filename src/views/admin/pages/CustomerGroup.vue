@@ -50,10 +50,9 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                        <tr>
-                            <td>Green</td>
-                            <td>10%</td>
+                        <tr v-for="customer in customers" :key="customer.id">
+                            <td>{{customer.first_name}} {{customer.last_name}}</td>
+                            <td>{{customer.email}}</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
                                 <router-link :to="{name:'edit-group',params:{id:2}}">
@@ -67,55 +66,6 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Green</td>
-                            <td>10%</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit-group',params:{id:2}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link >
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Green</td>
-                            <td>10%</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit-group',params:{id:2}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                    </button>
-                                </router-link >
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Green</td>
-                            <td>10%</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit-group',params:{id:2}}">
-                                    <button class="pro-edit-btn">
-                                    <img src="../../../assets/img/edit.svg" alt=""> Edit
-                                </button>
-                                </router-link >
-                                <button class="pro-delete-btn">
-                                    <img src="../../../assets/img/delete.svg" alt=""> Delete
-                                </button>
-                                </div>
-                            </td>
-                        </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -127,7 +77,27 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default{
+  data() {
+    return {
+      customers: [],
+    };
+  },
+  methods: {
+    async fetchCustomers() {
+      try {
+        const response = await axios.get('http://127.0.0.1:8000/api/contact-manage/customers');
+        this.customers = response.data.customers;
+      } catch (error) {
+        console.error('Failed to fetch customers:', error);
+      }
+    },
+  },
+  mounted() {
+    this.fetchCustomers()
+  }
 }
 </script>
 

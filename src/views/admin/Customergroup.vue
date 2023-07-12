@@ -81,53 +81,9 @@
                             </tr>
                         </thead>
                         <tbody>
-
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
-                                    </button>
-                                    <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
-                                    </button>
-                                    <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                    <button class="pro-edit-btn">
-                                        <i class="uil uil-edit-alt"></i> Edit
-                                    </button>
-                                    <button class="pro-delete-btn">
-                                        <i class="uil uil-trash-alt"></i> Delete
-                                    </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Islam</td>
-                                <td>@kamrul</td>
+                            <tr v-for="customer in customers" :key="customer.id">
+                                <td>{{customer.first_name}} {{customer.last_name}}</td>
+                                <td>{{customer.email}}</td>
                                 <td>
                                     <div class="d-flex align-items-center gap-2">
                                     <button class="pro-edit-btn">
@@ -150,7 +106,27 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default{
+  data() {
+    return {
+      customers: [],
+    };
+  },
+  methods: {
+    async fetchCustomers() {
+      try {
+        const response = await axios.get('http://127.0.0.1:8000/api/contact-manage/customers');
+        this.customers = response.data.customers;
+      } catch (error) {
+        console.error('Failed to fetch customers:', error);
+      }
+    },
+  },
+  mounted() {
+    this.fetchCustomers()
+  }
 }
 </script>
 
