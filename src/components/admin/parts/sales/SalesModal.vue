@@ -72,8 +72,9 @@
                       class="d-flex align-items-center justify-content-end pro-form-btn"
                       >
                       <div class="d-flex gap-3 align-items-center">
-                        <router-link :to="{name:'sales'}"><span class="popup-close-btn" id="popup-close" data-bs-dismiss="modal">Close</span></router-link>
                         <button class="popup-save-btn" @click="saveSale">Save</button>
+                        <router-link :to="{name:'sales'}"><span class="popup-close-btn" id="popup-close" data-bs-dismiss="modal">Close</span></router-link>
+
                       </div>
                     </div>
                 </form>
@@ -111,20 +112,13 @@ export default {
       }
   },
   methods:{
-    resetModal() {
-      const modalElement = this.$refs.salesModal;
-      const modal = bootstrap.Modal.getInstance(modalElement);
-      if (modal) {
-        modal.hide();
-      }
-  },
     saveSale(e) {
       e.preventDefault();
       const apiUrl = 'http://127.0.0.1:8000/api/user-manage/sale-commission-agents';
 
       axios.post(apiUrl, this.sales)
           .then(response => {
-            console.log("Sales created successfully:", response);
+            console.log("Sales created successfully:", response.data);
             console.log('this.sales', this.sales)
             this.$router.push({
               name: 'sales'
@@ -132,9 +126,16 @@ export default {
             // this.resetForm();
           })
           .catch(error => {
-            console.error("Error creating sales:", error);
+            console.error("Error creating sales:", error.response.data);
           });
     },
+    resetModal() {
+      const modalElement = this.$refs.salesModal;
+      const modal = bootstrap.Modal.getInstance(modalElement);
+      if (modal) {
+        modal.hide();
+      }
+  },
   }
 };
 </script>
