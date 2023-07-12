@@ -60,7 +60,7 @@
                                     <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link >
-                                <button class="pro-delete-btn">
+                                <button class="pro-delete-btn"  @click="confirmDelete(customer.id)">
                                     <img src="../../../assets/img/delete.svg" alt=""> Delete
                                 </button>
                                 </div>
@@ -93,6 +93,23 @@ export default{
       } catch (error) {
         console.error('Failed to fetch customers:', error);
       }
+    },
+    confirmDelete(customerId) {
+      if (confirm("Are you sure you want to delete this customer?")) {
+        this.deleteCustomer(customerId);
+      }
+    },
+    deleteCustomer(customerId) {
+      const apiUrl = `http://127.0.0.1:8000/api/contact-manage/customers/${customerId}`;
+      axios
+          .delete(apiUrl)
+          .then((response) => {
+            console.log("Customer deleted successfully");
+            this.customers = this.customers.filter((customer) => customer.id !== customerId);
+          })
+          .catch((error) => {
+            console.log("Error deleting customer", error);
+          });
     },
   },
   mounted() {
