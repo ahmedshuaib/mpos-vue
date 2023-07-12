@@ -17,14 +17,14 @@
                     <div class="row">
                       <div class="col-lg-6 mt-4">
                         <label for="fname">Contact type: * </label>
-                        <input type="text" class="form-control" id="validationFname" aria-describedby="FnameHelp" placeholder="Suppliers" required/>
+                        <input type="text" class="form-control" id="validationFname" aria-describedby="FnameHelp" placeholder="Suppliers" required v-model="supplier.supplier_type"/>
                         <div class="invalid-feedback">
                           This field is required
                         </div>
                       </div>
                       <div class="col-lg-6 mt-4">
                       <label for="lname">Name: *</label>
-                        <input class="form-control" id="name" type="text" placeholder="Name" required/>
+                        <input class="form-control" id="name" type="text" placeholder="Name" required v-model="supplier.first_name"/>
                         <div class="invalid-feedback">
                           This field is required
                         </div>
@@ -52,7 +52,7 @@
                         <div class="col-lg-6 mt-4">
                           <label for="contact">Customer Type:</label>
                           <select class="form-select" aria-label="Default select example">
-                            <option selected>General</option>
+                            <option selected>Select Customer Type</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
@@ -90,7 +90,7 @@
                           class="form-control"
                           id="email"
                           type="email"
-                          placeholder="Email"
+                          placeholder="Email" v-model="supplier.email"
                           required
                           />
                           <div class="invalid-feedback">
@@ -102,9 +102,9 @@
                           <input
                           class="form-control"
                           id="mobile"
-                          type="number"
+                          type="text"
                           placeholder="Mobile"
-                          required
+                          required v-model="supplier.mobile"
                           />
                           <div class="invalid-feedback">
                            This field is required
@@ -115,9 +115,9 @@
                           <input
                           class="form-control"
                           id="number"
-                          type="number"
+                          type="text"
                           placeholder="Alternate Number"
-                          required
+                          required v-model="supplier.alternate_mobile"
                           />
                           <div class="invalid-feedback">
                           This field is required
@@ -129,8 +129,8 @@
                           class="form-control"
                           id="landline"
                           type="text"
-                          placeholder="General"
-                          required
+                          placeholder="Landline"
+                          required v-model="supplier.emergency_contact"
                           />
                           <div class="invalid-feedback">
                           This field is required
@@ -246,7 +246,7 @@
                         <router-link :to="{name:'suppliers'}">
                             <span class="popup-close-btn" id="popup-close" data-bs-dismiss="modal">Close</span>
                         </router-link>
-                        <button class="popup-save-btn">Save</button>
+                        <button class="popup-save-btn" @click="createSupplier">Save</button>
                       </div>
                     </div>
                 </form>
@@ -261,8 +261,25 @@
 
 <script>
 import * as bootstrap from 'bootstrap';
+import axios from "axios";
 
 export default {
+  data(){
+    return{
+      supplier:{
+        user_id: 1,
+        tenant_id: 1,
+        shop_id: 1,
+        first_name: null,
+        last_name: null,
+        email: null,
+        mobile: null,
+        alternate_mobile: null,
+        emergency_contact: null,
+        supplier_type: null
+      }
+    }
+  },
   mounted(){
     if(this.$route.name==='addCustomer'){
       const modalElement = this.$refs.addCustomer;
@@ -273,6 +290,18 @@ export default {
   },
   
   methods:{
+    createSupplier(e) {
+      e.preventDefault()
+      const apiUrl = 'http://127.0.0.1:8000/api/contact-manage/suppliers';
+
+      axios.post(apiUrl, this.supplier)
+          .then(response => {
+            console.log("supplier created successfully:", response.data);
+          })
+          .catch(error => {
+            console.error("Error creating user:", error);
+          });
+    },
     resetModal() {
       const modalElement = this.$refs.addCustomer;
       const modal = bootstrap.Modal.getInstance(modalElement);

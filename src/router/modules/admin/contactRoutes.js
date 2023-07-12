@@ -23,7 +23,7 @@ export default [
         },
         children:[
             {
-                path: "add-customer",
+                path: "add-supplier",
                 name: "addCustomer",
                 component: () =>
                     import(
