@@ -59,270 +59,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>01711</td>
+                        <tr v-for="supplier in suppliers" :key="supplier.id">
+                            <td>{{ supplier.id }}</td>
                             <td>KRY INT</td>
-                            <td>Brock Lesner</td>
-                            <td>01717675204</td>
-                            <td>$1200</td>
-                            <td>$00</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>01711</td>
-                            <td>Mcdonald</td>
-                            <td>Marco rashford</td>
-                            <td>+656514684</td>
-                            <td>$100</td>
-                            <td>$600</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>231635</td>
-                            <td>Apple</td>
-                            <td>Roman reigns</td>
-                            <td>+546546</td>
-                            <td>$1700</td>
-                            <td>$100</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>01711</td>
-                            <td>KRY INT</td>
-                            <td>Brock Lesner</td>
-                            <td>01717675204</td>
-                            <td>$1200</td>
-                            <td>$00</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>01711</td>
-                            <td>KRY INT</td>
-                            <td>Brock Lesner</td>
-                            <td>01717675204</td>
-                            <td>$1200</td>
-                            <td>$00</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>01711</td>
-                            <td>KRY INT</td>
-                            <td>Brock Lesner</td>
-                            <td>01717675204</td>
-                            <td>$1200</td>
-                            <td>$00</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>01711</td>
-                            <td>KRY INT</td>
-                            <td>Brock Lesner</td>
-                            <td>01717675204</td>
-                            <td>$1200</td>
-                            <td>$00</td>
-                            <td>
-                                <div class="dots-menu">
-                                <div class="dots-btn">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                                <ul class="t-options">
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Copy</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">View</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Edit</p>
-                                    </li>
-
-                                    <li class="t-option">
-                                    <span class="t-option-circle"></span>
-                                    <p class="t-option-text mb-0">Delete</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>01711</td>
-                            <td>KRY INT</td>
-                            <td>Brock Lesner</td>
-                            <td>01717675204</td>
+                            <td>{{ supplier.first_name }} {{ supplier.last_name}}</td>
+                            <td>{{ supplier.mobile }}</td>
                             <td>$1200</td>
                             <td>$00</td>
                             <td>
@@ -400,10 +141,38 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default{
+  data(){
+    return {
+      suppliers: []
+    }
+  },
+  methods:{
+  async fetchSuppliers() {
+      try {
+        const response = await axios.get('http://127.0.0.1:8000/api/contact-manage/suppliers');
+        this.suppliers = response.data.suppliers;
+      } catch (error) {
+        console.error('Failed to fetch suppliers:', error);
+      }
+    },
+  },
+  mounted() {
+    this.fetchSuppliers();
+  },
 }
 </script>
 
-<style>
+<style scoped>
 
+button#user-add-btn {
+  cursor: pointer;
+  line-height: 20px;
+  padding: 12px 12px;
+  border: 1px solid var(--gray-text-background, #E1E5E6);
+  background: var(--primary-1, #229269);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
 </style>
