@@ -92,7 +92,7 @@
 
                             <div class="d-flex align-items-center justify-content-end pro-form-btn">
                                 <div class="d-flex gap-3 align-items-center">
-                                  <router-link :to="{name:'user'}"><span class="popup-close-btn" id="popup-close" @click="popup">Close</span></router-link>  
+                                  <router-link :to="{name:'user'}"><span class="popup-close-btn" id="popup-close" @click="popup">Close</span></router-link>
                                   <button class="popup-save-btn" type="submit">Save</button>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@
 <script>
   import * as bootstrap from 'bootstrap';
   export default {
-
+    name: 'edit-group',
     mounted(){
       if(this.$route.name==='edit'){
           const modalElement = this.$refs.editModal;

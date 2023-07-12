@@ -55,8 +55,8 @@
                             <td>{{customer.email}}</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                <router-link :to="{name:'edit-group',params:{id:2}}">
-                                    <button class="pro-edit-btn">
+                                <router-link :to="{name:'edit-group',params:{customerId: customer.id}}">
+                                    <button class="pro-edit-btn" @click="editPage(customer.id)">
                                     <img src="../../../assets/img/edit.svg" alt=""> Edit
                                 </button>
                                 </router-link >
@@ -78,6 +78,7 @@
 
 <script>
 import axios from "axios";
+import Edit from "@/components/admin/user/Edit.vue";
 
 export default{
   data() {
@@ -86,6 +87,14 @@ export default{
     };
   },
   methods: {
+    editPage(customerId) {
+      this.$router.push({
+        name: 'edit-group',
+        params: {
+          customerId: customerId,
+        },
+      })
+    },
     async fetchCustomers() {
       try {
         const response = await axios.get('http://127.0.0.1:8000/api/contact-manage/customers');

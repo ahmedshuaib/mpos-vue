@@ -88,12 +88,13 @@ export default [
                 },
             },
             {
-                path:'edit-group/:id',
+                path:'edit-group/:customerId',
                 name: "edit-group",
                 components:{
                     default: Edit,
                     EditGroup: Edit
                 },
+                props:true,
                 meta: {
                     isProtected: true
                 },
